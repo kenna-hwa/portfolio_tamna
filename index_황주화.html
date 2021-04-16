@@ -17,46 +17,47 @@
     <header id="header" class="header">
         <div class="header_box">
             <h1><a href="#">탐나는전</a></h1>
-            <!-- nav start -->
+            <!-- gnb start -->
             <nav class="gnb">
                 <h2 class="blind"><a href="#">상단 메뉴</a></h2>
                 <ul>
                     <li class="gnb_info"><a href="#">탐나는전</a>
-                        <ul>
+                        <!-- <ul class="gnb_info_sub">
                             <li><a href="#">탐나는전 소개</a></li>
                             <li><a href="#">탐나는전 혜택</a></li>
                             <li><a href="#">탐나는전 발급방법</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="gnb_personal"><a href="#">개인사용자</a>
-                        <ul>
+                        <!-- <ul class="gnb_personal_sub">
                             <li><a href="#">카드 신청</a></li>
                             <li><a href="#">카드 등록</a></li>
                             <li><a href="#">이용 내역</a></li>
                             <li><a href="#">가맹점 찾기</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="gnb_shop"><a href="#">가맹점</a>
-                        <ul>
+                        <!-- <ul class="gnb_shop_sub">
                             <li><a href="#">가맹점 혜택</a></li>
                             <li><a href="#">가맹점 등록</a></li>
                             <li><a href="#">가맹점 매출 확인</a></li>
                             <li><a href="#">홍보물 다운</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="gnb_customer"><a href="#">고객센터</a>
-                        <ul>
+                        <!-- <ul class="gnb_customer_sub">
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">NEWS</a></li>
                             <li><a href="#">자주묻는질문</a></li>
                             <li><a href="#">문의하기</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
+                    <li class="gnb_more"><a href="#">더보기</a></li>
                 </ul>
-                <div class="gnb_more">더보기</div>
+                
             </nav>
         </div>
-        <!-- nav end -->
+        <!-- gnb end -->
     </header>
     <!-- header end -->
 
@@ -64,27 +65,33 @@
     <main id="main" class="main">
         <!-- main img start -->
         <div class="main_img">
+            <h2>메인이미지</h2>
+            <ul>
+                <li><a href="#">이전</a></li>
+                <li><a href="#">다음</a></li>
+            </ul>
+            <div class="main_img_order">이미지 순서</div>
         </div>
         <!-- main img end -->
 
         <!-- quick menu start -->
         <section class="quick_menu">
-            <h2>빠른 메뉴</h2>
+            <h2 class="blind">빠른 메뉴</h2>
             <ul>
-                <li><a href="#">카드발급신청</a></li>
-                <li><a href="#">이용내역보기</a></li>
-                <li><a href="#">가맹점찾기</a></li>
-                <li><a href="#">가맹점등록</a></li>
+                <li class="quick_subs"><a href="#">카드발급신청</a></li>
+                <li class="quick_usage"><a href="#">이용내역보기</a></li>
+                <li class="quick_search"><a href="#">가맹점찾기</a></li>
+                <li class="quick_register"><a href="#">가맹점등록</a></li>
             </ul>
         </section>
         <!-- quick menu end -->
 
         <!-- board start -->
         <section class="board">
-            <h2>게시판 모음</h2>
+            <h2 class="blind">게시판</h2>
             <div class="board_top">
-                <div class="notice">
-                    <h3>공지사항</h3>
+                <div class="board_notice">
+                    <h3><a href="#">공지사항</a></h3>
                     <ul>
                         <li><a href="#">탐나는전 제주페이 어플 다운로드 방법<span>2021-03-02</span></a></li>
                         <li><a href="#">탐나는전 가맹점 신청 안내<span>2021-02-26</span></a></li>
@@ -92,8 +99,8 @@
                         <li><a href="#">탐나는전 제주페이 홈페이지 오픈<span>2021-01-28</span></a></li>
                     </ul>
                 </div>
-                <div class="news">
-                    <h3>NEWS</h3>
+                <div class="board_news">
+                    <h3><a href="#">NEWS</a></h3>
                     <ul>
                         <li><a href="#">제주도, 탐나는전 부정유총 등 불법행위 6건 적발<span>2021-03-06</span></a></li>
                         <li><a href="#">제주도-제주도기자협회, '탐나는전' 성공 정착 '한 뜻'<span>2021-03-04</span></a></li>
@@ -104,8 +111,8 @@
             </div>
 
             <div class="board_bottom">
-                <div class="qna">
-                    <h3>자주묻는질문</h3>
+                <div class="board_qna">
+                    <h3><a href="#">자주묻는질문</a></h3>
                     <ul>
                         <li><a href="#">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?<span>2021-03-06</span></a></li>
                         <li><a href="#">사업주가 환전을 하려면 어디로 가나요?<span>2021-03-04</span></a></li>
@@ -114,7 +121,7 @@
                     </ul>
                 </div>
 
-                <div class="qr">
+                <div class="board_qr">
                     <h3>탐나는전 어플 다운로드</h3>
                     <p>탐나는전 어플 아이콘</p>
                     <p>구글 플레이 QR코드</p>
