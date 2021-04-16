@@ -29,4 +29,69 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 .header {
     height: 100px;
     border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header_box {
+    width: 1600px;
+    height: 100px;
+    background: red;
+    margin: auto;
+}
+.header_box h1{
+    width: 89px;
+    height: 90px;
+    background: url(../images/tamna_logo.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin: 7px 73px 5px 210px;
+}
+.header_box h1 a {
+    height: 100%;
+    display: block;
+}
+.gnb>ul>li>a{
+    display: block;
+}
+
+.gnb_info {
+    width: 87px;
+    height: 25px;
+    background: url(../images/gnb_info.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin: 37px 145px 0 93px;
+}
+.gnb_personal {
+    width: 113px;
+    height: 25px;
+    background: url(../images/gnb_personal.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin: 37px 156px 0 0;
+}
+.gnb_shop {
+    width: 66px;
+    height: 25px;
+    background: url(../images/gnb_shop.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin: 37px 168px 0 0;
+}
+.gnb_customer {
+    width: 88px;
+    height: 25px;
+    background: url(../images/gnb_customer.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin: 37px 110px 0 0;
+}
+.gnb_more {
+    width: 46px;
+    height: 41px;
+    background: url(../images/hamburger.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin: 29px 229px 31px 0;
 }
