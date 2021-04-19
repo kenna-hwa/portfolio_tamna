@@ -403,3 +403,298 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     top: 56px;
     left: 380px;
 }
+
+/* youtube */
+
+.youtube {
+    width: 1181px;
+    height: 1440px;
+    margin: 0 auto 150px;
+}
+
+/* youtube_offcial */
+
+.youtube_official {
+    position: relative;
+    width: 1181px;
+    height: 670px;
+    margin: 0 auto 100px;
+    
+}
+.youtube_official h3 {
+    width: 981px;
+    height: 670px;
+    background: url(../images/youtube_official_img.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+}
+.youtube_official h3 a {
+    display: block;
+    height: 100%;
+}
+
+.youtube_official_txt {
+    position: absolute;
+    width: 183px;
+    left: 997px;
+    float: left;
+
+}
+.youtube_official_txt1 {
+    position: absolute;
+    width: 183px;
+    height: 161px;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 45px;
+    top: 45px;
+}
+
+.youtube_official_txt1>span {
+    font-size: 40px;
+    line-height: 80px;
+}
+.youtube_official_txt1>span:after {
+    position: absolute;
+    width: 183px;
+    height: 3px;
+    display: inline-block;
+    background: url(../images/youtube_official_bar.jpg) no-repeat;
+    content: "";
+    top: 200px;
+    left: 1px;
+
+}
+.youtube_official_txt2 {
+    position: absolute;
+    width: 191px;
+    height: 152px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 32px;
+    top: 285px;
+}
+.youtube_official_txt2>span:nth-child(3) {
+    font-weight: 500;
+}
+
+.youtube_official_txt2::after {
+    position: absolute;
+    width: 116px;
+    height: 164px;
+    display: inline-block;
+    background: url(../images/youtube_official_icon.jpg) no-repeat;
+    content: "";
+    top: 175px;
+    left: 8px;
+
+}
+.youtube_official_txt2>span:nth-child(6):hover{
+    text-decoration:none;
+    border-bottom:1px solid #626262; 
+    padding-bottom:3px;
+}
+
+/* youtube_kb */
+
+
+.youtube_kb {
+    position: relative;
+    width: 1181px;
+    height: 670px;
+    margin: 0 auto 100px;
+}
+.youtube_kb h3 {
+    width: 981px;
+    height: 670px;
+    background: url(../images/youtube_kb_img.jpg) no-repeat;
+    text-indent: -9999px;
+    float: right;
+}
+.youtube_kb h3 a {
+    display: block;
+    height: 100%;
+}
+.youtube_kb_txt {
+    width: 183px;
+    height: 572px;
+    float: right;
+}
+.youtube_kb_txt1 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: right;
+    letter-spacing: -1px;
+    top: 45px;
+    left: 40px;
+}
+.youtube_kb_txt1:after {
+    position: absolute;
+    width: 183px;
+    height: 3px;
+    display: inline-block;
+    background: url(../images/youtube_kb_bar.jpg) no-repeat;
+    content: "";
+    top: 200px;
+    left: -38px;
+}
+.youtube_kb_txt2 {
+    position: absolute;
+    width: 191px;
+    height: 152px;
+    font-size: 16px;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 32px;
+    top: 285px;
+    left: -10px;
+}
+.youtube_kb_txt2>span {
+    font-weight: 500;
+}
+.youtube_kb_txt2::after {
+    position: absolute;
+    width: 115px;
+    height: 110px;
+    display: inline-block;
+    background: url(../images/youtube_kb_icon.jpg) no-repeat;
+    content: "";
+    top: 190px;
+    left: 75px;
+}
+
+/* link */
+.link {
+    width: 1181px;
+    height: 240px;
+    margin: 0 auto 150px;
+}
+.link a {
+    display: block;
+    height: 100%;
+}
+.link_header {
+    width: 280px;
+    height: 240px;
+    background: url(../images/link_icon.jpg) no-repeat bottom;
+    border-right: 1px solid #666;
+    padding: 45px 32px 0 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.link_header p:nth-child(2) {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: right;
+    float: left;
+}
+.link_header p:nth-child(3) {
+    width: 87px;
+    height:48px;
+    background: url(../images/link_arrow.jpg) no-repeat right;
+    text-indent: -9999px;
+    float: left;
+    margin: 20px 0 0 32px;
+}
+
+.link_jejutourism {
+    width: 300px;
+    height: 240px;
+    border-right: 1px solid #666;
+    box-sizing: border-box;
+    background: url(../images/link_jejutourism.jpg) no-repeat top;
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    text-align: center;
+    line-height: 450px;
+}
+.link_jejugoverment {
+    width: 300px;
+    height: 240px;
+    border-right: 1px solid #666;
+    box-sizing: border-box;
+    background: url(../images/link_jejugoverment.jpg) no-repeat top;
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    text-align: center;
+    line-height: 450px;
+}
+
+.link_jejusafecode {
+    width: 300px;
+    height: 240px;
+    border-right: 1px solid #666;
+    box-sizing: border-box;
+    background: url(../images/link_jejusafecode.jpg) no-repeat top;
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    text-align: center;
+    line-height: 450px;
+}
+/* footer */
+
+.footer {
+    height: 180px;
+    background: #4c4c4c;
+    margin: auto;
+}
+.footer_box {
+    position: relative;
+    width: 1181px;
+    height: 180px;
+    margin: auto;
+}
+.footer_box a {
+    display: block;
+    height: 100%;
+}
+.footer_logo {
+    position: absolute;
+    width: 86px;
+    height: 150px;
+    background: url(../images/footer_tamna_logo.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 15px;
+    left: 35px;
+}
+.footer_txt {
+    position: absolute;
+    font-size: 16px;
+    color: #eee;
+    float: left;
+    top: 65px;
+    left: 220px;
+}
+address {
+    float: left;
+    margin-bottom: 5px;
+}
+address::after {
+    content: " | ";
+    margin: 0 10px 0 5px;
+}
+.footer_txt p:nth-child(2) {
+    float: left;
+    margin-bottom: 5px;
+}
+.footer_jejugoverment {
+    position: absolute;
+    width: 217px;
+    height: 70px;
+    background: url(../images/footer_jeju_logo.jpg) no-repeat center;
+    text-indent: -9999px;
+    top: 60px;
+    right: 50px;
+}
