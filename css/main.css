@@ -25,7 +25,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
         /* scroll 숨김 */
         body {overflow: auto; overflow-x: hidden;}
 
-
 /* -------------------------------------------------------------------------------- */
 
 
@@ -36,7 +35,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     box-sizing: border-box;
     margin: auto;
 }
-
 .header_box {
     position: relative;
     width: 1181px;
@@ -692,7 +690,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     line-height: 45px;
     top: 45px;
 }
-
 .youtube_official_txt1>span {
     font-size: 40px;
     line-height: 80px;
@@ -706,7 +703,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     content: "";
     top: 200px;
     left: 1px;
-
 }
 .youtube_official_txt2 {
     position: absolute;
@@ -731,7 +727,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     content: "";
     top: 175px;
     left: 8px;
-
 }
 .youtube_official_txt2>span:nth-child(6)::after{
     position: absolute;
@@ -742,7 +737,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 }
 
 /* youtube_kb */
-
 
 .youtube_kb {
     position: relative;
@@ -812,6 +806,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 }
 
 /* link */
+
 .link {
     width: 1181px;
     height: 240px;
@@ -873,7 +868,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     text-align: center;
     line-height: 450px;
 }
-
 .link_jejusafecode {
     width: 300px;
     height: 240px;

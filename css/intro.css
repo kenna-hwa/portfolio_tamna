@@ -29,6 +29,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 /* -------------------------------------------------------------------------------- */
 
 /* header start */
+
 .header {
     height: 100px;
     border-bottom: 1px solid #ccc;
@@ -303,10 +304,9 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 .tamna_what_is_txt {
     position: absolute;
     font-size: 16px;
-    font-weight: 300px;
     letter-spacing: -1px;
     text-align: center;
-    top: 200px;
+    top: 215px;
     left: 42px;
 }
 .tamna_what_is ul {
@@ -314,7 +314,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     width: 917px;
     height: 332px;
     float: left;
-    top: 270px;
+    top: 300px;
     font-weight: 500;
     letter-spacing: -1px;
 }
@@ -470,7 +470,9 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     display: block;
     height: 100%;
 }
+
 /* tamna howto KB online */
+
 .tamna_howto_KB ul>li:nth-child(1) {
     position: relative;
     font-size: 20px;
@@ -568,6 +570,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 } 
 
 /* tamna howto KB offline */
+
 .tamna_howto_KB ul>li:nth-child(2) {
     position: relative;
     font-size: 20px;
@@ -690,7 +693,9 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     display: block;
     height: 100%;
 }
+
 /* tamna howto Kona online */
+
 .tamna_howto_Kona ul>li:nth-child(1) {
     position: relative;
     font-size: 20px;
@@ -788,6 +793,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 } 
 
 /* tamna howto Kona offline */
+
 .tamna_howto_Kona ul>li:nth-child(2) {
     position: relative;
     font-size: 20px;
@@ -884,10 +890,8 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     text-align: center;
 } 
 
-
-
-
 /* tamna howto paper */
+
 .tamna_howto_paper {
     position: absolute;
     width: 1010px;
@@ -1012,12 +1016,12 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     left: 820px;
     text-align: center;
 } 
-
 .tamna_howto_paper_img {
     position: relative;
     width: 665px;
     height: 295px;
     background: url(../images/intro/tamna_howto_paper_img.jpg) no-repeat;
+    text-indent: -9999px;
     margin: 510px auto 100px;
 }
 .tamna_howto_paper_txt{
@@ -1050,6 +1054,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 }
 .tamna_howto_button a::after {
     content: " ❭❭";
+    color: #21bdbd;
     transition: all 0.2s ease-out;
 }
 .tamna_howto_button a:hover {
@@ -1060,6 +1065,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     color: #fff;
     transition: all 0.15s ease-in-out;
 }
+
 /* main end */
 
 
