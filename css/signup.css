@@ -280,7 +280,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 .tamna_card_login {
     position: relative;
     width: 770px;
-    height: 525px;
+    height: 595px;
     margin: 0 auto 150px;
 }
 .tamna_card_login h2::before {
@@ -330,6 +330,12 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     font-size: 16px;
     color: #ccc;
 }
+.tamna_card_login_id_txt {
+    position: relative;
+    top: 3px;
+    left: 20px;
+    color: #aaa;
+}
 .tamna_card_login_pw {
     width: 430px;
     height: 55px;
@@ -337,12 +343,18 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     box-sizing: border-box;
     font-size: 16px;
     color: #eee;
-    margin: 10px auto 20px;
+    margin: 20px auto 20px;
     padding-left: 20px;
 }
 .tamna_card_login_pw::placeholder {
     font-size: 16px;
     color: #ccc;
+}
+.tamna_card_login_pw_txt {
+    position: relative;
+    top: -18px;
+    left: 20px;
+    color: #aaa;
 }
 .tamna_card_login_button {
     width: 430px;
@@ -356,7 +368,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     transition: all 0.2s ease-in-out;
 }
 .tamna_card_login_button:hover {
-    background: #eee;
+    background: #fece08;
     color: #333;
     transition: all 0.2s ease-in-out;
 }
@@ -368,7 +380,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     position: absolute;
     font-size: 16px;
     color: #999;
-    top: 240px;
+    top:290px;
     left: 320px;
 }
 .tamna_card_login_find ul li {
@@ -388,7 +400,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 }
 .tamna_card_login_fromapp {
     position: relative;
-    top: 300px;
+    top: 350px;
     left: 300px;
     font-size: 16px;
 }
