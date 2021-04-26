@@ -308,7 +308,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     line-height: 22px;
     text-align: left;
     top: 215px;
-    left: 395px;
+    left: 425px;
     margin-bottom: 50px;
 }
 
@@ -388,69 +388,93 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     transition: all 0.2s ease-in-out;
 }
 
-/* tamna join checklist */
-.tamna_join_chklist {
-    width: 1080px;
-    height: 960px;
-    margin: 0 auto 50px;
-    font-size: 18px;
-}
-/* input element */
+/* tamna input form */
 
-.chk_span1 {
+.tamna_input_form {
+    position: relative;
+    width: 1080px;
+    height: 400px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+}
+
+
+/* username */
+.tamna_join_username_box {
     display: inline-block;
     width: 1080px;
     height: 80px;
-    top: 0;
-    left: 0;
     border-top: 1px solid #444;
     border-bottom: 1px solid #444;
     box-sizing: border-box;
 }
+.tamna_join_username_label {
+    position: absolute;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_join_username_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
+#tamna_join_username {
+    position: absolute;
+    display: inline-block;
+    width: 780px;
+    height: 55px;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    top: 12px;
+    right: 0;
+}
 
-/* checkbox custom */
-.chkbox_all {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label1  {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
-}
-.chkbox_all:checked~.chk_label1 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label1_txt {
-    margin-left: 50px;
-}
-/* checkbox custom end */
 
-.chk_span2 {
-    display: inline-block;
+/* gender */
+.tamna_join_gender_box {
     width: 1080px;
     height: 80px;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #444;
     box-sizing: border-box;
 }
+.tamna_join_gender_label {
+    position: absolute;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_join_gender_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
 
-/* checkbox custom */
-#chkbox_2 {
-    position: absolute; 
+/* male */
+
+.tamna_join_gender_male_box {
+    position: relative; 
+    width: 390px;
+    height: 55px;
+    box-sizing: border-box;
+    top: 10px;
+    left: 299px;
+}
+
+/* male radio button custom */
+
+
+#tamna_join_gender_male { /* gender input*/
     width: 1px; 
     height: 1px; 
     padding: 0; 
@@ -459,81 +483,50 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     clip:rect(0,0,0,0); 
     border: 0;
 }
-.chk_label2  {
+.tamna_join_gender_male_label {
+    position: absolute;
     display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
+    width: 390px;
+    height: 55px;
+    border: 1px solid #ccc;
+    padding: 15px 0 0 20px;
+    box-sizing: border-box;
+    background: #fff;
+    /* margin: 25px 0 0 50px; */
     cursor: pointer;
-}
-#chkbox_2:checked~.chk_label2 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label2_txt {
-    position: relative;
-    margin-left: 50px;
-}
-.chk_label2_txt2 {
-    color: #aaa;
-}
-/* checkbox custom end */
-
-.chk_span3 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
-}
-/* checkbox custom */
-#chkbox_3 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label3  {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
-}
-#chkbox_3:checked~.chk_label3 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label3_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
+    color:#111;
 
-.chk_span4 {
+}
+#tamna_join_gender_male:checked~.tamna_join_gender_male_label>span {
+    position: absolute;
     display: inline-block;
-    width: 1080px;
-    height: 80px;
+    width: 390px;
+    height: 55px;
+    padding: 15px 0 0 20px;
+    box-sizing: border-box;
+    background: #21bdbd;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
+    color:#111;
 }
-/* checkbox custom */
-#chkbox_4 {
-    position: absolute; 
+
+/* female */
+
+.tamna_join_gender_female_box {
+    position: relative; 
+    width: 390px;
+    height: 55px;
+    box-sizing: border-box;
+    top: -45px;
+    left: 690px;
+}
+
+/* female radio button custom */
+
+
+#tamna_join_gender_female { /* gender input*/
     width: 1px; 
     height: 1px; 
     padding: 0; 
@@ -542,347 +535,205 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     clip:rect(0,0,0,0); 
     border: 0;
 }
-.chk_label4  {
+.tamna_join_gender_female_label {
+    position: absolute;
     display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
+    width: 390px;
+    height: 55px;
+    border: 1px solid #ccc;
+    padding: 15px 0 0 20px;
+    box-sizing: border-box;
+    background: #fff;
+    /* margin: 25px 0 0 50px; */
     cursor: pointer;
-}
-#chkbox_4:checked~.chk_label4 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label4_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
-
-.chk_span5 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #ccc;
+    color:#333;
+
+}
+#tamna_join_gender_female:checked~.tamna_join_gender_female_label>span {
+    position: absolute;
+    display: inline-block;
+    width: 390px;
+    height: 55px;
+    padding: 15px 0 0 20px;
     box-sizing: border-box;
-}
-
-/* checkbox custom */
-#chkbox_5 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label5  {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
-}
-#chkbox_5:checked~.chk_label5 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label5_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
-
-.chk_span6 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
+    background: #21bdbd;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
-}
-/* checkbox custom */
-#chkbox_6 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label6 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
-}
-#chkbox_6:checked~.chk_label6 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label6_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
+    color:#333;
 
-.chk_span7 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
 }
-/* checkbox custom */
-#chkbox_7 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label7  {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
-}
-#chkbox_7:checked~.chk_label7 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label7_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
 
-.chk_span8 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
-}
-/* checkbox custom */
-#chkbox_8 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label8 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
-}
-#chkbox_8:checked~.chk_label8 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label8_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
 
-.chk_span9 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
-}
-/* checkbox custom */
-#chkbox_9 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label9 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
-}
-#chkbox_9:checked~.chk_label9 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label9_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
 
-.chk_span10 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
-}
-/* checkbox custom */
-#chkbox_10 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label10 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
-}
-#chkbox_10:checked~.chk_label10 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
-}
-.chk_label10_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
 
-.chk_span11 {
-    display: inline-block;
+/* birth */
+.tamna_join_birth_box {
+    position: relative;
     width: 1080px;
     height: 80px;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #444;
     box-sizing: border-box;
 }
-/* checkbox custom */
-#chkbox_11 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label11 {
+.tamna_join_birth_label {
+    position: absolute;
     display: inline-block;
     width: 1080px;
     height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
-    cursor: pointer;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
 }
-#chkbox_11:checked~.chk_label11 {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
+.tamna_join_birth_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
 }
-.chk_label11_txt {
-    position: relative;
-    margin-left: 50px;
-}
-/* checkbox custom end */
 
-.chk_span12 {
-    display: inline-block;
+/* tamna_join_birthyear */
+select {
+    -webkit-appearance: none;  /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+    display: none;
+}
+
+#tamna_join_birthyear {
+    position: absolute;
+    width: 280px;
+    height: 55px;
+    top: 10px;
+    left: 300px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+}
+#tamna_join_birthmonth {
+    position: absolute;
+    width: 235px;
+    height: 55px;
+    top: 10px;
+    left: 595px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+}
+#tamna_join_birthday {
+    position: absolute;
+    width: 235px;
+    height: 55px;
+    top: 10px;
+    left: 845px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+}
+
+
+
+
+
+/* phonenum */
+.tamna_join_phonenum_box {
+    position: relative;
     width: 1080px;
     height: 80px;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #444;
     box-sizing: border-box;
 }
-/* checkbox custom */
-#chkbox_12 {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.chk_label12 {
+.tamna_join_phonenum_label {
+    position: absolute;
     display: inline-block;
     width: 1080px;
     height: 80px;
-    background: url(../images/join/join_unchecked.png) no-repeat;
-    margin: 25px 0 0 50px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_join_phonenum_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
+
+#tamna_join_phonenum {
+    position: absolute;
+    width: 565px;
+    height: 55px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 16px;
+    top: 10px;
+    left: 300px;
+}
+.tamna_join_phonenum_btn {
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    border-radius: 20px;
+    top: 10px;
+    left: 880px;
+    background: #21bdbd;
     cursor: pointer;
 }
-#chkbox_12:checked~.chk_label12 {
+
+
+
+/* verifynum */
+.tamna_join_verifynum_box {
+    position: relative;
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #444;
+    box-sizing: border-box;
+}
+.tamna_join_verifynum_label {
+    position: absolute;
     display: inline-block;
     width: 1080px;
     height: 80px;
-    background: url(../images/join/join_checked.png) no-repeat;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
 }
-.chk_label12_txt {
-    position: relative;
-    margin-left: 50px;
+.tamna_join_verifynum_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
 }
-/* checkbox custom end */
-/* tamna join checklist end */
+#tamna_join_verifynum {
+    position: absolute;
+    width: 565px;
+    height: 55px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 16px;
+    top: 10px;
+    left: 300px;
+}
+.tamna_join_verifynum_btn {
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    border-radius: 20px;
+    top: 10px;
+    left: 880px;
+    background: #21bdbd;
+    cursor: pointer;
+}
+
 
 /* tamna join next btn */
 

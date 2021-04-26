@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탐나는전 회원가입</title>
+    <link type="text/css" rel="stylesheet" href="css/join3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/tamna_favicon.ico" />
+</head>
+
+<body>
+    <!-- header start -->
+    <header id="header" class="header">
+        <div class="header_box">
+            <h1><a href="#">탐나는전</a></h1>
+            <!-- gnb start -->
+            <nav class="gnb">
+                <h2 class="blind">상단 메뉴</h2>
+                <ul>
+                    <li class="gnb_info"><a href="#">탐나는전</a>
+                        <!-- <ul class="gnb_info_sub">
+                            <li><a href="#">탐나는전 소개</a></li>
+                            <li><a href="#">탐나는전 혜택</a></li>
+                            <li><a href="#">탐나는전 발급방법</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="gnb_personal"><a href="#">개인사용자</a>
+                        <!-- <ul class="gnb_personal_sub">
+                            <li><a href="#">카드 신청</a></li>
+                            <li><a href="#">카드 등록</a></li>
+                            <li><a href="#">이용 내역</a></li>
+                            <li><a href="#">가맹점 찾기</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="gnb_shop"><a href="#">가맹점</a>
+                        <!-- <ul class="gnb_shop_sub">
+                            <li><a href="#">가맹점 혜택</a></li>
+                            <li><a href="#">가맹점 등록</a></li>
+                            <li><a href="#">가맹점 매출확인</a></li>
+                            <li><a href="#">홍보물 다운</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="gnb_customer"><a href="#">고객센터</a>
+                        <!-- <ul class="gnb_customer_sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+                <a href="#" class="gnb_more">더보기</a>
+            </nav>
+        </div>
+        <!-- <div class="gnb_sub">
+            <div class="gnb_sub_box">
+                <h3>서브메뉴</h3>
+            </div>
+        </div> -->
+        <!-- gnb end -->
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main id="main" class="main">
+        <!-- tamna join -->
+        <div class="tamna_join">
+
+            <h2>회원가입</h2>
+            <div class="tamna_join_txt">
+                웹에서 사용하실 아이디와 비밀번호를 입력해주세요.
+            </div>
+
+            <!-- tamna join order -->
+            <div class="tamna_join_order">
+                <ol>
+                    <li><a href="#">약관동의</a></li>
+                    <li><a href="#">회원정보 입력</a></li>
+                    <li><a href="#">가입완료</a></li>
+                </ol>
+            </div>
+            <!-- tamna join order end -->
+            <!-- tamna join end -->
+        </div>
+
+        <!-- tamna input form -->
+        <div class="tamna_input_form">
+            <label for="tamna_join_id">아이디(이메일주소)</label>
+            <input type="text" name="id" id="tamna_join_id" value="">
+            <span>@</span>
+            <select name="id_domain" id="tamna_join_id_domain" value="">
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="hanmail.net">hanmail.net</option>
+                <option value="nate.com">nate.com</option>
+                <option value="hotmail.com">hotmail.com</option>
+                <option value="직접입력">직접입력</option>
+            </select>
+            
+
+            <label for="gender">성별</label>
+            <input type="radio" name="male" id="gender" value="male"><span></span>남</span>
+            <input type="radio" name="female" id="gender" value="female"><span>여</span>
+            <label for="birthyear">생년월일</label>
+            <input type="text" name="birthyear" id="birthyear" value="" placeholder="생년">
+            <input type="text" name="birthmonth" id="birthmonth" value="" placeholder="월">
+            <input type="text" name="birthday" id="birthday" value="" placeholder="일">
+            <label for="phonenum">이름</label>
+            <input type="text" name="phonenum" id="phonenum" value="" placeholder="- 없이 입력해주세요">
+            <button type="submit" class="phonenum_verify">인증번호 받기</button>
+            <label for="verifynum">인증번호</label>
+            <input type="text" name="verifynum" id="verifynum" value="" placeholder="인증번호를 입력하세요">
+            <button type="submit" class="verify_get">인증번호 확인</button>
+
+        </div>
+        <!-- tamna input form end -->
+        </main>
+
+        <!-- footer start -->
+        <footer id="footer" class="footer">
+            <div class="footer_box">
+                <h2><a href="#">탐나는전 업체 정보</a></h2>
+                <div class="footer_txt">
+                    <address>주소 : (63122) 제주특별자치도 제주시 문연로 6(연동)</address>
+                    <p>대표전화 : 1600-3971 (09:00 ~ 18:00)</p>
+                    <p>Copyright 2020 제주특별자치도. All rights reserved</p>
+                </div>
+                <div class="footer_jejugoverment"><a href="#">제주특별자치도 바로가기</a></div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+
+
+</body>
+
+</html>
