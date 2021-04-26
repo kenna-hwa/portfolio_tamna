@@ -338,7 +338,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     position: absolute;
     width: 240px;
     height: 40px;
-    background: #21bdbd;
+    background: #fff;
     color: #fff;
     border: 1px solid #eee;
     box-sizing: border-box;
@@ -356,7 +356,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     position: absolute;
     width: 240px;
     height: 40px;
-    background: #fff;
+    background: #21bdbd;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     box-sizing: border-box;
@@ -565,9 +565,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 
 }
 
-
-
-
 /* birth */
 .tamna_join_birth_box {
     position: relative;
@@ -609,10 +606,13 @@ select::-ms-expand {
     height: 55px;
     top: 10px;
     left: 300px;
-    border: 1px solid #eee;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     padding: 15px;
     font-size: 16px;
+}
+#tamna_join_birthyear:optional{
+    color: #888;
 }
 #tamna_join_birthmonth {
     position: absolute;
@@ -620,10 +620,13 @@ select::-ms-expand {
     height: 55px;
     top: 10px;
     left: 595px;
-    border: 1px solid #eee;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     padding: 15px;
     font-size: 16px;
+}
+#tamna_join_birthmonth:optional{
+    color: #888;
 }
 #tamna_join_birthday {
     position: absolute;
@@ -631,14 +634,14 @@ select::-ms-expand {
     height: 55px;
     top: 10px;
     left: 845px;
-    border: 1px solid #eee;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     padding: 15px;
     font-size: 16px;
 }
-
-
-
+#tamna_join_birthday:optional{
+    color: #888;
+}
 
 
 /* phonenum */
@@ -669,7 +672,7 @@ select::-ms-expand {
     position: absolute;
     width: 565px;
     height: 55px;
-    border: 1px solid #eee;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     padding-left: 20px;
     font-size: 16px;
@@ -686,7 +689,6 @@ select::-ms-expand {
     background: #21bdbd;
     cursor: pointer;
 }
-
 
 
 /* verifynum */
@@ -716,7 +718,7 @@ select::-ms-expand {
     position: absolute;
     width: 565px;
     height: 55px;
-    border: 1px solid #eee;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     padding-left: 20px;
     font-size: 16px;
