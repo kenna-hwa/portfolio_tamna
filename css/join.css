@@ -1,0 +1,880 @@
+@charset "utf-8";
+
+/* css reset */
+/* block 요소 m,p reset */
+body, h1, h2, h3, h4, div, p, ul, li, dl, dt, dd {margin: 0; padding: 0;}
+
+/* another */
+a {text-decoration: none; color: #000;}
+
+ul,li {list-style: none;}
+
+address {font-style: normal;}
+
+/* font setting */
+
+body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-weight: 200;}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Common class */
+
+        /* .blind {visibility: hidden; } 글자있던 자리는 남아있게 됨 */
+        .blind {position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
+
+        /* scroll 숨김 */
+        body {overflow: auto; overflow-x: hidden;}
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* header start */
+
+.header {
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0 auto 150px;
+}
+
+.header_box {
+    position: relative;
+    width: 1181px;
+    height: 100px;
+    margin: auto;
+}
+.header_box h1{
+    position: absolute;
+    width: 89px;
+    height: 90px;
+    background: url(../images/tamna_logo.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 7px;
+    left: 5px;
+}
+.header_box h1 a {
+    height: 100%;
+    display: block;
+}
+
+/* gnb */
+
+.gnb ul li a {
+    display: block;
+    height: 100%;
+}
+.gnb_info {
+    position: absolute;
+    width: 126px;
+    height: 65px;
+    background: url(../images/gnb_info.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 18px;
+    left: 160px;
+}
+.gnb_personal {
+    position: absolute;
+    width: 153px;
+    height: 65px;
+    background: url(../images/gnb_personal.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 18px;
+    left: 395px;
+}
+.gnb_shop {
+    position: absolute;
+    width: 106px;
+    height: 65px;
+    background: url(../images/gnb_shop.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 18px;
+    left: 663px;
+}
+.gnb_customer {
+    position: absolute;
+    width: 128px;
+    height: 65px;
+    background: url(../images/gnb_customer.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 18px;
+    left: 897px;
+}
+.gnb_more {
+    position: absolute;
+    display: block;
+    width: 86px;
+    height: 81px;
+    background: url(../images/gnb_more.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 9px;
+    left: 1095px;
+}
+
+/* sub menu */
+
+.gnb_sub {
+    height: 298px;
+    background: #fff;
+    margin: auto;
+    opacity: 0.95;
+    z-index: -1;
+}
+.gnb_sub_box{
+    position: relative;
+    width: 1181px;
+    height: 298px;
+    margin: auto;
+    z-index: 0;
+}
+.gnb_sub_box h3 {
+    position: absolute;
+    width: 366px;
+    height: 298px;
+    background: url(../images/gnb_sub_wave.jpg) no-repeat left;
+    margin: auto;
+    text-indent: -9999px;
+    left: -200px;
+}
+.gnb_info_sub {
+    position: relative;
+    width: 140px;
+    height: 298px;
+    margin: auto;
+    z-index: 1;
+    left: -8px;
+}
+.gnb_info_sub a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1px;
+    color: #424242;
+    text-indent: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.gnb_info_sub a::after {
+    position: absolute; 
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fece08;
+    box-shadow: 2px 2px 1px #eee;
+    transition: all 0.25s ease-out;
+    left: 50%;
+    width: 0;
+}
+.gnb_info_sub a:hover::after {
+    transition: all 0.2s ease-in-out;
+    left: 1px;
+    width: 135px;
+}
+.gnb_personal_sub {
+    position: relative;
+    width: 140px;
+    height: 298px;
+    margin: auto;
+    z-index: 1;
+}
+.gnb_personal_sub a{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    color: #424242;
+    text-indent: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.gnb_personal_sub a::after {
+    position: absolute; 
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fece08;
+    box-shadow: 2px 2px 1px #eee;
+    transition: all 0.25s ease-out;
+    left: 50%;
+    width: 0;
+}
+.gnb_personal_sub a:hover::after {
+    transition: all 0.2s ease-in-out;
+    left: 25px;
+    width: 90px;
+}
+.gnb_shop_sub {
+    position: relative;
+    width: 140px;
+    height: 298px;
+    margin: auto;
+    z-index: 1;
+    left: -15px;
+}
+.gnb_shop_sub a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    color: #424242;
+    text-indent: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.gnb_shop_sub a::after {
+    position: absolute; 
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fece08;
+    box-shadow: 2px 2px 1px #eee;
+    transition: all 0.25s ease-out;
+    left: 50%;
+    width: 0;
+}
+.gnb_shop_sub a:hover::after {
+    transition: all 0.2s ease-in-out;
+    left: 1px;
+    width: 135px;
+}
+.gnb_customer_sub {
+    position: relative;
+    width: 140px;
+    height: 298px;
+    margin: auto;
+    z-index: 1;
+    left: -4px;
+}
+.gnb_customer_sub a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    color: #424242;
+    text-indent: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.gnb_customer_sub a::after {
+    position: absolute; 
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fece08;
+    box-shadow: 2px 2px 1px #eee;
+    transition: all 0.25s ease-out;
+    left: 50%;
+    width: 0;
+}
+.gnb_customer_sub a:hover::after {
+    transition: all 0.2s ease-in-out;
+    left: 20px;
+    width: 100px;
+}
+
+/* main */
+
+/* tamna join */
+
+.tamna_join {
+    position: relative;
+    width: 1080px;
+    height: 310px;
+    margin: 0 auto 50px;
+}
+.tamna_join h2::before {
+    position: absolute;
+    width: 82px;
+    height: 80px;
+    content: "";
+    background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
+    top: -130px;
+    left: 497px;
+}
+.tamna_join h2 {
+    position: relative;
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    text-align: center;
+    top: 130px;
+}
+.tamna_join_txt {
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: -1px;
+    line-height: 22px;
+    text-align: left;
+    top: 215px;
+    left: 330px;
+    margin-bottom: 50px;
+}
+
+/* tamna join order */
+
+.tamna_join_order {
+    position: relative;
+    display: block;
+    width: 720px;
+    height: 40px;
+    margin: auto;
+    top: 214px;
+}
+.tamna_join_order ol {
+    width: 720px;
+    height: 40px;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+.tamna_join_order ol a {
+    display: block;
+    height: 100%;
+}
+.tamna_join_order ol li:nth-child(1) {
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    background: #21bdbd;
+    color: #fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    left: 20px;
+}
+.tamna_join_order ol li:nth-child(1) a {
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+}
+.tamna_join_order ol li:nth-child(1) a:hover {
+    font-weight: 450;
+    transition: all 0.2s ease-in-out;
+}
+.tamna_join_order ol li:nth-child(2) {
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    left: 260px;
+}
+.tamna_join_order ol li:nth-child(2) a {
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+}
+.tamna_join_order ol li:nth-child(2) a:hover {
+    font-weight: 450;
+    transition: all 0.2s ease-in-out;
+}
+.tamna_join_order ol li:nth-child(3) {
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    left: 500px;
+}
+.tamna_join_order ol li:nth-child(3) a {
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+}
+.tamna_join_order ol li:nth-child(3) a:hover {
+    font-weight: 450;
+    transition: all 0.2s ease-in-out;
+}
+
+/* tamna join checklist */
+.tamna_join_chklist {
+    width: 1080px;
+    height: 960px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+}
+/* input element */
+
+.chk_span1 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    box-sizing: border-box;
+}
+
+/* checkbox custom */
+.chkbox_all {
+    display: none;
+}
+.chk_label1  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+.chkbox_all:checked~.chk_label1 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label1_txt {
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span2 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* checkbox custom */
+#chkbox_2 {
+    display: none;
+}
+.chk_label2  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_2:checked~.chk_label2 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label2_txt {
+    position: relative;
+    margin-left: 50px;
+}
+.chk_label2_txt2 {
+    color: #aaa;
+}
+/* checkbox custom end */
+
+.chk_span3 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_3 {
+    display: none;
+}
+.chk_label3  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_3:checked~.chk_label3 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label3_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span4 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_4 {
+    display: none;
+}
+.chk_label4  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_4:checked~.chk_label4 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label4_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span5 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* checkbox custom */
+#chkbox_5 {
+    display: none;
+}
+.chk_label5  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_5:checked~.chk_label5 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label5_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span6 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_6 {
+    display: none;
+}
+.chk_label6 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_6:checked~.chk_label6 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label6_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span7 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_7 {
+    display: none;
+}
+.chk_label7  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_7:checked~.chk_label7 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label7_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span8 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_8 {
+    display: none;
+}
+.chk_label8 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_8:checked~.chk_label8 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label8_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span9 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_9 {
+    display: none;
+}
+.chk_label9 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_9:checked~.chk_label9 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label9_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span10 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_10 {
+    display: none;
+}
+.chk_label10 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_10:checked~.chk_label10 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label10_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span11 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_11 {
+    display: none;
+}
+.chk_label11 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_11:checked~.chk_label11 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label11_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span12 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_12 {
+    display: none;
+}
+.chk_label12 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_12:checked~.chk_label12 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label12_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+/* tamna join checklist end */
+
+/* tamna join next btn */
+
+.tamna_join_next_btn {
+    display: block;
+    width: 430px;
+    height: 55px;
+    background: #21bdbd;
+    border: 1px solid #ddd;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto 150px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.tamna_join_next_btn:hover {
+    background: #fece08;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* footer */
+
+.footer {
+    height: 180px;
+    background: #4c4c4c;
+    margin: auto;
+}
+.footer_box {
+    position: relative;
+    width: 1181px;
+    height: 180px;
+    margin: auto;
+}
+.footer_box a {
+    display: block;
+    height: 100%;
+}
+.footer_box h2 {
+    position: absolute;
+    width: 86px;
+    height: 150px;
+    background: url(../images/footer_tamna_logo.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 15px;
+    left: 35px;
+}
+.footer_txt {
+    position: absolute;
+    font-size: 16px;
+    color: #eee;
+    float: left;
+    top: 65px;
+    left: 220px;
+}
+address {
+    float: left;
+    margin-bottom: 5px;
+}
+address::after {
+    content: " | ";
+    margin: 0 10px 0 5px;
+}
+.footer_txt p:nth-child(2) {
+    float: left;
+    margin-bottom: 5px;
+}
+.footer_jejugoverment {
+    position: absolute;
+    width: 217px;
+    height: 70px;
+    background: url(../images/footer_jeju_logo.jpg) no-repeat center;
+    text-indent: -9999px;
+    top: 60px;
+    right: 50px;
+}
