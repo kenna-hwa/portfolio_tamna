@@ -1,0 +1,732 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+    
+    <meta name="og:title" content="탐나는전" />
+    <meta name="og:description" content="탐나는전 카드를 신청하고 이용내역을 관리할 수 있는 사이트" />
+    <meta name="og:image" content="https://jeju.usersite.co.kr/img/img_meta_jeju.png" />
+    <meta name="keywords" content="제주지역화폐,탐나는전,카드,정책발행금,정책수당,카드등록,카드신청,인센티브,분실신고,문의" />
+
+    <title>탐나는전</title>
+    <link rel="icon" type="image/png" href="../../img/ic_favi_jeju.ico" />
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-PPSTGBQPZW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PPSTGBQPZW');
+        var version = '4.12.1.02_01';
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/all.css"/>
+
+    <script type="text/javascript" src="../vendor/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/layout-merge-1.min.js"></script>
+    <script>
+        /*<![CDATA[*/
+        if ($.browser.mobile && location.pathname.indexOf('/download-app') != 0) {
+            window.location.href = "/download-app";
+        }
+        /*]]>*/
+    </script>
+</head>
+<body class="jeju">
+
+<div>
+    <header class="header">
+        <div class="header__inner">
+            <a href="/" class="header__logo">
+                <img src="../img/logo_jeju.png" alt="logo"/>
+            </a>
+
+            <input name="sessionExpireTime" id="sessionExpireTime" type="hidden" value=""/>
+
+            <div class="header__info">
+                
+                
+                <a href="/login" class="header__link">로그인</a>
+                
+                <em class="header__line"></em>
+                <a href="/sign-up" class="header__link">회원가입</a>
+                
+
+            </div>
+        </div>
+
+        <div id="session-extend-dialog" style="display:none">
+            <div class="cb-layer-popup" style="width:440px; padding: 30px 0px 15px 0px">
+                <button class="layer-close cb-close">
+                    <span class="blind">닫기</span>
+                </button>
+                <img class="layer-icon" src="/img/icon-error.png" alt=""/>
+                <p class="layer-p-2"><span class="cbRemainingTime" style="font-weight: bold">0</span>초 후 자동으로 로그아웃 됩니다.</p>
+                <p class="layer-p-3">
+                    고객님의 안전한 서비스 이용을 위해
+                    <br/>로그인 후 <span class="sessionTimeInMinute"></span>분 동안 이용이 없는 경우
+                    <br/>자동으로 로그아웃 됩니다.
+                </p>
+                <p class="layer-p-3 bold">
+                    로그인 시간을 연장하시겠습니까?
+                </p>
+                <div class="layer-btn-area">
+                    <button class="layer-btn-w extendedSessionNo">로그아웃</button>
+                    <button class="layer-btn extendedSessionYes">로그인 시간 연장</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="session-timeout-dialog" style="display:none">
+            <div class="cb-layer-popup" style="width:440px; padding: 50px 0px 15px 0px">
+                <button class="layer-close cb-close signInAgain">
+                    <span class="blind">닫기</span>
+                </button>
+                <img class="layer-icon" src="/img/icon-error.png" alt=""/>
+                <p class="layer-p-2">자동으로 로그아웃 되었습니다.</p>
+                <p class="layer-p-3">
+                    고객님의 안전한 서비스 이용을 위해
+                    <br/>로그인 후 <span class="sessionTimeInMinute"></span>분 동안 이용이 없어
+                    <br/>자동으로 로그아웃 되었습니다.
+                </p>
+                <div class="layer-btn-area">
+                    <button class="layer-btn signInAgain">다시 로그인</button>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<!-- body -->
+<div class="body">
+    <!-- body__head -->
+    <div class="body__head">
+        <ul class="page-info">
+            <!--<li><a th:href="@{/}">홈</a></li>-->
+            <li>회원가입</li>
+        </ul>
+    </div>
+    <!-- //body__head -->
+
+    <!-- body__main -->
+    <div class="body__main">
+        <!-- menu -->
+        <div>
+    <nav class="menu">
+        <div class="menu-title menu_card_info">카드 신청 · 관리</div>
+        <ul class="menu-list">
+            <li class="menu_card_info_home">
+                <a href="/home#pg=apply_card_home">카드 안내 · 신청</a>
+            </li>
+            <li class="menu_card_info_history">
+                <a href="/home#pg=card_application_history">카드 신청내역</a>
+            </li>
+            <li class="menu_card_info_register">
+                <a href="/register-card">카드등록</a>
+            </li>
+        </ul>
+        
+    <ul class="menu-list ">
+        <li class="menu_card_use_history">
+            <a href="/home#pg=card_use_history">카드 이용내역</a>
+        </li>
+        
+        <li class="menu_card_use_emoney_history">
+            <a href="/home#pg=emoney_history">내 금고 이용내역</a>
+        </li>
+        <li class="menu_card_use_user_point_history">
+            <a href="/home#pg=user_point_history">캐시 이용내역</a>
+        </li>
+    </ul>
+
+        <ul class="menu-list">
+            <li class="menu_customer_question">
+                <a href="/home#pg=qna_list">1:1 문의</a>
+            </li>
+            <li class="menu_customer_report_card">
+                <a href="/home#pg=lost_card_list">카드 분실신고</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+        <!-- //menu -->
+
+        <!-- content -->
+        <div class="content">
+            <input type="hidden" name="aspId" id="aspId" value="000155000000000"/>
+            <h1 class="content-title">회원가입</h1>
+            <!-- initial page -->
+
+            <div page="start" class="signup-type-link sign-up-option-choose-page" style="display: none">
+                <div class="signup-type-link__item signup-type-item">
+                    <div class="signup-type-link__img">
+                        <img src="../img/signup-icon-01.png" alt="icon"/>
+                    </div>
+                    <div class="signup-type-link__text">
+                        <p><span>탐나는전을</span> 처음 이용하시나요?</p>
+                        <p>지금 회원가입하고 <span>탐나는전</span> 카드를 신청하세요.</p>
+                    </div>
+                    <a href="javascript:" class="signup-type-link__anchor btn-sign-up-new-next"></a>
+                </div>
+                <div class="signup-type-link__item signup-type-item">
+                    <div class="signup-type-link__img">
+                        <img src="../img/signup-icon-02.png" alt="icon"/>
+                    </div>
+                    <div class="signup-type-link__text">
+                        <p>고객센터나 오프라인 판매처에서 카드를 등록해서 사용 중이신가요?</p>
+                        <p>추가적인 정보를 입력하고,웹에서도 <span>탐나는전을</span> 이용하세요.</p>
+                    </div>
+                    <a href="javascript:" class="signup-type-link__anchor btn-sign-up-exist-semi-associate-next"></a>
+                </div>
+                <div class="signup-type-link__item signup-type-item">
+                    <div class="signup-type-link__img">
+                        <img src="../img/signup-icon-03.png" alt="icon"/>
+                    </div>
+                    <div class="signup-type-link__text">
+                        <p><span>탐나는전</span> 앱에서 가입하셨나요?</p>
+                        <p>추가적인 정보를 입력하고,웹에서도 <span>탐나는전을</span> 이용하세요.</p>
+                    </div>
+                    <a href="javascript:" class="signup-type-link__anchor btn-sign-up-exist-associate-next"></a>
+                </div>
+            </div>
+            <!-- //initial page -->
+
+            <div class="signup-process-list" style="display: none">
+                <ul>
+                    <li id="acceptTerms"><span>약관동의</span></li>
+                    <li id="enterMemberInfo"><span>회원정보 입력</span></li>
+                    <li id="signedUp"><span>가입완료</span></li>
+                </ul>
+            </div>
+
+            <!-- terms and condition -->
+            <div page="tc" style="display: none">
+
+
+                <div class="signup-terms sign-up-terms-and-condition">
+                    <p class="signup-terms__top-text">서비스 이용약관 및 정보이용 안내에 동의해주세요.</p>
+                    <ul class="signup-terms__list sign-up-terms-and-condition-data"></ul>
+                </div>
+                <div class="btn-area mt80 sign-up-terms-and-condition-btn">
+                    <button class="btn-01 btn-sign-up-tc-next">다음</button>
+                </div>
+            </div>
+            <!-- //terms and condition -->
+
+            <!--basic form-->
+            <div page="basic" style="display: none">
+                <div class="sign-up-form-basic">
+                    <p class="signup-terms__top-text">아래의 회원가입 정보를 입력해주세요.</p>
+                    <div class="table-01 mt30 table-01-without-line-height">
+
+                        <table>
+                            <caption>비밀번호 찾기-아이디(이메일), 이름, 휴대폰 번호 인증번호 입력</caption>
+                            <colgroup>
+                                <col style="width: 250px;"/>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">이름<span class="ess"></span></th>
+                                <td>
+                                    <input type="text" name="uname" class="input-text"
+                                           placeholder="이름을 입력하세요"/>
+                                    <span class="error-msg name_validation_message"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">성별<span class="ess"></span></th>
+                                <td>
+                                    <div class="radio-box">
+                                        <input name="gender" value="Male" type="radio" id="radio-male"
+                                               />
+                                        <label for="radio-male">남</label>
+                                        <input name="gender" value="Female" type="radio" id="radio-female"
+                                               />
+                                        <label for="radio-female">여</label>
+                                    </div>
+                                    <span class="error-msg gender_validation_message"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">생년월일<span class="ess"></span></th>
+                                <td>
+                                    <div class="select-birth is-error">
+								<span class="select">
+                                    <select name="dobYear" style="display:none">
+                                        <option value="">생년</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1950">1950</option>
+                                        <option value="1949">1949</option>
+                                        <option value="1948">1948</option>
+                                        <option value="1947">1947</option>
+                                        <option value="1946">1946</option>
+                                        <option value="1945">1945</option>
+                                        <option value="1944">1944</option>
+                                        <option value="1943">1943</option>
+                                        <option value="1942">1942</option>
+                                        <option value="1941">1941</option>
+                                        <option value="1940">1940</option>
+                                        <option value="1939">1939</option>
+                                        <option value="1938">1938</option>
+                                        <option value="1937">1937</option>
+                                        <option value="1936">1936</option>
+                                        <option value="1935">1935</option>
+                                        <option value="1934">1934</option>
+                                        <option value="1933">1933</option>
+                                        <option value="1932">1932</option>
+                                        <option value="1931">1931</option>
+                                        <option value="1930">1930</option>
+                                        <option value="1929">1929</option>
+                                        <option value="1928">1928</option>
+                                        <option value="1927">1927</option>
+                                        <option value="1926">1926</option>
+                                        <option value="1925">1925</option>
+                                        <option value="1924">1924</option>
+                                        <option value="1923">1923</option>
+                                        <option value="1922">1922</option>
+                                        <option value="1921">1921</option>
+                                        <option value="1920">1920</option>
+                                        <option value="1919">1919</option>
+                                        <option value="1918">1918</option>
+                                        <option value="1917">1917</option>
+                                        <option value="1916">1916</option>
+                                        <option value="1915">1915</option>
+                                        <option value="1914">1914</option>
+                                        <option value="1913">1913</option>
+                                        <option value="1912">1912</option>
+                                        <option value="1911">1911</option>
+                                        <option value="1910">1910</option>
+                                        <option value="1909">1909</option>
+                                        <option value="1908">1908</option>
+                                        <option value="1907">1907</option>
+                                        <option value="1906">1906</option>
+                                        <option value="1905">1905</option>
+                                        <option value="1904">1904</option>
+                                        <option value="1903">1903</option>
+                                        <option value="1902">1902</option>
+                                        <option value="1901">1901</option>
+                                        <option value="1900">1900</option>
+                                    </select>
+								</span>
+                                        <span class="select">
+                                    <select name="dobMonth" class="month-list" style="display:none">
+                                        <option value="">월</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+								</span>
+                                        <span class="select">
+                                    <select name="dobDate" style="display:none">
+                                        <option value="">일</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </span>
+                                    </div>
+                                    <span class="error-msg dob_validation_message"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">휴대폰번호<span class="ess"></span></th>
+                                <td>
+                                    <div class="input-btn-area">
+                                        <input type="text" name="mobileNumber"
+                                               class="input-text valid-number" maxlength="15"
+                                               minlength="10" placeholder="- 없이 입력해주세요."/>
+                                        <a href="javascript:;" class="btn-certification btn-verify-cell">인증번호 받기</a>
+                                    </div>
+                                    <span class="error-msg mobile_number_validation_message"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">인증번호<span class="ess"></span></th>
+                                <td style="line-height: 0">
+                                    <div class="input-btn-area">
+                                        <input type="text" name="otp" class="input-text"
+                                               placeholder="인증번호를 입력하세요" maxlength="6" minlength="6"/>
+                                        <a href="javascript:;" class="btn-certification btn-verify-otp">인증번호 확인</a>
+                                        <span style="line-height: 56px" class="input-timer otp-expiry-time"></span>
+                                    </div>
+                                    <span class="error-msg otp_validation_message"></span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="btn-area mt80 sign-up-form-basic-btn">
+                    <button class="btn-01 btn-sign-up-form-basic-next">다음</button>
+                </div>
+            </div>
+            <!--//basic form-->
+
+            <!--user already exists-->
+            <div page="user-exists" class="sign-up-already-user-exits" style="display: none">
+                <div class="img-box">
+                    <img src="../img/signup-icon-01.png" alt="로그인. 아이콘"/>
+                    <div class="txt-box">
+                        <p class="txtB sign-up-already-user-exits-message">다시 로그인하세요.</p>
+                    </div>
+                </div>
+                <div class="btn-area mt80">
+                    <a class="btn-01" href="/login"> 로그인 </a>
+                </div>
+            </div>
+            <!--//user already exists-->
+
+            <!--user credential-->
+            <div page="additional" style="display: none">
+
+                <form name="SignUp" action="/sign-up#page=additional" method="post">
+
+                    <div class="sign-up-form-credential">
+
+                        <!--some hidden value-->
+                        <input type="hidden" name="aspId" value="000155000000000" />
+                        <input type="hidden" name="securityToken" value="" />
+                        <input type="hidden" name="userId" value="" />
+                        <input type="hidden" name="mobileNumber" value="" />
+                        <input type="hidden" name="realName" value="" />
+                        <input type="hidden" name="socialNo" value="" />
+                        <input type="hidden" name="gender" value="" />
+                        <input type="hidden" name="username" value="" />
+                        <input type="hidden" name="tcidList" value="" />
+                        <input type="hidden" name="useSmsYn" value="true" />
+                        <input type="hidden" name="useEmailYn" value="true" />
+                        <input type="hidden" name="isEmailNotEditAble" value="false" />
+                        <input type="hidden" name="keepProgress" id="keepProgress" value="false"/>
+                        <input type="hidden" name="guid" id="guid" />
+
+                        <p class="signup-terms__top-text">웹에서 사용하실 아이디와 비밀번호를 입력해주세요.</p>
+                        <div class="table-01 mt30 table-01-without-line-height">
+                            <table>
+                                <caption>비밀번호 찾기-아이디(이메일), 이름, 휴대폰 번호 인증번호 입력</caption>
+                                <colgroup>
+                                    <col style="width: 250px;"/>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">아이디(이메일주소)<span class="ess"></span></th>
+                                    <td>
+                                        <div class="email-form-2">
+                                            <div class="email">
+                                            <input type="text" name="email_id" style="height:54px;padding:0"
+                                                   class="input-text dynamic-validation-credential"/>
+                                            <em style="line-height: 56px">@</em>
+                                            <input type="text" name="email_domain_text" style="height:54px;padding:0;padding-left:10px"
+                                                   id="email_domain_text"
+                                                   class="input-text dynamic-validation-credential"/>
+                                            </div>
+                                                <span class="select">
+                                                <select name="email_domain" id="email_domain" class="dynamic-validation-credential-select" style="display:none">
+                                                    <option value="naver.com">naver.com</option>
+                                                    <option value="daum.net">daum.net</option>
+                                                    <option value="gmail.com">gmail.com</option>
+                                                    <option value="hotmail.com">hotmail.com</option>
+                                                    <option value="nate.com">nate.com</option>
+                                                    <option value="">직접입력</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <span class="error-msg email_id_validation_message"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">비밀번호<span class="ess"></span></th>
+                                    <td>
+                                        <input type="password" class="input-text dynamic-validation-credential"
+                                               placeholder="영문(대소문자),숫자,특수문자 포함 8자리 이상 12자리 이하"
+                                               style="ime-mode:disabled;" npkencrypt="on" data-keypad-type="alpha" name="newPassword" id="newPassword" maxlength="12"
+                                        />
+
+                                        <span class="error-msg new_password_validation_message"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">비밀번호 확인<span class="ess"></span></th>
+                                    <td>
+                                        <input type="password" class="input-text dynamic-validation-credential"
+                                               placeholder="영문(대소문자),숫자,특수문자 포함 8자리 이상 12자리 이하"
+                                               style="ime-mode:disabled;" npkencrypt="on" data-keypad-type="alpha" name="confirmNewPassword" id="confirmNewPassword" maxlength="12"
+                                        />
+
+                                        <span class="error-msg confirm_new_password_validation_message"></span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn-area mt80 sign-up-form-credential-btn">
+                        <input type="submit" class="btn-01 btn-sign-up-complete" value="회원가입 완료"/>
+                    </div>
+
+                </form>
+
+            </div>
+            <!--//user credential-->
+
+            <!--sign up fail-->
+            <div page="signup-fail" class="sign-up-fail" align="center" style="display: none">
+                <span class="error-msg user-sign-up-fail-message"></span>
+            </div>
+
+            <div page="existing-user-not-found" class="sign-up-exiting-user-not-found" style="display: none">
+                <p class="signup-result-text-2"><span class="error-msg sign-up-exiting-user-not-found-message"></span>
+                </p>
+                <div class="btn-area">
+                    <!--<button class="btn-01"><a th:href="@{/sign-up}"> 회원가입 </a></button>-->
+                    <a class="btn-01" href="/sign-up"> 회원가입 </a>
+                </div>
+            </div>
+
+            <div page="existing-user-found" class="sign-up-exiting-user-found-and-need-change-mobile-number"
+                 style="display: none">
+                <p class="signup-result-text-2"><span
+                        class="error-msg sign-up-exiting-user-found-and-need-change-mobile-number-message"></span></p>
+                <div class="btn-area">
+                    <button class="btn-01"><a href="/">홈</a></button>
+                </div>
+            </div>
+            <!--//sign up fail-->
+
+            <!--sign up success-->
+            <div page="success" class="sign-up-success" style="display: none">
+                <p class="signup-result-text-1">웹 회원가입이 완료되었습니다.</p>
+                <p class="signup-result-text-2">더 많은 기능을 제공하는 <span>탐나는전</span> 앱도 함께 이용해보세요.</p>
+
+                <div class="btn-area">
+                    <a class="btn-01" href="/login"> 로그인 </a>
+                </div>
+            </div>
+            <!--//sign up success-->
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //body__main -->
+</div>
+<!-- //body -->
+
+<!-- footer -->
+<div>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__text">
+                <span>코나아이㈜는 탐나는전의 운영대행사입니다.</span>
+            </p>
+            <ul class="footer__link-list" id="terms-and-condition-footer-data">
+            </ul>
+            <a href="javascript:void(0)" class="footer__konai">
+                <img src="/img/konai.png" alt="konai"/>
+            </a>
+            <ul class="footer__info-list">
+                <li>주소 : 서울특별시 영등포구 은행로 3 익스콘벤처타워 8층</li>
+                <li>대표자 : 조정일</li>
+                <li>사업자등록번호 : 109-81-53365</li>
+                <li>고객센터 : <span>1600-3971</span></li>
+            </ul>
+            <p class="footer__copy">COPYRIGHT KONA I CO., LTD. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+</div>
+<!-- //footer -->
+<div>
+    <script type="text/javascript" src="/scripts/layout-merge-2.min.js"></script>
+    
+
+    <script>
+        /*<![CDATA[*/
+        $(document).ready(function () {
+            menuActivator.init();
+            termsAndCondition.init();
+
+            var showTimeInMinute = 0;
+            var sessionTimerDefaultValue = 30;
+            var sessionTimer = localStorage.getItem('sessionTime');
+            if (sessionTimer) {
+                try {
+                    var sessionTimerInMinute = Math.floor(sessionTimer / 60);
+                    showTimeInMinute = sessionTimerInMinute;
+                } catch (e) {
+                    showTimeInMinute = sessionTimerDefaultValue;
+                }
+                $('.sessionTimeInMinute').html(showTimeInMinute);
+            } else {
+                showTimeInMinute = sessionTimerDefaultValue;
+                $('.sessionTimeInMinute').html(showTimeInMinute);
+            }
+        });
+        /*]]>*/
+    </script>
+</div>
+<script type="text/javascript" src="../scripts/pages/user-sign-up/sign-up-service.js?v=4.12.1.02_01"></script>
+<script type="text/javascript" src="../scripts/pages/user-sign-up/sign-up.min.js?v=4.12.1.02_01"></script>
+
+<script>
+    /*<![CDATA[*/
+
+    var hasError = false;
+    var errorCode = null;
+    var signUpSuccess = false;
+    console.log("Server return val ====");
+    console.log(hasError);
+    console.log(errorCode);
+    console.log(signUpSuccess);
+    console.log("Server return val ====");
+
+    $(document).ready(function () {
+        $('#email_domain').val("naver.com");
+        $('#email_domain_text').val("naver.com").prop("disabled", true);
+
+        var isFirefox = typeof InstallTrigger !== 'undefined';
+        if(isFirefox){
+            window.alert("이용할 수 없는 브라우저입니다. 일부 화면이 정상적으로 보이지 않을 수 있습니다.");
+        }
+        // jquery selectmenu
+        $('.select > select').selectmenu();
+        signUp.init();
+
+    });
+
+
+    // nprotect solution check
+    nosQuery(document).ready(function () {
+        if (!npPfsCtrl.IsSupport()) {
+            window.location.href = "/install"
+        } else {
+            console.log("Your system support this security program !!!");
+        }
+        /*window.npPfsCtrl.setColor({
+            TextColor : "#000000", 			// 키보드보안 글자 색상
+            FieldBgColor : "#FFFFFF", 			// 키보드보안 배경 색상
+            ReTextColor : "", 			// 키보드보안 치환 글자 색상
+            ReFieldBgColor : "", 		// 키보드보안 치환 배경 색상
+            OnTextColor : "#000000", 	// 마우스입력기 포커스 글자 색상
+            OnFieldBgColor : "#FFFFFF", // 마우스입력기 포커스 배경 색상
+            OffTextColor : "#000000", 	// 마우스입력기 글자 색상
+            OffFieldBgColor : "#FFFFFF" // 마우스입력기 배경 색상
+        });*/
+        npPfsStartup(document.SignUp, true, true, false, true, "npkencrypt", "on");
+    });
+
+    /*]]>*/
+</script>
+
+
+
+</body>
+
+</html>
