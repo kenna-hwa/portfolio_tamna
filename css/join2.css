@@ -11,6 +11,10 @@ ul,li {list-style: none;}
 
 address {font-style: normal;}
 
+button {border:0; padding:0; background:transparent; cursor:pointer; *overflow:visible;}
+
+input {border:0; padding:0; background:transparent; cursor:pointer; *overflow:visible;}
+
 /* font setting */
 
 body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-weight: 200;}
@@ -644,15 +648,15 @@ select::-ms-expand {
 }
 
 
-/* phonenum */
-.tamna_join_phonenum_box {
+/* phoneNum */
+.tamna_join_phoneNum_box {
     position: relative;
     width: 1080px;
     height: 80px;
     border-bottom: 1px solid #444;
     box-sizing: border-box;
 }
-.tamna_join_phonenum_label {
+.tamna_join_phoneNum_label {
     position: absolute;
     display: inline-block;
     width: 1080px;
@@ -661,14 +665,13 @@ select::-ms-expand {
     line-height: 75px;
     box-sizing: border-box;    
 }
-.tamna_join_phonenum_label::after {
+.tamna_join_phoneNum_label::after {
     position: absolute;
     content: "*";
     margin-top: 4px;
     color: rgb(185, 0, 0);
 }
-
-#tamna_join_phonenum {
+#tamna_join_phoneNum {
     position: absolute;
     width: 565px;
     height: 55px;
@@ -679,7 +682,7 @@ select::-ms-expand {
     top: 10px;
     left: 300px;
 }
-.tamna_join_phonenum_btn {
+.tamna_join_phoneNum_btn {
     position: absolute;
     width: 200px;
     height: 55px;
@@ -690,16 +693,15 @@ select::-ms-expand {
     cursor: pointer;
 }
 
-
-/* verifynum */
-.tamna_join_verifynum_box {
+/* verifyNum */
+.tamna_join_verifyNum_box {
     position: relative;
     width: 1080px;
     height: 80px;
     border-bottom: 1px solid #444;
     box-sizing: border-box;
 }
-.tamna_join_verifynum_label {
+.tamna_join_verifyNum_label {
     position: absolute;
     display: inline-block;
     width: 1080px;
@@ -708,13 +710,13 @@ select::-ms-expand {
     line-height: 75px;
     box-sizing: border-box;    
 }
-.tamna_join_verifynum_label::after {
+.tamna_join_verifyNum_label::after {
     position: absolute;
     content: "*";
     margin-top: 4px;
     color: rgb(185, 0, 0);
 }
-#tamna_join_verifynum {
+#tamna_join_verifyNum {
     position: absolute;
     width: 565px;
     height: 55px;
@@ -725,7 +727,7 @@ select::-ms-expand {
     top: 10px;
     left: 300px;
 }
-.tamna_join_verifynum_btn {
+.tamna_join_verifyNum_btn {
     position: absolute;
     width: 200px;
     height: 55px;
@@ -735,7 +737,6 @@ select::-ms-expand {
     background: #21bdbd;
     cursor: pointer;
 }
-
 
 /* tamna join next btn */
 
