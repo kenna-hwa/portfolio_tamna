@@ -1039,13 +1039,7 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     font-weight: 300;
     line-height: 95px;
 }
-.tamna_howto_button span {
-    position: relative;
-    top: 3px;
-    font-size: 30px;
-    font-weight: 600;
-    color: #21bdbd;
-}
+
 .tamna_howto_button a {
     display: block;
     height: 100%;

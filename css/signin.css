@@ -301,9 +301,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
     text-align: center;
     top: 130px;
 }
-.tamna_card_login {
-    position: relative;
-}
 .tamna_card_login_txt {
     position: absolute;
     font-size: 16px;
