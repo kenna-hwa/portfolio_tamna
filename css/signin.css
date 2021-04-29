@@ -251,8 +251,8 @@
 
 .tamna_card_login {
     position: relative;
-    width: 770px;
-    height: 595px;
+    width: 430px;
+    height: 615px;
     margin: 0 auto 150px;
 }
 .tamna_card_login h2::before {
@@ -262,7 +262,8 @@
     content: "";
     background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
     top: -130px;
-    left: 340px;
+    left: 50%;
+    margin-left: -41px;
 }
 .tamna_card_login h2 {
     position: relative;
@@ -276,10 +277,11 @@
 .tamna_card_login_txt {
     position: absolute;
     font-size: 16px;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
     text-align: center;
     top: 210px;
-    left: 160px;
+    left: 50%;
+    margin-left: -216px;
 }
 .tamna_card_login_input {
     position: relative;
@@ -294,6 +296,7 @@
     border: 1px solid #ddd;
     box-sizing: border-box;
     padding-left: 20px;
+    cursor: text;
 }
 .tamna_card_login_id::placeholder {
     font-size: 16px;
@@ -311,9 +314,9 @@
     border: 1px solid #ddd;
     box-sizing: border-box;
     font-size: 16px;
-    color: #eee;
     margin: 20px auto 20px;
     padding-left: 20px;
+    cursor: text;
 }
 .tamna_card_login_pw::placeholder {
     font-size: 16px;
@@ -350,7 +353,8 @@
     font-size: 16px;
     color: #999;
     top:290px;
-    left: 320px;
+    left: 50%;
+    margin-left: -65px;
 }
 .tamna_card_login_find ul li {
     position: relative;
@@ -370,7 +374,8 @@
 .tamna_card_login_fromapp {
     position: relative;
     top: 350px;
-    left: 300px;
+    left: 50%;
+    margin-left: -90px;
     font-size: 16px;
 }
 .tamna_card_login_fromapp a {

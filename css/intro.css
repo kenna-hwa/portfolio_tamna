@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* css reset */
 
 /* header start */
 
@@ -415,6 +414,71 @@
     text-align: center;
     margin-bottom: 50px;
 }
+/* tamna howto tap menu */
+
+.tamna_howto_tap_menu {
+    
+    width: 723px;
+    height: 40px;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    margin: 0 auto 100px;
+}
+ .tamna_howto_KB_title>a{
+    display: block;
+    width: 33.333%;
+    height: 40px;
+    border-right: 1px solid #dadada;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 37px;
+    float: left;
+    transition: all 0.1s ease-in-out;
+} 
+.tamna_howto_KB_title>a:hover {
+    width: 33.333%;
+    height: 40px;
+    font-weight: 400;
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+ .tamna_howto_Kona_title>a{
+    display: block;
+    width: 33.333%;
+    height: 40px;
+    border-right: 1px solid #dadada;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 37px;
+    float: left;
+    transition: all 0.1s ease-in-out;
+} 
+.tamna_howto_Kona_title>a:hover {
+    width: 33.333%;
+    height: 40px;
+    font-weight: 400;
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_howto_Paper_title>a {
+    display: block;
+    width: 33.333%;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 37px;
+    float: left;
+    transition: all 0.1s ease-in-out;
+} 
+.tamna_howto_Paper_title>a:hover {
+    width: 33.333%;
+    height: 40px;
+    font-weight: 400;
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}  
 
 /* tamna howto KB */
 
@@ -423,25 +487,6 @@
     width: 1010px;
     height: 1195px;
     margin: auto;
-}
-.tamna_howto_KB h3 {
-    position: relative;
-    width: 240px;
-    height: 40px;
-    background: #32bdbd;
-    border-top: 1px solid #dadada;
-    border-left: 1px solid #dadada;
-    border-bottom: 1px solid #dadada;
-    box-sizing: border-box;
-    font-weight: 300;
-    text-align: center;
-    line-height: 35px;
-    margin-bottom: 100px;
-    left: 146px;
-}
-.tamna_howto_KB a {
-    display: block;
-    height: 100%;
 }
 
 /* tamna howto KB online */
@@ -648,24 +693,7 @@
     height: 1195px;
     margin: auto;
 }
-.tamna_howto_Kona h3 {
-    position: relative;
-    width: 240px;
-    height: 40px;
-    background: #fff;
-    border: 1px solid #dadada;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center;
-    line-height: 35px;
-    margin-bottom: 100px;
-    left: 386px;
-}
-.tamna_howto_Kona h3>a {
-    display: block;
-    height: 100%;
-}
+
 
 /* tamna howto Kona online */
 
@@ -870,26 +898,6 @@
     width: 1010px;
     height: 1195px;
     margin: auto;
-}
-.tamna_howto_paper h3 {
-    position: relative;
-    width: 240px;
-    height: 40px;
-    background: #fff;
-    border-top: 1px solid #dadada;
-    border-right: 1px solid #dadada;
-    border-bottom: 1px solid #dadada;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center;
-    line-height: 35px;
-    margin-bottom: 100px;
-    left: 626px;
-}
-.tamna_howto_paper h3 a {
-    display: block;
-    height: 100%;
 }
 
 /* tamna howto paper offline */
