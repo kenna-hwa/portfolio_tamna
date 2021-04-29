@@ -1,37 +1,5 @@
 @charset "utf-8";
 
-/* css reset */
-/* block 요소 m,p reset */
-body, h1, h2, h3, h4, div, p, ul, li, dl, dt, dd {margin: 0; padding: 0;}
-
-/* another */
-a {text-decoration: none; color: #000;}
-
-ul,li {list-style: none;}
-
-address {font-style: normal;}
-
-button {border:0; padding:0; background:transparent; cursor:pointer; *overflow:visible;}
-
-input {border:0; padding:0; background:transparent; cursor:pointer; *overflow:visible;}
-
-/* font setting */
-
-body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-weight: 200;}
-
-/* ------------------------------------------------------------------------------- */
-
-/* Common class */
-
-        /* .blind {visibility: hidden; } 글자있던 자리는 남아있게 됨 */
-        .blind {position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
-
-        /* scroll 숨김 */
-        body {overflow: auto; overflow-x: hidden;}
-
-
-/* -------------------------------------------------------------------------------- */
-
 /* header start */
 
 .header {
@@ -405,15 +373,6 @@ body {font-size: 14px; font-family: 'Noto Sans KR', '돋움', sans-serif; font-w
 
 
 /* id */
-select {
-    -webkit-appearance: none;  /* 네이티브 외형 감추기 */
-    -moz-appearance: none;
-    appearance: none;
-}
-/* IE 10, 11의 네이티브 화살표 숨기기 */
-select::-ms-expand {
-    display: none;
-}
 
 .tamna_join_id_box {
     display: inline-block;
