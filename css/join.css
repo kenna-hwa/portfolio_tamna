@@ -301,47 +301,47 @@
 }
 .tamna_join_order1>a {
     display: block;
-    width: 33%;
+    width: 33.22222222222%;
     height: 40px;
     border-right: 1px solid #dadada;
     float: left;
     transition: all 0.1s ease-in-out;
 }
-.tamna_join_order1>a:hover {
-    width: 33%;
+.tamna_join_order1>a:hover:active {
+    width: 33.22222222222%;
     background: #21bdbd;
     font-weight: 400;
     transition: all 0.1s ease-in-out;
 }
 .tamna_join_order2>a {
     display: block;
-    width: 33%;
+    width: 33.22222222222%;
     height: 40px;
     border-right: 1px solid #dadada;
     box-sizing: border-box;
     float: left;
     transition: all 0.1s ease-in-out;
 }
-.tamna_join_order2>a:hover {
-    width: 33%;
+/* .tamna_join_order2>a:hover:active {
+    width: 33.22222222222%;
     background: #21bdbd;
     font-weight: 400;
     transition: all 0.1s ease-in-out;
-}
+} */
 .tamna_join_order3>a {
     display: block;
-    width: 33%;
+    width: 33.22222222222%;
     height: 40px;
     box-sizing: border-box;
     float: left;
     transition: all 0.1s ease-in-out;
 }
-.tamna_join_order3>a:hover {
-    width: 33%;
+/* .tamna_join_order3>a:hover:active {
+    width: 33.34%;
     background: #21bdbd;
     font-weight: 400;
     transition: all 0.1s ease-in-out;
-}
+} */
 
 /* tamna join checklist */
 .tamna_join_chklist {
