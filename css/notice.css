@@ -247,15 +247,15 @@
 
 /* main */
 
-/* tamna join */
+/* tamna notice */
 
-.tamna_join {
+.tamna_notice{
     position: relative;
-    width: 1080px;
-    height: 310px;
+    width: 190px;
+    height: 222px;
     margin: 0 auto 50px;
 }
-.tamna_join h2::before {
+.tamna_notice h2::before {
     position: absolute;
     width: 82px;
     height: 80px;
@@ -263,9 +263,9 @@
     background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
     top: -130px;
     left: 50%;
-    margin-left: -39px;
+    margin-left: -41px;
 }
-.tamna_join h2 {
+.tamna_notice h2 {
     position: relative;
     display: block;
     font-size: 28px;
@@ -274,142 +274,199 @@
     text-align: center;
     top: 130px;
 }
-.tamna_join_txt {
+.tamna_notice_txt {
     position: absolute;
     font-size: 16px;
     letter-spacing: -1px;
     line-height: 22px;
     text-align: left;
-    top: 215px;
+    top: 203px;
     left: 50%;
-    margin: 0 0 50px -100px;
+    margin: 0 0 50px -85px;
 }
-/* tamna join order */
 
-.tamna_join_order {
+/* tamna notice search */
+
+.tamna_notice_search {
     position: relative;
-    width: 722px;
+    width: 1080px;
     height: 40px;
-    font-size: 16px;
-    text-align: center;
-    line-height: 40px;
-    border: 1px solid #dadada;
-    box-sizing: border-box;
-    top:230px;
     margin: 0 auto 50px;
 }
-.tamna_join_order1>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    border-right: 1px solid #dadada;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
-/* .tamna_join_order1>a:hover:active {
-    width: 33.22222222222%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-} */
-.tamna_join_order2>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    border-right: 1px solid #dadada;
-    box-sizing: border-box;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
- /* .tamna_join_order2>a:hover:active {
-    width: 33.22222222222%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-}  */
-.tamna_join_order3>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    box-sizing: border-box;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
- .tamna_join_order3>a:hover:active {
-    width: 33.34%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-}
-
-
-/* tamna qr ad */
-
-.tamna_qr_ad {
-    position: relative;
-    width: 420px;
-    height: 240px;
-    margin: 0 auto 50px;
-}
-.tamna_qr_ad h3 {
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.tamna_qr_ad p {
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
-    letter-spacing: -1px;
-    margin-bottom: 25px;
-}
-.tamna_qr_appicon {
-    width: 50px;
-    height: 50px;
-    background: url(../images/join_finish/join_finish_appicon.jpg) no-repeat;
-    text-indent: -9999px;
-    margin: 0 auto 20px;
-}
-.tamna_qr_google {
+.tamna_notice_search_box {
     position: absolute;
-    width: 200px;
-    height: 100px;
-    background: url(../images//join_finish/join_finish_google.jpg) no-repeat;
-    text-indent: -9999px;
-    left: 0;
-}
-.tamna_qr_apple {
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    background: url(../images//join_finish/join_finish_apple.jpg) no-repeat;
-    text-indent: -9999px;
     right: 0;
 }
-.tamna_join_finish_login {
-    width: 350px;
-    height: 100px;
+.tamna_notice_category {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    background: #fff;
+    color: #777;
+    font-size: 16px;
+    padding-left: 20px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tamna_notice_search_text {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    background: #fff;
+    color: #777;
+    font-size: 16px;
+    padding-left: 20px;
+    cursor: text;
+    float: left;
+    margin-right: 10px;
+    }
+.tamna_notice_search_submit_btn {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #777;
+    box-sizing: border-box;
     background: #21bdbd;
-    border: 1px solid #ddd;
     color: #fff;
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0 auto 150px;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
-    line-height: 95px;
-    letter-spacing: 12px;
+    float: left;
+    transition: all 0.2s linear;
 }
-.tamna_join_finish_login a {
-    display: block;
-    height: 100%;
-    color: #fff;
-    transition: all 0.2s ease-in-out;
-}
-.tamna_join_finish_login a:hover {
+.tamna_notice_search_submit_btn:hover {
     background: #fff;
     color: #000;
-    transition: all 0.2s ease-in-out;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+/* table */
+.tamna_notice_table_box {
+    width: 1080px;
+    margin: 0 auto 150px;
+}
+.tamna_notice_table {
+    width: 1080px;
+    height: 400px;
+    font-size: 16px;
+    letter-spacing: -1px;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: center;
+    border-top: 2px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+/* table row */
+.tamna_notice_table a {
+    display: block;
+    height: 100%;
+    line-height: 80px;
+}
+.tamna_notice_table tr:nth-child(1) {
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+}
+.tamna_notice_table tr:nth-child(2) {
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_notice_table tr:nth-child(2):hover {
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_notice_table tr:nth-child(3) {
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+}
+.tamna_notice_table tr:nth-child(3):hover {
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_notice_table tr:nth-child(4) {
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+}
+.tamna_notice_table tr:nth-child(4):hover {
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_notice_table tr:nth-child(5) {
+    width: 1080px;
+    height: 80px;
+}
+.tamna_notice_table tr:nth-child(5):hover {
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+/* table width */
+.tamna_notice_tableHead_tableNum {
+    width: 100px;
+}
+.tamna_notice_tableHead_tableTitle {
+    width: 850px;
+}
+.tamna_notice_tableHead_tableDate {
+    width: 130px;
+}
+
+/* tableTitle align */
+.tamna_notice_tableTitle {
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+/* tableData color */
+.tamna_notice_tableDate {
+    color: #999;
+    cursor: default;
+
+}
+
+/* category diplay none */
+.tamna_notice_tableHead_tableCategory {
+    width: 2px;
+    display: none;
+}
+.tamna_notice_tableCategory {
+    width: 2px;
+    display: none;
+}
+
+/* paging */
+.tamna_notice_table_paging {
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+}
+.tamna_notice_table_paging a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    background: #21bdbd;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    line-height: 38px; 
 }
 
 /* footer */

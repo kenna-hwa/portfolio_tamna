@@ -247,15 +247,15 @@
 
 /* main */
 
-/* tamna join */
+/* tamna_contact */
 
-.tamna_join {
+.tamna_contact{
     position: relative;
-    width: 1080px;
-    height: 310px;
+    width: 400px;
+    height: 245px;
     margin: 0 auto 50px;
 }
-.tamna_join h2::before {
+.tamna_contact h2::before {
     position: absolute;
     width: 82px;
     height: 80px;
@@ -263,9 +263,9 @@
     background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
     top: -130px;
     left: 50%;
-    margin-left: -39px;
+    margin-left: -41px;
 }
-.tamna_join h2 {
+.tamna_contact h2 {
     position: relative;
     display: block;
     font-size: 28px;
@@ -274,143 +274,43 @@
     text-align: center;
     top: 130px;
 }
-.tamna_join_txt {
+.tamna_contact_txt {
     position: absolute;
     font-size: 16px;
-    letter-spacing: -1px;
-    line-height: 22px;
-    text-align: left;
-    top: 215px;
-    left: 50%;
-    margin: 0 0 50px -100px;
-}
-/* tamna join order */
-
-.tamna_join_order {
-    position: relative;
-    width: 722px;
-    height: 40px;
-    font-size: 16px;
-    text-align: center;
-    line-height: 40px;
-    border: 1px solid #dadada;
-    box-sizing: border-box;
-    top:230px;
-    margin: 0 auto 50px;
-}
-.tamna_join_order1>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    border-right: 1px solid #dadada;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
-/* .tamna_join_order1>a:hover:active {
-    width: 33.22222222222%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-} */
-.tamna_join_order2>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    border-right: 1px solid #dadada;
-    box-sizing: border-box;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
- /* .tamna_join_order2>a:hover:active {
-    width: 33.22222222222%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-}  */
-.tamna_join_order3>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    box-sizing: border-box;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
- .tamna_join_order3>a:hover:active {
-    width: 33.34%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-}
-
-
-/* tamna qr ad */
-
-.tamna_qr_ad {
-    position: relative;
-    width: 420px;
-    height: 240px;
-    margin: 0 auto 50px;
-}
-.tamna_qr_ad h3 {
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.tamna_qr_ad p {
-    font-size: 18px;
     font-weight: 300;
-    text-align: center;
     letter-spacing: -1px;
-    margin-bottom: 25px;
-}
-.tamna_qr_appicon {
-    width: 50px;
-    height: 50px;
-    background: url(../images/join_finish/join_finish_appicon.jpg) no-repeat;
-    text-indent: -9999px;
-    margin: 0 auto 20px;
-}
-.tamna_qr_google {
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    background: url(../images//join_finish/join_finish_google.jpg) no-repeat;
-    text-indent: -9999px;
-    left: 0;
-}
-.tamna_qr_apple {
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    background: url(../images//join_finish/join_finish_apple.jpg) no-repeat;
-    text-indent: -9999px;
-    right: 0;
-}
-.tamna_join_finish_login {
-    width: 350px;
-    height: 100px;
-    background: #21bdbd;
-    border: 1px solid #ddd;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0 auto 150px;
+    line-height: 25px;
     text-align: center;
-    line-height: 95px;
-    letter-spacing: 12px;
+    top: 200px;
+    left: 50%;
+    margin-left: -180px;
 }
-.tamna_join_finish_login a {
-    display: block;
-    height: 100%;
-    color: #fff;
-    transition: all 0.2s ease-in-out;
+
+
+/* tamna_contact_list */
+.tamna_contact_list_box {
+    width: 875px;
+    height: 455px;
+    margin: 0 auto 150px;
 }
-.tamna_join_finish_login a:hover {
-    background: #fff;
-    color: #000;
-    transition: all 0.2s ease-in-out;
+.tamna_contact_list1 {
+    width: 325px;
+    height: 455px;
+    background: url(../images/contact/contact_personal.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin-right: 225px;
 }
+.tamna_contact_list2 {
+    width: 325px;
+    height: 455px;
+    background: url(../images/contact/contact_shop.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+}
+
+/* main end */
+
 
 /* footer */
 

@@ -262,7 +262,8 @@
     content: "";
     background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
     top: -130px;
-    left: 163px;
+    left: 50%;
+    margin-left: -41px;
 }
 .tamna_shop_download h2 {
     position: relative;

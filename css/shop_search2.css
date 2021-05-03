@@ -262,7 +262,8 @@
     content: "";
     background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
     top: -130px;
-    left: 245px;
+    left: 50%;
+    margin-left: -40px;
 }
 .tamna_shop_search h2 {
     position: relative;
@@ -281,7 +282,8 @@
     line-height: 22px;
     text-align: center;
     top: 205px;
-    left: 0px;
+    left: 50%;
+    margin-left: -280px;
 }
 
 .tamna_shop_search_txt span {
@@ -293,7 +295,7 @@
     margin-top: 12px;
 }
 
-/* tamna_shop_category */
+/* tamna_shop_search */
 .tamna_shop_search_box {
     width: 1080px;
     height: 395px;
@@ -366,17 +368,20 @@ select::-ms-expand { display: none; }
     left: 35px;
     font-size: 16px;
     padding-left: 20px;
+    cursor: pointer;
 }
 #tamna_shop_search_text_box {
     position: absolute;
     width: 800px;
     height: 55px;
     border: 1px solid #f3f3f3;
+    background: #fff;
     box-sizing: border-box;
     top: 105px;
     left: 35px;
     font-size: 16px;
     padding-left: 20px;
+    cursor: text;
 }
 .tamna_shop_search_city_txt {
     position: absolute;
@@ -461,6 +466,8 @@ select::-ms-expand { display: none; }
 .tamna_shop_search_result_table tr {
     border-top: 1px solid #bbb;
 }
+
+/* paging */
 .tamna_shop_search_result_table_paging {
     width: 160px;
     height: 40px;

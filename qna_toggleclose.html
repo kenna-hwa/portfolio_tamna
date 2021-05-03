@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>탐나는전 회원가입</title>
+    <title>탐나는전 자주묻는질문</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css">
-    <link type="text/css" rel="stylesheet" href="css/join4.css">
+    <link type="text/css" rel="stylesheet" href="css/qna_toggleclose.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
@@ -69,40 +69,72 @@
 
     <!-- main start -->
     <main id="main" class="main">
-        <!-- tamna join -->
-        <div class="tamna_join">
-
-            <h2>회원가입</h2>
-            <div class="tamna_join_txt">
-                탐나는전 가입이 완료되었습니다.
+        <!-- tamna notice -->
+        <div class="tamna_qna">
+            <h2>탐나는전 자주묻는질문</h2>
+            <div class="tamna_qna_txt">
+                탐나는전에 대한 궁금증! 여기에 다 모였다!
             </div>
-
-                <!-- tamna join order -->
-                <div class="tamna_join_order">
-                <ol>
-                    <li class="tamna_join_order1"><a href="#">약관동의</a></li>
-                    <li  class="tamna_join_order2"><a href="#">회원정보 입력</a></li>
-                    <li  class="tamna_join_order3"><a href="#">가입완료</a></li>
-                </ol>
-            </div>
-            <!-- tamna join order end -->
-            <!-- tamna join end -->
         </div>
 
-        <!-- tamna qr ad form -->
-        <div class="tamna_qr_ad">
-            <h3>웹 회원가입이 완료되었습니다.</h3>
-            <p>더 많은 기능을 제공하는 탐나는전 앱도 함께 이용해보세요.</p>
-            <div class="tamna_qr_appicon">탐나는전 어플 아이콘</div>
-            <div class="tamna_qr_google">탐나는전 어플 구글 플레이스토어 다운로드</div>
-            <div class="tamna_qr_apple">탐나는전 어플 애플 앱스토어 다운로드</div>
+        <!-- tamna notice search -->
+        <div class="tamna_qna_search">
+            <div class="tamna_qna_search_box">
+                <select name="qna_category" id="qna_category" class="tamna_qna_category">
+                    <option value="qna_all">전체</option>
+                    <option value="qna_shop">가맹점</option>
+                    <option value="qna_personal">개인사용자</option>
+                </select>
+                <input type="text" name="qna_search_text" id="qna_search_text" class="tamna_qna_search_text"
+                    placeholder="검색어 입력">
+                <button type="submit" id="qna_search_submit_btn" class="tamna_qna_search_submit_btn">검색</button>
+            </div>
         </div>
 
-        <!-- tamna join finish end -->
-        <div class="tamna_join_finish_login"><a href="#">로그인</a></div>
-        <!-- tamna join finish end -->
+        <!-- tamna qna search table -->
+        <div class="tamna_qna_table_box">
+            <table class="tamna_qna_table">
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarker">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">'탐나는전'을 결제받으면 어떻게 입금처리되나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_q"> 
+                        <td class="tamna_qna_tableMarker">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">사업주가 환전을 하려면 어디로(어떻게) 가나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarker">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">가맹점이 내야하는 별도의 수수료가 있나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarker">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">프랜차이즈 사업장을 운영하는데 가맹점으로 신청 가능한가요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarker">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">가맹점 등록 신청을 하고 나면 어떤 방식으로 통보받나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+            </table>
+            <!-- tamna qna table paging -->
+            <div class="tamna_qna_table_paging">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+            </div>
+        </div>
     </main>
     <!-- main end -->
+
     <!-- footer start -->
     <footer id="footer" class="footer">
         <div class="footer_box">
@@ -115,7 +147,7 @@
             <div class="footer_jejugoverment"><a href="#">제주특별자치도 바로가기</a></div>
         </div>
     </footer>
-
+    <!-- footer end -->
 
 </body>
 

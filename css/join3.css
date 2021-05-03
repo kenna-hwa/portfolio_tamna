@@ -394,6 +394,7 @@
     font-size: 16px;
     top: 12px;
     left: 300px;
+    cursor: text;
 }
 .tamna_join_id_select_input {
     position: absolute;
@@ -422,7 +423,7 @@
     top: 12px;
     left: 815px;
     padding-left: 20px;
-
+    cursor: pointer;
 }
 #tamna_join_id_domain:optional {
     color: #444;
@@ -463,6 +464,7 @@
     box-sizing: border-box;
     padding-left: 20px;
     font-size: 16px;
+    cursor: text;
 }
 
 /* tamna_input_pw_check */
@@ -499,6 +501,7 @@
     border: 1px solid #ccc;
     box-sizing: border-box;
     padding-left: 20px;
+    cursor: text;
     font-size: 16px;
 }
 
@@ -511,15 +514,15 @@
     background: #21bdbd;
     border: 1px solid #ddd;
     color: #fff;
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 400;
     margin: 0 auto 150px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 .tamna_join_finish_btn:hover {
-    background: #fece08;
-    color: #333;
+    background: #fff;
+    color: #000;
     transition: all 0.2s ease-in-out;
 }
 
