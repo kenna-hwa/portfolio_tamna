@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>탐나는전 카드신청</title>
+    <title>탐나는전 자주묻는질문</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css">
-    <link type="text/css" rel="stylesheet" href="css/apply.css">
+    <link type="text/css" rel="stylesheet" href="css/qna_toggleclose.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
@@ -69,28 +69,70 @@
 
     <!-- main start -->
     <main id="main" class="main">
-        <div class="tamna_card_apply">
-            <h2>탐나는전이란?</h2>
-            <div class="tamna_card_apply_txt">
-                <ul>
-                <li>탐나는전 체크카드는 제주지역화폐 '탐나는전'을 충전해서 이용할 수 있는 전용 체크카드입니다.</li>
-                <li>탐나는전 체크카드 발급, 충전, 이용은 제주도민이 아니더라도 가능합니다.</li>
-                <li>탐나는전 카드 발급은 KB 국민카드 웹사이트, 지점 방문 신청 또는 코나아이 웹사이트를 통해서 신청 가능합니다.</li>
-                <li>종이형 상품권은 농협중앙회, 지역 농·축협 본점, 제주은행에서 가능하며 버튼을 클릭하면 지도로 연결됩니다.</li>
-                <li>탐나는전 이용 및 App 관련 문의는 탐나는전 고객센터 (1600-3971)로 문의 주시기 바랍니다.</li>
-                </ul>
+        <!-- tamna notice -->
+        <div class="tamna_qna">
+            <h2>탐나는전 자주묻는질문</h2>
+            <div class="tamna_qna_txt">
+                탐나는전에 대한 궁금증! 여기에 다 모였다!
             </div>
-            <div class="tamna_card_apply_bank">
-                <ul>
-                <li class="tamna_card_apply_bank_KB"><a href="#">KB 국민카드</a></li>
-                <li class="tamna_card_apply_bank_Kona"><a href="#">코나아이</a></li>
-                <li class="tamna_card_apply_bank_NH"><a href="#">농협중앙회</a></li>
-                <li class="tamna_card_apply_bank_Jeju"><a href="#">제주은행</a></li>
-                </ul>
+        </div>
+
+        <!-- tamna notice search -->
+        <div class="tamna_qna_search">
+            <div class="tamna_qna_search_box">
+                <select name="qna_category" id="qna_category" class="tamna_qna_category">
+                    <option value="qna_all">전체</option>
+                    <option value="qna_shop">가맹점</option>
+                    <option value="qna_personal">개인사용자</option>
+                </select>
+                <input type="text" name="qna_search_text" id="qna_search_text" class="tamna_qna_search_text"
+                    placeholder="검색어 입력">
+                <button type="submit" id="qna_search_submit_btn" class="tamna_qna_search_submit_btn">검색</button>
+            </div>
+        </div>
+
+        <!-- tamna qna search table -->
+        <div class="tamna_qna_table_box">
+            <table class="tamna_qna_table">
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">'탐나는전'을 결제받으면 어떻게 입금처리되나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_q"> 
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">사업주가 환전을 하려면 어디로(어떻게) 가나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">가맹점이 내야하는 별도의 수수료가 있나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">프랜차이즈 사업장을 운영하는데 가맹점으로 신청 가능한가요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">가맹점 등록 신청을 하고 나면 어떤 방식으로 통보받나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+            </table>
+            <!-- tamna qna table paging -->
+            <div class="tamna_qna_table_paging">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
             </div>
         </div>
     </main>
-    
     <!-- main end -->
 
     <!-- footer start -->

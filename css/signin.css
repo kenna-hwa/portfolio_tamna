@@ -340,7 +340,7 @@
     transition: all 0.2s ease-in-out;
 }
 .tamna_card_login_button:hover {
-    background: #fece08;
+    background: #fff;
     color: #333;
     transition: all 0.2s ease-in-out;
 }

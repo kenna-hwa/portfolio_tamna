@@ -316,6 +316,7 @@
     padding-right: 20px;
     border: 1px solid #bbb;
     box-sizing: border-box;
+    cursor: text;
 }
 .tamna_shop_apply_input_busiNum_txt {
     position: relative;

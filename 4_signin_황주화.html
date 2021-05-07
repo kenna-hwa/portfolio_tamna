@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>탐나는전 가맹점 등록 기준 및 혜택</title>
+    <title>탐나는전 카드등록</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css">
-    <link type="text/css" rel="stylesheet" href="css/shop_apply.css">
+    <link type="text/css" rel="stylesheet" href="css/signin.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
@@ -23,7 +23,7 @@
             <nav class="gnb">
                 <h2 class="blind">상단 메뉴</h2>
                 <ul>
-                    <li class="gnb_info"><a href="#">탐나는전 가맹점 등록</a>
+                    <li class="gnb_info"><a href="#">탐나는전</a>
                         <!-- <ul class="gnb_info_sub">
                                 <li><a href="#">탐나는전 소개</a></li>
                                 <li><a href="#">탐나는전 혜택</a></li>
@@ -69,26 +69,35 @@
 
     <!-- main start -->
     <main id="main" class="main">
-        <div class="tamna_shop_apply">
-            <h2>탐나는전 가맹점 등록</h2>
-            <div class="tamna_shop_apply_txt">
-                <span class="tamna_shop_apply_txt1">지역화폐 이용 가맹점 등록 - 제주특별자치도청<br></span> 
-                골목상권에 힘을 심어드릴게요. 탐나는전의 가맹점으로 함께하세요!<br>
+        <div class="tamna_card_login">
 
-                <span class="tamna_shop_apply_txt2">지역사랑상품권 이용 활성화에 관한 법률 개정에 따라,<br></span>
-                <span class="tamna_shop_apply_txt3"> 10월부터 가맹점주(사업자)가 직접 지역화폐 가맹점으로 등록한 매장에서만 지역화폐 이용이 가능합니다.<br></span>
-
-                현재 별도의 가맹 신청 없이 운영 중인 매장도 기한 내 미신청 시 결제가 제한될 수 있습니다. <br>
-
-                <span class="tamna_shop_apply_txt4">* 가맹 신청이 완료되더라도 지자체별 정책에 의해<br>
-                일부 매장은 매출액 제한, 업종 제한 등을 이유로 결제가 제한될 수 있습니다.</span>
+            <h2>카드 등록</h2>
+            <div class="tamna_card_login_txt">
+                발급 받으신 탐나는전 카드 등록을 위해 회원가입 또는 로그인을 해주세요.
             </div>
-        </div>
-        <div class="tamna_shop_apply_input_box">
-            <input type="text" name="business RegistrationNumber" id="tamna_shop_apply_input_busiNum" placeholder="사업자등록번호를 입력해 주세요." maxlength="13">
-            <p class="tamna_shop_apply_input_busiNum_txt">- 없이 사업자등록번호를 입력해 주세요.</p>
-            <button type="submit" class="tamna_shop_apply_input_busiNum_btn">인증요청</button>
-            
+
+
+            <div class="tamna_card_login_input">
+                
+                <input class="tamna_card_login_id" type="text" name="email" id="email" placeholder="아이디(이메일 주소)">
+                <label for="email" class="tamna_card_login_id_txt">아이디를 입력해주세요. (아이디는 이메일 형식입니다.)</label>
+                <input class="tamna_card_login_pw" type="password" name="password" id="password" placeholder="비밀번호">
+                <label for="password" class="tamna_card_login_pw_txt">비밀번호를 입력해주세요.</label>
+                <button class="tamna_card_login_button" type="submit" value="login">로그인</button>
+            </div>
+
+            <div class="tamna_card_login_find">
+                <ul>
+                    <li><a href="#">아이디 찾기</a></li>
+                    <li><a href="#">비밀번호 찾기</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+
+            <div class="tamna_card_login_fromapp">
+                <a href="#">앱에서 가입한 회원인가요?</a>
+            </div>
+
         </div>
     </main>
 
