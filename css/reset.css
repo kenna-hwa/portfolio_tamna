@@ -1,14 +1,13 @@
 @charset "utf-8";
 /* css reset */
 /* block 요소 m,p reset */
-body, h1, h2, h3, h4, div, p, ol, ul, li, dl, dt, dd, header, section, article, span, label, form, a{margin:0;padding:0;border:0}
+body, h1, h2, h3, h4, div, p, ol, ul, li, dl, dt, dd, header, section, article, span, label, form, a, fieldset{margin:0;padding:0;border:0}
 /* another */
 a{text-decoration:none;color:#000}
 ul,li{list-style:none}
 address{font-style:normal}
 button{border:0;padding:0;background:transparent;cursor:pointer;*overflow:visible}
 input{border:0;padding:0;background:transparent;cursor:pointer;*overflow:visible}
-/* scroll 숨김 */body{overflow:auto;overflow-x:hidden}
 /* select 네이티브 외형 감추기 */
 select {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 table {border-collapse:collapse;border-spacing:0;}
