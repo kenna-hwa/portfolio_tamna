@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .allwrap {
+            width: 1900px;
+            height: 400px;
+            background-color: mediumturquoise;
+            font-size: 20px;
+        }
+        .topwrap {
+            width: 1900;
+            height: 100px;
+            background-color: darkorange;
+            position: relative;
+            top: 100px;
+        }
+
+        .topmenu {
+            width: 200px;
+            height: 50px;
+            padding-top: 20px;
+            float: left;
+            font-size: 25px;
+            margin-right: 250px;
+            background-color: brown;
+        }
+
+        #submenu {
+            position: absolute;
+            display: none;
+            top: 100px;
+            background-color: royalblue;
+            z-index: 1;
+        }
+
+        .subbox {
+            display: none;
+            position: relative;
+            top:100px;
+            width: 1800px;
+            height: 500px;
+            background-color: antiquewhite;
+            font-size: 150px;
+            z-index: -2;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+        var topwrap = document.querySelector(".topwrap");
+        var subbox = document.querySelector(".subbox");
+        var submenu = document.querySelector("#submenu");
+        var topmenu = document.querySelector(".topmenu");
+
+        
+        topwrap.addEventListener("mouseout", function(){
+            subbox.style.display="block";
+            submenu.style.display="block";
+        }, false);
+        
+}//onload function 마침
+
+    </script>
+</head>
+
+<body>
+    <nav class="allwrap">
+        <ul class="topwrap">
+            <li class="topmenu">첫번째탑
+                <ul id="submenu">
+                    <li>첫번째서브일</li>
+                    <li>첫번째서브둘</li>
+                </ul>
+            </li>
+            <li class="topmenu">두번째탑
+                <ul id="submenu">
+                    <li>두번째서브일</li>
+                    <li>두번째서브둘</li>
+                </ul>
+            </li>
+            <li class="topmenu">세번째탑
+                <ul id="submenu">
+                    <li>세번째서브일</li>
+                    <li>세번째서브둘</li>
+                </ul>
+            </li>
+            <li class="topmenu">네번째탑
+                <ul id="submenu">
+                    <li>네번째서브일</li>
+                    <li>네번째서브둘</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="subwrap">
+            <div class="subbox"> 
+                <h3>subbox 서브메뉴</h3>
+            </div>
+        </div> 
+    </nav>
+</body>
+
+
+</html>

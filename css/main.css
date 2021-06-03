@@ -242,6 +242,8 @@
     left: 20px;
     width: 100px;
 }
+#submenu {display: none;}
+.subwrap {display: none;}
 
 /* main */
 /* main img */
