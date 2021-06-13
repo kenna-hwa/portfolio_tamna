@@ -251,7 +251,7 @@
 
 .tamna_join {
     position: relative;
-    width: 1080px;
+    width: 721px;
     height: 310px;
     margin: 0 auto 50px;
 }
@@ -263,7 +263,7 @@
     background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
     top: -130px;
     left: 50%;
-    margin-left: -41px;
+    margin-left: -40px;
 }
 .tamna_join h2 {
     position: relative;
@@ -280,9 +280,9 @@
     letter-spacing: -1px;
     line-height: 22px;
     text-align: left;
-    top: 215px;
+    top: 200px;
     left: 50%;
-    margin: 0  0 50px -110px;
+    margin-left: -145px;
 }
 
 /* tamna join order */
@@ -297,7 +297,7 @@
     border: 1px solid #dadada;
     box-sizing: border-box;
     top:230px;
-    margin: 0 auto 50px;
+    margin-bottom: 50px;
 }
 .tamna_join_order1>a {
     display: block;
@@ -307,12 +307,12 @@
     float: left;
     transition: all 0.1s ease-in-out;
 }
-/* .tamna_join_order1>a:hover:active {
+.tamna_join_order1>a:hover:active {
     width: 33.22222222222%;
     background: #21bdbd;
     font-weight: 400;
     transition: all 0.1s ease-in-out;
-} */
+}
 .tamna_join_order2>a {
     display: block;
     width: 33.22222222222%;
@@ -322,12 +322,12 @@
     float: left;
     transition: all 0.1s ease-in-out;
 }
- .tamna_join_order2>a:hover:active {
+/* .tamna_join_order2>a:hover:active {
     width: 33.22222222222%;
     background: #21bdbd;
     font-weight: 400;
     transition: all 0.1s ease-in-out;
-} 
+} */
 .tamna_join_order3>a {
     display: block;
     width: 33.22222222222%;
@@ -343,90 +343,29 @@
     transition: all 0.1s ease-in-out;
 } */
 
-
-/* tamna input form */
-
-.tamna_input_form {
+/* tamna join checklist */
+.tamna_join_chklist {
     width: 1080px;
-    height: 400px;
+    height: 960px;
     margin: 0 auto 50px;
-    font-size: 16px;
+    font-size: 18px;
 }
+/* input element */
 
-/* username */
-.tamna_join_username_box {
-    position: relative;
+.chk_span1 {
     display: inline-block;
     width: 1080px;
     height: 80px;
+    top: 0;
+    left: 0;
     border-top: 1px solid #444;
     border-bottom: 1px solid #444;
     box-sizing: border-box;
 }
-.tamna_join_username_label {
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;    
-}
-.tamna_join_username_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-#tamna_join_username {
-    position: absolute;
-    display: inline-block;
-    width: 780px;
-    height: 55px;
-    border: 1px solid #ccc;
-    padding-left: 20px;
-    box-sizing: border-box;
-    font-size: 16px;
-    top: 11px;
-    right: 0;
-    cursor: text;
-}
 
-
-/* gender */
-.tamna_join_gender_box {
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #444;
-    box-sizing: border-box;
-}
-.tamna_join_gender_label {
-    position: absolute;
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;    
-}
-.tamna_join_gender_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-
-/* male */
-.tamna_join_gender_male_box {
-    position: relative; 
-    width: 390px;
-    height: 55px;
-    box-sizing: border-box;
-    top: 10px;
-    left: 299px;
-}
-
-/* male radio button custom */
-#tamna_join_gender_male { /* gender input*/
+/* checkbox custom */
+.chkbox_all {
+    position: absolute; 
     width: 1px; 
     height: 1px; 
     padding: 0; 
@@ -435,49 +374,38 @@
     clip:rect(0,0,0,0); 
     border: 0;
 }
-.tamna_join_gender_male_label {
-    position: absolute;
+.chk_label1  {
     display: inline-block;
-    width: 390px;
-    height: 55px;
-    border: 1px solid #ccc;
-    padding: 15px 0 0 20px;
-    box-sizing: border-box;
-    background: #fff;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    color:#999;
-    font-weight: 400;
 }
-#tamna_join_gender_male:checked~.tamna_join_gender_male_label>span {
-    position: absolute;
+.chkbox_all:checked~.chk_label1 {
     display: inline-block;
-    width: 390px;
-    height: 54px;
-    padding: 15px 0 0 20px;
-    box-sizing: border-box;
-    background: #21bdbd;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label1_txt {
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span2 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
     top: 0;
     left: 0;
-    color:#fff;
-    font-weight: 400;
-}
-
-/* female */
-
-.tamna_join_gender_female_box {
-    position: relative; 
-    width: 390px;
-    height: 55px;
+    border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-    top: -45px;
-    left: 690px;
 }
 
-/* female radio button custom */
-
-#tamna_join_gender_female { /* gender input*/
+/* checkbox custom */
+#chkbox_2 {
+    position: absolute; 
     width: 1px; 
     height: 1px; 
     padding: 0; 
@@ -486,215 +414,430 @@
     clip:rect(0,0,0,0); 
     border: 0;
 }
-.tamna_join_gender_female_label {
-    position: absolute;
+.chk_label2  {
     display: inline-block;
-    width: 390px;
-    height: 55px;
-    border: 1px solid #ccc;
-    padding: 15px 0 0 20px;
-    box-sizing: border-box;
-    background: #fff;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
     cursor: pointer;
+}
+#chkbox_2:checked~.chk_label2 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label2_txt {
+    position: relative;
+    margin-left: 50px;
+}
+.chk_label2_txt2 {
+    color: #aaa;
+}
+/* checkbox custom end */
+
+.chk_span3 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
     top: 0;
     left: 0;
-    color:#999;
-    font-weight: 400;
-}
-#tamna_join_gender_female:checked~.tamna_join_gender_female_label>span {
-    position: absolute;
-    display: inline-block;
-    width: 390px;
-    height: 54px;
-    padding: 15px 0 0 20px;
+    border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-    background: #21bdbd;
+}
+/* checkbox custom */
+#chkbox_3 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label3  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_3:checked~.chk_label3 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label3_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span4 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
     top: 0;
     left: 0;
-    color:#fff;
-    font-weight: 400;
-}
-
-/* birth */
-.tamna_join_birth_box {
-    position: relative;
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #ccc;
     box-sizing: border-box;
 }
-.tamna_join_birth_label {
-    position: absolute;
+/* checkbox custom */
+#chkbox_4 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label4  {
     display: inline-block;
     width: 1080px;
     height: 80px;
-    padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;  
-}
-.tamna_join_birth_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-
-/* tamna_join_birthyear */
-#tamna_join_birthyear {
-    position: absolute;
-    width: 280px;
-    height: 55px;
-    top: 10px;
-    left: 300px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
     cursor: pointer;
 }
-#tamna_join_birthyear:optional{
-    color: #888;
-}
-#tamna_join_birthmonth {
-    position: absolute;
-    width: 235px;
-    height: 55px;
-    top: 10px;
-    left: 595px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-}
-#tamna_join_birthmonth:optional{
-    color: #888;
-}
-#tamna_join_birthday {
-    position: absolute;
-    width: 235px;
-    height: 55px;
-    top: 10px;
-    left: 845px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-}
-#tamna_join_birthday:optional{
-    color: #888;
-}
-
-
-/* phoneNum */
-.tamna_join_phoneNum_box {
-    position: relative;
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #444;
-    box-sizing: border-box;
-}
-.tamna_join_phoneNum_label {
-    position: absolute;
+#chkbox_4:checked~.chk_label4 {
     display: inline-block;
     width: 1080px;
     height: 80px;
-    padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;    
+    background: url(../images/join/join_checked.png) no-repeat;
 }
-.tamna_join_phoneNum_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-#tamna_join_phoneNum {
-    position: absolute;
-    width: 565px;
-    height: 55px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    padding-left: 20px;
-    font-size: 16px;
-    top: 10px;
-    left: 300px;
-    cursor: text;
-}
-.tamna_join_phoneNum_btn {
-    position: absolute;
-    width: 200px;
-    height: 55px;
-    border-radius: 20px;
-    top: 10px;
-    left: 880px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    background: #21bdbd;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-.tamna_join_phoneNum_btn:hover {
-    transition: all 0.1s ease-in-out;
-    background: #fff;
-    color: #000;
-}
-
-
-/* verifyNum */
-.tamna_join_verifyNum_box {
+.chk_label4_txt {
     position: relative;
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #444;
-    box-sizing: border-box;
+    margin-left: 50px;
 }
-.tamna_join_verifyNum_label {
-    position: absolute;
+/* checkbox custom end */
+
+.chk_span5 {
     display: inline-block;
     width: 1080px;
     height: 80px;
-    padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;    
-}
-.tamna_join_verifyNum_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-#tamna_join_verifyNum {
-    position: absolute;
-    width: 565px;
-    height: 55px;
-    border: 1px solid #ccc;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-    padding-left: 20px;
-    font-size: 16px;
-    top: 10px;
-    left: 300px;
-    cursor: text;
 }
-.tamna_join_verifyNum_btn {
-    position: absolute;
-    width: 200px;
-    height: 55px;
-    border-radius: 20px;
-    top: 10px;
-    left: 880px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    background: #21bdbd;
+
+/* checkbox custom */
+#chkbox_5 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label5  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
 }
-.tamna_join_verifyNum_btn:hover {
-    transition: all 0.1s ease-in-out;
-    background: #fff;
-    color: #000;
+#chkbox_5:checked~.chk_label5 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
 }
+.chk_label5_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span6 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_6 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label6 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_6:checked~.chk_label6 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label6_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span7 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_7 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label7  {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_7:checked~.chk_label7 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label7_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span8 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_8 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label8 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_8:checked~.chk_label8 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label8_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span9 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_9 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label9 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_9:checked~.chk_label9 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label9_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span10 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_10 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label10 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_10:checked~.chk_label10 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label10_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span11 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_11 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label11 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_11:checked~.chk_label11 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label11_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+
+.chk_span12 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* checkbox custom */
+#chkbox_12 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chk_label12 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_unchecked.png) no-repeat;
+    margin: 25px 0 0 50px;
+    cursor: pointer;
+}
+#chkbox_12:checked~.chk_label12 {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    background: url(../images/join/join_checked.png) no-repeat;
+}
+.chk_label12_txt {
+    position: relative;
+    margin-left: 50px;
+}
+/* checkbox custom end */
+/* tamna join checklist end */
 
 /* tamna join next btn */
 
@@ -707,7 +850,7 @@
     color: #fff;
     font-size: 24px;
     font-weight: 400;
-    margin: 50px auto 150px;
+    margin: 0 auto 150px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -717,17 +860,13 @@
     transition: all 0.2s ease-in-out;
 }
 
-
 /* footer */
 
 .footer {
-    position: relative;
     height: 180px;
     background: #4c4c4c;
     margin: auto;
-    top: 150px;
 }
-
 .footer_box {
     position: relative;
     width: 1181px;

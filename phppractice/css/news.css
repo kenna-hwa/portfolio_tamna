@@ -1,0 +1,527 @@
+@charset "utf-8";
+
+/* header start */
+
+.header {
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0 auto 150px;
+}
+
+.header_box {
+    position: relative;
+    width: 1181px;
+    height: 100px;
+    margin: auto;
+}
+.header_box h1{
+    position: absolute;
+    width: 89px;
+    height: 90px;
+    background: url(../images/tamna_logo.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 7px;
+    left: 5px;
+}
+.header_box h1 a {
+    height: 100%;
+    display: block;
+}
+
+/* gnb */
+
+.gnb ul li a {
+    display: block;
+    height: 100%;
+}
+.gnb_info {
+    position: absolute;
+    width: 126px;
+    height: 65px;
+    background: url(../images/gnb_info.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 18px;
+    left: 160px;
+}
+.gnb_personal {
+    position: absolute;
+    width: 153px;
+    height: 65px;
+    background: url(../images/gnb_personal.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 18px;
+    left: 395px;
+}
+.gnb_shop {
+    position: absolute;
+    width: 106px;
+    height: 65px;
+    background: url(../images/gnb_shop.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 18px;
+    left: 663px;
+}
+.gnb_customer {
+    position: absolute;
+    width: 128px;
+    height: 65px;
+    background: url(../images/gnb_customer.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 18px;
+    left: 897px;
+}
+.gnb_more {
+    position: absolute;
+    display: block;
+    width: 86px;
+    height: 81px;
+    background: url(../images/gnb_more.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 9px;
+    left: 1095px;
+}
+
+/* sub menu */
+
+.gnb_sub {
+    height: 298px;
+    background: #fff;
+    margin: auto;
+    opacity: 0.95;
+    z-index: -1;
+}
+.gnb_sub_box{
+    position: relative;
+    width: 1181px;
+    height: 298px;
+    margin: auto;
+    z-index: 0;
+}
+.gnb_sub_box h3 {
+    position: absolute;
+    width: 366px;
+    height: 298px;
+    background: url(../images/gnb_sub_wave.jpg) no-repeat left;
+    margin: auto;
+    text-indent: -9999px;
+    left: -200px;
+}
+.gnb_info_sub {
+    position: relative;
+    width: 140px;
+    height: 298px;
+    margin: auto;
+    z-index: 1;
+    left: -8px;
+}
+.gnb_info_sub a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1px;
+    color: #424242;
+    text-indent: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.gnb_info_sub a::after {
+    position: absolute; 
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fece08;
+    box-shadow: 2px 2px 1px #eee;
+    transition: all 0.25s ease-out;
+    left: 50%;
+    width: 0;
+}
+.gnb_info_sub a:hover::after {
+    transition: all 0.2s ease-in-out;
+    left: 1px;
+    width: 135px;
+}
+.gnb_personal_sub {
+    position: relative;
+    width: 140px;
+    height: 298px;
+    margin: auto;
+    z-index: 1;
+}
+.gnb_personal_sub a{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    color: #424242;
+    text-indent: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.gnb_personal_sub a::after {
+    position: absolute; 
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fece08;
+    box-shadow: 2px 2px 1px #eee;
+    transition: all 0.25s ease-out;
+    left: 50%;
+    width: 0;
+}
+.gnb_personal_sub a:hover::after {
+    transition: all 0.2s ease-in-out;
+    left: 25px;
+    width: 90px;
+}
+.gnb_shop_sub {
+    position: relative;
+    width: 140px;
+    height: 298px;
+    margin: auto;
+    z-index: 1;
+    left: -15px;
+}
+.gnb_shop_sub a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    color: #424242;
+    text-indent: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.gnb_shop_sub a::after {
+    position: absolute; 
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fece08;
+    box-shadow: 2px 2px 1px #eee;
+    transition: all 0.25s ease-out;
+    left: 50%;
+    width: 0;
+}
+.gnb_shop_sub a:hover::after {
+    transition: all 0.2s ease-in-out;
+    left: 1px;
+    width: 135px;
+}
+.gnb_customer_sub {
+    position: relative;
+    width: 140px;
+    height: 298px;
+    margin: auto;
+    z-index: 1;
+    left: -4px;
+}
+.gnb_customer_sub a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    color: #424242;
+    text-indent: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.gnb_customer_sub a::after {
+    position: absolute; 
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fece08;
+    box-shadow: 2px 2px 1px #eee;
+    transition: all 0.25s ease-out;
+    left: 50%;
+    width: 0;
+}
+.gnb_customer_sub a:hover::after {
+    transition: all 0.2s ease-in-out;
+    left: 20px;
+    width: 100px;
+}
+
+/* main */
+
+/* tamna news */
+
+.tamna_news{
+    position: relative;
+    width: 250px;
+    height: 222px;
+    margin: 0 auto 50px;
+}
+.tamna_news h2::before {
+    position: absolute;
+    width: 82px;
+    height: 80px;
+    content: "";
+    background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
+    top: -130px;
+    left: 50%;
+    margin-left: -41px;
+}
+.tamna_news h2 {
+    position: relative;
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    text-align: center;
+    top: 130px;
+}
+.tamna_news_txt {
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: -1px;
+    line-height: 22px;
+    text-align: left;
+    top: 203px;
+    left: 50%;
+    margin: 0 0 50px -125px;
+}
+
+/* tamna news search */
+
+.tamna_news_search {
+    position: relative;
+    width: 1080px;
+    height: 40px;
+    margin: 0 auto 50px;
+}
+.tamna_news_search_box {
+    position: absolute;
+    right: 0;
+}
+.tamna_news_category {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    background: #fff;
+    color: #777;
+    font-size: 16px;
+    padding-left: 20px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tamna_news_search_text {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    background: #fff;
+    color: #777;
+    font-size: 16px;
+    padding-left: 20px;
+    cursor: text;
+    float: left;
+    margin-right: 10px;
+    }
+.tamna_news_search_submit_btn {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    background: #21bdbd;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    transition: all 0.2s linear;
+}
+.tamna_news_search_submit_btn:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+/* table */
+.tamna_news_table_box {
+    width: 1080px;
+    margin: 0 auto 150px;
+}
+.tamna_news_table {
+    width: 1080px;
+    height: 400px;
+    font-size: 16px;
+    letter-spacing: -1px;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: center;
+    border-top: 2px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+/* table row */
+.tamna_news_table a {
+    display: block;
+    height: 100%;
+    line-height: 80px;
+}
+.tamna_news_table tr:nth-child(1) {
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+}
+.tamna_news_table tr:nth-child(2) {
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_news_table tr:nth-child(2):hover {
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_news_table tr:nth-child(3) {
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+}
+.tamna_news_table tr:nth-child(3):hover {
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_news_table tr:nth-child(4) {
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #4c4c4c;
+    box-sizing: border-box;
+}
+.tamna_news_table tr:nth-child(4):hover {
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_news_table tr:nth-child(5) {
+    width: 1080px;
+    height: 80px;
+}
+.tamna_news_table tr:nth-child(5):hover {
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+}
+/* table width */
+.tamna_news_tableHead_tableNum {
+    width: 100px;
+}
+.tamna_news_tableHead_tableTitle {
+    width: 850px;
+}
+.tamna_news_tableHead_tableDate {
+    width: 130px;
+}
+
+/* tableTitle align */
+.tamna_news_tableTitle {
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+/* tableData color */
+.tamna_news_tableDate {
+    color: #999;
+    cursor: default;
+
+}
+
+/* category diplay none */
+.tamna_news_tableHead_tableCategory {
+    width: 2px;
+    display: none;
+}
+.tamna_news_tableCategory {
+    width: 2px;
+    display: none;
+}
+
+/* paging */
+.tamna_news_table_paging {
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+}
+.tamna_news_table_paging a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    background: #21bdbd;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    line-height: 38px; 
+}
+
+/* footer */
+
+.footer {
+    height: 180px;
+    background: #4c4c4c;
+    margin: auto;
+}
+.footer_box {
+    position: relative;
+    width: 1181px;
+    height: 180px;
+    margin: auto;
+}
+.footer_box a {
+    display: block;
+    height: 100%;
+}
+.footer_box h2 {
+    position: absolute;
+    width: 86px;
+    height: 150px;
+    background: url(../images/footer_tamna_logo.jpg) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    top: 15px;
+    left: 35px;
+}
+.footer_txt {
+    position: absolute;
+    font-size: 16px;
+    color: #eee;
+    float: left;
+    top: 65px;
+    left: 220px;
+}
+address {
+    float: left;
+    margin-bottom: 5px;
+}
+address::after {
+    content: " | ";
+    margin: 0 10px 0 5px;
+}
+.footer_txt p:nth-child(2) {
+    float: left;
+    margin-bottom: 5px;
+}
+.footer_jejugoverment {
+    position: absolute;
+    width: 217px;
+    height: 70px;
+    background: url(../images/footer_jeju_logo.jpg) no-repeat center;
+    text-indent: -9999px;
+    top: 60px;
+    right: 50px;
+}

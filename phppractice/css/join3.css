@@ -262,8 +262,7 @@
     content: "";
     background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
     top: -130px;
-    left: 50%;
-    margin-left: -41px;
+    left: 497px;
 }
 .tamna_join h2 {
     position: relative;
@@ -281,9 +280,10 @@
     line-height: 22px;
     text-align: left;
     top: 215px;
-    left: 50%;
-    margin: 0  0 50px -110px;
+    left: 395px;
+    margin-bottom: 50px;
 }
+
 
 /* tamna join order */
 
@@ -347,14 +347,128 @@
 /* tamna input form */
 
 .tamna_input_form {
+    position: relative;
     width: 1080px;
-    height: 400px;
+    height: 240px;
     margin: 0 auto 50px;
     font-size: 16px;
 }
 
-/* username */
-.tamna_join_username_box {
+
+
+/* id */
+
+.tamna_join_id_box {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    border-top: 1px solid #444;
+    box-sizing: border-box;
+}
+.tamna_join_id_label {
+    position: absolute;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_join_id_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
+#tamna_join_id {
+    position: absolute;
+    display: inline-block;
+    width: 263px;
+    height: 55px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 0px solid #fff;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    top: 12px;
+    left: 300px;
+    cursor: text;
+}
+.tamna_join_id_select_input {
+    position: absolute;
+    width: 237px;
+    height: 55px;
+    border-top: 1px solid #ccc;
+    border-left: 0px solid #fff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    top: 12px;
+    left: 562px;
+}
+.tamna_join_id_select_input>span {
+    position: relative;
+    top: 15px;
+    left:0;
+    font-size: 16px;
+    font-weight: 500;
+}
+#tamna_join_id_domain {
+    position: absolute;
+    width: 265px;
+    height: 55px;
+    border: 1px solid #ccc;
+    top: 12px;
+    left: 815px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+#tamna_join_id_domain:optional {
+    color: #444;
+    font-size: 18px;
+}
+
+/* tamna_input_pw */
+.tamna_input_pw_box {
+    position: relative;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    border-top: 1px solid #444;
+    box-sizing: border-box;
+}
+.tamna_input_pw_label {
+    position: absolute;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_input_pw_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
+#tamna_input_pw {
+    position: absolute;
+    width: 780px;
+    height: 55px;
+    top: 12px;
+    left: 300px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 16px;
+    cursor: text;
+}
+
+/* tamna_input_pw_check */
+.tamna_input_pw_check_box {
     position: relative;
     display: inline-block;
     width: 1080px;
@@ -363,7 +477,8 @@
     border-bottom: 1px solid #444;
     box-sizing: border-box;
 }
-.tamna_join_username_label {
+.tamna_input_pw_check_label {
+    position: absolute;
     display: inline-block;
     width: 1080px;
     height: 80px;
@@ -371,334 +486,28 @@
     line-height: 75px;
     box-sizing: border-box;    
 }
-.tamna_join_username_label::after {
+.tamna_input_pw_check_label::after {
     position: absolute;
     content: "*";
     margin-top: 4px;
     color: rgb(185, 0, 0);
 }
-#tamna_join_username {
+#tamna_input_pw_check {
     position: absolute;
-    display: inline-block;
     width: 780px;
     height: 55px;
-    border: 1px solid #ccc;
-    padding-left: 20px;
-    box-sizing: border-box;
-    font-size: 16px;
-    top: 11px;
-    right: 0;
-    cursor: text;
-}
-
-
-/* gender */
-.tamna_join_gender_box {
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #444;
-    box-sizing: border-box;
-}
-.tamna_join_gender_label {
-    position: absolute;
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;    
-}
-.tamna_join_gender_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-
-/* male */
-.tamna_join_gender_male_box {
-    position: relative; 
-    width: 390px;
-    height: 55px;
-    box-sizing: border-box;
-    top: 10px;
-    left: 299px;
-}
-
-/* male radio button custom */
-#tamna_join_gender_male { /* gender input*/
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.tamna_join_gender_male_label {
-    position: absolute;
-    display: inline-block;
-    width: 390px;
-    height: 55px;
-    border: 1px solid #ccc;
-    padding: 15px 0 0 20px;
-    box-sizing: border-box;
-    background: #fff;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    color:#999;
-    font-weight: 400;
-}
-#tamna_join_gender_male:checked~.tamna_join_gender_male_label>span {
-    position: absolute;
-    display: inline-block;
-    width: 390px;
-    height: 54px;
-    padding: 15px 0 0 20px;
-    box-sizing: border-box;
-    background: #21bdbd;
-    top: 0;
-    left: 0;
-    color:#fff;
-    font-weight: 400;
-}
-
-/* female */
-
-.tamna_join_gender_female_box {
-    position: relative; 
-    width: 390px;
-    height: 55px;
-    box-sizing: border-box;
-    top: -45px;
-    left: 690px;
-}
-
-/* female radio button custom */
-
-#tamna_join_gender_female { /* gender input*/
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: -1px; 
-    overflow: hidden; 
-    clip:rect(0,0,0,0); 
-    border: 0;
-}
-.tamna_join_gender_female_label {
-    position: absolute;
-    display: inline-block;
-    width: 390px;
-    height: 55px;
-    border: 1px solid #ccc;
-    padding: 15px 0 0 20px;
-    box-sizing: border-box;
-    background: #fff;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    color:#999;
-    font-weight: 400;
-}
-#tamna_join_gender_female:checked~.tamna_join_gender_female_label>span {
-    position: absolute;
-    display: inline-block;
-    width: 390px;
-    height: 54px;
-    padding: 15px 0 0 20px;
-    box-sizing: border-box;
-    background: #21bdbd;
-    top: 0;
-    left: 0;
-    color:#fff;
-    font-weight: 400;
-}
-
-/* birth */
-.tamna_join_birth_box {
-    position: relative;
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #444;
-    box-sizing: border-box;
-}
-.tamna_join_birth_label {
-    position: absolute;
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;  
-}
-.tamna_join_birth_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-
-/* tamna_join_birthyear */
-#tamna_join_birthyear {
-    position: absolute;
-    width: 280px;
-    height: 55px;
-    top: 10px;
+    top: 12px;
     left: 300px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-}
-#tamna_join_birthyear:optional{
-    color: #888;
-}
-#tamna_join_birthmonth {
-    position: absolute;
-    width: 235px;
-    height: 55px;
-    top: 10px;
-    left: 595px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-}
-#tamna_join_birthmonth:optional{
-    color: #888;
-}
-#tamna_join_birthday {
-    position: absolute;
-    width: 235px;
-    height: 55px;
-    top: 10px;
-    left: 845px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-}
-#tamna_join_birthday:optional{
-    color: #888;
-}
-
-
-/* phoneNum */
-.tamna_join_phoneNum_box {
-    position: relative;
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #444;
-    box-sizing: border-box;
-}
-.tamna_join_phoneNum_label {
-    position: absolute;
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
     padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;    
-}
-.tamna_join_phoneNum_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-#tamna_join_phoneNum {
-    position: absolute;
-    width: 565px;
-    height: 55px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    padding-left: 20px;
-    font-size: 16px;
-    top: 10px;
-    left: 300px;
     cursor: text;
-}
-.tamna_join_phoneNum_btn {
-    position: absolute;
-    width: 200px;
-    height: 55px;
-    border-radius: 20px;
-    top: 10px;
-    left: 880px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    background: #21bdbd;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-.tamna_join_phoneNum_btn:hover {
-    transition: all 0.1s ease-in-out;
-    background: #fff;
-    color: #000;
-}
-
-
-/* verifyNum */
-.tamna_join_verifyNum_box {
-    position: relative;
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #444;
-    box-sizing: border-box;
-}
-.tamna_join_verifyNum_label {
-    position: absolute;
-    display: inline-block;
-    width: 1080px;
-    height: 80px;
-    padding-left: 20px;
-    line-height: 75px;
-    box-sizing: border-box;    
-}
-.tamna_join_verifyNum_label::after {
-    position: absolute;
-    content: "*";
-    margin-top: 4px;
-    color: rgb(185, 0, 0);
-}
-#tamna_join_verifyNum {
-    position: absolute;
-    width: 565px;
-    height: 55px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    padding-left: 20px;
     font-size: 16px;
-    top: 10px;
-    left: 300px;
-    cursor: text;
-}
-.tamna_join_verifyNum_btn {
-    position: absolute;
-    width: 200px;
-    height: 55px;
-    border-radius: 20px;
-    top: 10px;
-    left: 880px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    background: #21bdbd;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-.tamna_join_verifyNum_btn:hover {
-    transition: all 0.1s ease-in-out;
-    background: #fff;
-    color: #000;
 }
 
-/* tamna join next btn */
+/* tamna join finish btn */
 
-.tamna_join_next_btn {
+.tamna_join_finish_btn {
     display: block;
     width: 350px;
     height: 100px;
@@ -707,11 +516,11 @@
     color: #fff;
     font-size: 24px;
     font-weight: 400;
-    margin: 50px auto 150px;
+    margin: 0 auto 150px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
-.tamna_join_next_btn:hover {
+.tamna_join_finish_btn:hover {
     background: #fff;
     color: #000;
     transition: all 0.2s ease-in-out;
@@ -721,13 +530,10 @@
 /* footer */
 
 .footer {
-    position: relative;
     height: 180px;
     background: #4c4c4c;
     margin: auto;
-    top: 150px;
 }
-
 .footer_box {
     position: relative;
     width: 1181px;
