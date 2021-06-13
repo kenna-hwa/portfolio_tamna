@@ -516,7 +516,7 @@
     color: #fff;
     font-size: 24px;
     font-weight: 400;
-    margin: 0 auto 150px;
+    margin: 50px auto 150px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -530,10 +530,13 @@
 /* footer */
 
 .footer {
+    position: relative;
     height: 180px;
     background: #4c4c4c;
     margin: auto;
+    top: 170px;
 }
+
 .footer_box {
     position: relative;
     width: 1181px;
