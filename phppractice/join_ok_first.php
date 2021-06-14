@@ -15,13 +15,13 @@ $sql = "insert into tmembers (tu_check) values ('$SelectCheck');";
 //데이터베이스에 값 전달
 mysqli_query($dbcon, $sql);
 
-//echo "
+echo "
 
-//    <script type=\"text/javascript\">
-//location.href=\"6_join2_황주화.html\";
+    <script type=\"text/javascript\">
+location.href=\"6_join2_황주화.html\";
 
- //   </script> 
+   </script> 
     
-//";
+";
 
 ?>
