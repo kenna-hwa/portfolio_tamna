@@ -408,12 +408,18 @@
     top: 12px;
     left: 562px;
 }
-.tamna_join_id_select_input>span {
+/* .tamna_join_id_select_input>span {
     position: relative;
     top: 15px;
     left:0;
     font-size: 16px;
     font-weight: 500;
+} */
+#at {
+    position: absolute;
+    font-size: 20px;
+    top: 25px;
+    left: 550px;
 }
 #tamna_join_id_domain {
     position: absolute;
