@@ -473,6 +473,19 @@ select::-ms-expand { display: none; }
     height: 40px;
     margin: 0 auto;
 }
+.pagingbox {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    background: #21bdbd;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    line-height: 38px;
+    float: left; 
+}
 .tamna_shop_search_result_table_paging div:nth-child(1) a{
 
     width: 40px;

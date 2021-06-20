@@ -1,3 +1,80 @@
+<?php
+
+//DB연결
+
+include "php/inc/dbcon.php";
+
+
+//쿼리 작성
+
+$sql = "select * from tshops;";
+
+
+//쿼리 전송
+
+$result = mysqli_query($dbcon, $sql);
+
+//paging : 전체 데이터 개수 구하기
+$num = mysqli_num_rows($result);
+
+//paging : 한 페이지 당 글 개수
+$list_num = 10;
+
+//paging : 한 블럭 당 페이지 개수
+$page_num = 3;
+
+//paging : 현재 페이지
+$page = isset($_GET["page"])? $_GET["page"] : 1;
+
+//paging : 전체 페이지 수 = 전체 데이터 / 페이지당 데이터 개수
+//ceil : 올림값. 소수점이 나오면 무조건 올림! 
+//floor : 내림값. 소수점이 나오면 무조건 내림!
+//round : 반올림. 0.4까지 내리고 0.5부터 올린다.
+$total_page = ceil($num / $list_num);
+//echo $total_page;
+
+//paging : 총 블럭 수 = 전체 페이지 수 / 블럭 당 페이지 수
+$total_block = ceil($total_page / $page_num);
+//echo $total_block;
+
+//paging : 현재 블럭 번호 = 현재 페이지 번호 / 블록 당 페이지 수
+$now_block = ceil($page / $page_num);
+
+//paging : 블럭 당 시작 페이지 번호 = (해당 글의 블럭 번호 - 1) * 블럭 당 페이지 수 + 1;
+$s_pageNum = ($now_block - 1) * $page_num + 1;
+if ($s_pageNum <= 0){
+    $s_pageNum = 1;
+};
+
+//paging : 블럭 당 마지막 페이지 번호 = 현재 블럭 번호 * 블럭 당 페이지 수
+$e_pageNum = $now_block * $page_num;
+//마지막 번호가 전체 페이지 수를 넘지 않도록
+if($e_pageNum > $total_page){
+    $e_pageNum = $total_page;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -7,7 +84,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>탐나는전 가맹점 찾기</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css">
-    <link type="text/css" rel="stylesheet" href="css/shop_search2.css">
+    <link type="text/css" rel="stylesheet" href="css/shop_search1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
@@ -107,85 +184,6 @@
                 <p class="tamna_shop_search_city_txt">* 카테고리, 지역, 매장명 중 최소 한 가지를 입력 후 검색 버튼을 눌러주세요.</p>
                 <button type="submit" id="tamna_shop_search_btn">검색</button>
             </div>
-        </div>
-        <div class="tamna_shop_search_result">
-            <h3>결제 가능 매장</h3>
-            <span>검색 결과 2822개</span>
-            <div class="tamna_shop_search_result_table_box">
-                <table class="tamna_shop_search_result_table">
-                    <thead>
-                        <tr>
-                        <th>매장명</th>
-                        <th>업종</th>
-                        <th>주소</th>
-                        <th>전화번호</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>(ji) 지머리디자인</td>
-                        <td>미용</td>
-                        <td>제주 제주시 이도 1동</td>
-                        <td>064)751-8252</td>
-                    </tr>
-                    <tr>
-                        <td>(주) 반석메디칼</td>
-                        <td>의료기관/제약</td>
-                        <td>제주 제주시 신광로1길 17</td>
-                        <td>064)712-0190</td>
-                    </tr>
-                    <tr>
-                        <td>(주) 시온요양기관</td>
-                        <td>의료기관/제약</td>
-                        <td>제주 제주시 아라 1동</td>
-                        <td>064)753-7533</td>
-                    </tr>
-                    <tr>
-                        <td>(주) 온누리바이오엔텍</td>
-                        <td>의료기관/제약</td>
-                        <td>제주 제주시 신광로1길 10</td>
-                        <td>064)757-5888</td>
-                    </tr>
-                    <tr>
-                        <td>(주) 행복</td>
-                        <td>미용</td>
-                        <td>제주 제주시 연동</td>
-                        <td>064)711-4000</td>
-                    </tr>
-                    <tr>
-                        <td>09샵</td>
-                        <td>미용</td>
-                        <td>제주 제주시 은남1길 17</td>
-                        <td>064)111-1111</td>
-                    </tr>
-                    <tr>
-                        <td>100 프로스킨케어</td>
-                        <td>미용</td>
-                        <td>제주 서귀포시 태평로 531</td>
-                        <td>064)733-6442</td>
-                    </tr>
-                    <tr>
-                        <td>1090헤어칼라</td>
-                        <td>미용</td>
-                        <td>제주 제주시 남녕로8길 6</td>
-                        <td>064)746-1090</td>
-                    </tr>
-                    <tr>
-                        <td>1month Nail</td>
-                        <td>미용</td>
-                        <td>제주 제주시 수덕9길 81-6</td>
-                        <td>064)747-8360</td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-
-            <div class="tamna_shop_search_result_table_paging">
-                <div><a href="#">1</a></div>
-                <div><a href="#">2</a></div>
-                <div><a href="#">3</a></div>
-            </div>
-
         </div>
     </main>
     <!-- main end -->
