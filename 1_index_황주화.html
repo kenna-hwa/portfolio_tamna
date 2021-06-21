@@ -20,10 +20,10 @@
     <script type="text/javascript">
         $(function(){
             //gnb
-            $(".header").mouseenter(function () {
+            $(".topmenu").mouseenter(function () {
                 $(".sub, .gnb_sub_box").stop().slideDown("2000");
             });
-            $(".header").mouseleave(function () {
+            $(".topmenu").mouseleave(function () {
                 $(".sub, .gnb_sub_box").stop().slideUp("2000");
             });
 
@@ -52,7 +52,7 @@
     <header id="header" class="header">
         <header id="header" class="header">
             <div class="header_box">
-                <h1><a href="#">탐나는전</a></h1>
+                <h1><a href="#" class="topmenu">탐나는전</a></h1>
                 <!-- gnb start -->
                 <nav class="gnb" id="topwrap">
                     <h2 class="blind">상단 메뉴</h2>
@@ -89,7 +89,7 @@
                             </ul> 
                         </li>
                     </ul>
-                    <a href="#" class="gnb_more">더보기</a>
+                    <a href="#" class="gnb_more topmenu">더보기</a>
                 </nav>
             </div>
             <div class="gnb_sub_box">
