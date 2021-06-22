@@ -19,6 +19,7 @@
     <!-- script start -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
+    <script src="js/signin.js"></script>
     <!-- script end -->
 </head>
 
@@ -32,7 +33,7 @@
                 <h2 class="blind">상단 메뉴</h2>
                 <ul>
                     <li class="gnb_info"><a href="intro.html" class="topmenu">탐나는전</a>
-                         <ul class="gnb_info_sub sub">
+                        <ul class="gnb_info_sub sub">
                             <li><a href="intro.html#main">탐나는전 소개</a></li>
                             <li><a href="intro.html#benefit">탐나는전 혜택</a></li>
                             <li><a href="intro.html#howto">탐나는전 발급방법</a></li>
@@ -52,7 +53,7 @@
                             <li><a href="shop_apply.html">가맹점 등록</a></li>
                             <li><a href="shop_revenue.html">가맹점 매출확인</a></li>
                             <li><a href="shop_download.html">홍보물 다운</a></li>
-                        </ul> 
+                        </ul>
                     </li>
                     <li class="gnb_customer"><a href="#" class="topmenu">고객센터</a>
                         <ul class="gnb_customer_sub sub">
@@ -60,7 +61,7 @@
                             <li><a href="news.html">NEWS</a></li>
                             <li><a href="qna_toggleclose.html">자주묻는질문</a></li>
                             <li><a href="contact.html">문의하기</a></li>
-                        </ul> 
+                        </ul>
                     </li>
                 </ul>
                 <a href="#" class="gnb_more topmenu">더보기</a>
@@ -70,7 +71,7 @@
             <div class="gnb_sub">
                 <h3>서브메뉴</h3>
             </div>
-        </div> 
+        </div>
         <!-- gnb end -->
     </header>
     <!-- header end -->
@@ -86,12 +87,18 @@
 
 
             <div class="tamna_shop_login_input">
-                
-                <input class="tamna_shop_login_id" type="text" name="email" id="email" placeholder="아이디(이메일 주소)">
-                <label for="email" class="tamna_shop_login_id_txt">아이디를 입력해주세요. (아이디는 이메일 형식입니다.)</label>
-                <input class="tamna_shop_login_pw" type="password" name="password" id="password" placeholder="비밀번호">
-                <label for="password" class="tamna_shop_login_pw_txt">비밀번호를 입력해주세요.</label>
-                <button class="tamna_shop_login_button" type="submit" value="login">로그인</button>
+                <form name="signin" action="php/signinOk.php" method="POST" onsubmit="return signinFormCheck()">
+                    <fieldset>
+                        <legend class="blind">로그인</legend>
+                        <input class="tamna_shop_login_id" type="text" name="email" id="email"
+                            placeholder="아이디(이메일 주소)">
+                        <label for="email" class="tamna_shop_login_id_txt">아이디를 입력해주세요. (아이디는 이메일 형식입니다.)</label>
+                        <input class="tamna_shop_login_pw" type="password" name="password" id="password"
+                            placeholder="비밀번호">
+                        <label for="password" class="tamna_shop_login_pw_txt">비밀번호를 입력해주세요.</label>
+                        <button class="tamna_shop_login_button" type="submit">로그인</button>
+                    </fieldset>
+                </form>
             </div>
 
             <div class="tamna_shop_login_find">
@@ -103,7 +110,7 @@
             </div>
 
             <div class="tamna_shop_login_fromapp">
-                <a href="#">개인회원인가요?</a>
+                <a href="signin.php">개인회원인가요?</a>
             </div>
 
         </div>
