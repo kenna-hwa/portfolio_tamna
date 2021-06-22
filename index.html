@@ -18,30 +18,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/index.js"></script>
     <script>
-        $(function(){
-            //gnb
-            $(".topmenu").mouseenter(function () {
-                $(".sub, .gnb_sub_box").stop().slideDown("1000");
-            });
-            $(".main").mouseenter(function () {
-                $(".sub, .gnb_sub_box").stop().slideUp("1000");
-            });
 
-            //이미지 캐러셀
-            $('.bxslider').bxSlider({
-                auto: true,
-                autoDelay: 0,
-                speed: 1900,
-                autoControls: true,
-                stopAutoOnClick: true,
-                pager: true,
-                slideWidth: 1600,
-                slideMargin: 0,
-                infiniteLoop: true,
-                touchEnabled: true,
-                autoHover: true
-            });
-          });
     </script>
     <!-- script end -->
 </head>
@@ -123,10 +100,10 @@
                     </div>
                     <div class="main_img_3 item">
                         <img src="images/index/main_img_3.jpg" alt="가맹점 신청 안내">
-                        <!-- <a href="#" class="main_img_link">                        
+                        <a href="#" class="main_img_link">                        
                             가맹점 신청 안내
                             삼춘! 아직 가맹점 신청 안하맨?
-                        </a> -->
+                        </a>
                     </div> 
                 </div>
         </div>
