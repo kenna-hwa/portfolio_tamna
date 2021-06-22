@@ -6,129 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>탐나는전</title>
-    <!-- css start -->
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/tamna_favicon.ico" />    
-    <!-- css end -->
-    <!-- script start -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="js/index.js"></script>
-    <script>
-        $(function(){
-            //gnb
-            $(".topmenu").mouseenter(function () {
-                $(".sub, .gnb_sub_box").stop().slideDown("1000");
-            });
-            $(".main").mouseenter(function () {
-                $(".sub, .gnb_sub_box").stop().slideUp("1000");
-            });
-
-            //이미지 캐러셀
-            $('.bxslider').bxSlider({
-                auto: true,
-                autoDelay: 0,
-                speed: 1900,
-                autoControls: true,
-                stopAutoOnClick: true,
-                pager: true,
-                slideWidth: 1600,
-                slideMargin: 0,
-                infiniteLoop: true,
-                touchEnabled: true,
-                autoHover: true
-            });
-          });
-    </script>
-    <!-- script end -->
+    <link rel="shortcut icon" href="images/tamna_favicon.ico" />
 </head>
 
 <body>
     <!-- header start -->
-    <div class="header_section"></div>
     <header id="header" class="header">
-            <div class="header_box">
-                <h1><a href="#" class="topmenu">탐나는전</a></h1>
-                <!-- gnb start -->
-                <nav class="gnb" id="topwrap">
-                    <h2 class="blind">상단 메뉴</h2>
-                    <ul>
-                        <li class="gnb_info"><a href="#" class="topmenu">탐나는전</a>
-                             <ul class="gnb_info_sub sub">
-                                <li><a href="#">탐나는전 소개</a></li>
-                                <li><a href="#">탐나는전 혜택</a></li>
-                                <li><a href="#">탐나는전 발급방법</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb_personal"><a href="#" class="topmenu">개인사용자</a>
-                            <ul class="gnb_personal_sub sub">
-                                <li><a href="#">카드 신청</a></li>
-                                <li><a href="#">카드 등록</a></li>
-                                <li><a href="#">이용 내역</a></li>
-                                <li><a href="#">가맹점 찾기</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb_shop"><a href="#" class="topmenu">가맹점</a>
-                            <ul class="gnb_shop_sub sub">
-                                <li><a href="#">가맹점 혜택</a></li>
-                                <li><a href="#">가맹점 등록</a></li>
-                                <li><a href="#">가맹점 매출확인</a></li>
-                                <li><a href="#">홍보물 다운</a></li>
-                            </ul> 
-                        </li>
-                        <li class="gnb_customer"><a href="#" class="topmenu">고객센터</a>
-                            <ul class="gnb_customer_sub sub">
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">NEWS</a></li>
-                                <li><a href="#">자주묻는질문</a></li>
-                                <li><a href="#">문의하기</a></li>
-                            </ul> 
-                        </li>
-                    </ul>
-                    <a href="#" class="gnb_more topmenu">더보기</a>
-                </nav>
-            </div>
+        <div class="header_box">
+            <h1><a href="#">탐나는전</a></h1>
+            <!-- gnb start -->
+            <nav class="gnb">
+                <h2 class="blind">상단 메뉴</h2>
+                <ul>
+                    <li class="gnb_info"><a href="#">탐나는전</a>
+                        <ul class="gnb_info_sub">
+                            <li><a href="#">탐나는전 소개</a></li>
+                            <li><a href="#">탐나는전 혜택</a></li>
+                            <li><a href="#">탐나는전 발급방법</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_personal"><a href="#">개인사용자</a>
+                        <ul class="gnb_personal_sub">
+                            <li><a href="#">카드 신청</a></li>
+                            <li><a href="#">카드 등록</a></li>
+                            <li><a href="#">이용 내역</a></li>
+                            <li><a href="#">가맹점 찾기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_shop"><a href="#">가맹점</a>
+                        <ul class="gnb_shop_sub">
+                            <li><a href="#">가맹점 혜택</a></li>
+                            <li><a href="#">가맹점 등록</a></li>
+                            <li><a href="#">가맹점 매출확인</a></li>
+                            <li><a href="#">홍보물 다운</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_customer"><a href="#">고객센터</a>
+                        <ul class="gnb_customer_sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#" class="gnb_more">더보기</a>
+            </nav>
+        </div>
+        <div class="gnb_sub">
             <div class="gnb_sub_box">
-                <div class="gnb_sub">
-                    <h3>서브메뉴</h3>
-                </div>
-            </div> 
-            <!-- gnb end -->
-        </header>
-        <!-- header end -->
+                <h3>서브메뉴</h3>
+            </div>
+        </div>
+        <!-- gnb end -->
+    </header>
+    <!-- header end -->
 
     <!-- main start -->
     <main id="main" class="main">
         <!-- main img start -->
-        <div class="main_img_wrap">
+        <div class="main_img">
             <h2 class="blind">메인이미지</h2>
-                <div class="bxslider">
-                    <div class="main_img_1 item">
-                        <img src="images/index/main_img_1.jpg" alt="탐나는전 혜택 소개">
-                        <!-- 탐나는전 혜택 소개
-                        1번 카드 충전시 10% 추가 적립
-                        2번 지류 상품권 구매 시 10% 즉시 할인
-                        3번 탐나는전 앱에서 카드 충전관리 기능 제공
-                        4번 지류상품권 현금영수증 발급 가능
-                        5번 카드사용액 30% 소득공제 (전통시장은 40%)
-                        탐나는전 앱 에서 소득공제를 신청하셔야 합니다. -->
-                    </div>
-                    <div class="main_img_2 item">
-                        <img src="images/index/main_img_2.jpg" alt="탐나는전 어플 설치하기">
-                            <!-- 탐나는전 어플 설치하기
-                            앱에서 간편하게 탐나는전 이용 -->
-                    </div>
-                    <div class="main_img_3 item">
-                        <img src="images/index/main_img_3.jpg" alt="가맹점 신청 안내">
-                        <!-- <a href="#" class="main_img_link">                        
-                            가맹점 신청 안내
-                            삼춘! 아직 가맹점 신청 안하맨?
-                        </a> -->
-                    </div> 
-                </div>
+            <ul>
+                <li class="main_img_1">
+                    탐나는전 혜택 소개
+                    1번 카드 충전시 10% 추가 적립
+                    2번 지류 상품권 구매 시 10% 즉시 할인
+                    3번 탐나는전 앱에서 카드 충전관리 기능 제공
+                    4번 지류상품권 현금영수증 발급 가능
+                    5번 카드사용액 30% 소득공제 (전통시장은 40%)
+                    탐나는전 앱 에서 소득공제를 신청하셔야 합니다.
+                </li>
+                <!-- <li class="main_img_2">
+                        탐나는전 어플 설치하기
+                        앱에서 간편하게 탐나는전 이용
+                        <a href="#">구글플레이에서 다운로드 큐알코드</a>
+                        <a href="#">앱스토어에서 다운로드 큐알코드</a>
+                    </li> -->
+                <!-- <li class="main_img_3">
+                        가맹점 신청 안내
+                        삼춘! 아직 가맹점 신청 안하맨?
+                        <a href="#">가맹점 신청하기</a>
+                    </li> -->
+            </ul>
+            <a href="#" class="main_img_prev">이전</a>
+            <a href="#" class="main_img_next">다음</a>
         </div>
         <!-- main img end -->
 
@@ -166,7 +132,7 @@
                     </ul>
                 </div>
             </div>
-        
+
             <div class="board_bottom">
                 <div class="board_qna">
                     <h3><a href="#">자주묻는질문</a></h3>
@@ -193,7 +159,7 @@
             <h2 class="blind">홍보영상</h2>
 
             <div class="youtube_official">
-                <h3><a href="#" class="youtube_official_link">유튜브 비디오</a></h3>
+                <h3><a href="#">유튜브 비디오</a></h3>
                 <div class="youtube_official_txt">
                     <div class="youtube_official_txt1">
                         제주형<br>
@@ -214,7 +180,7 @@
             </div>
 
             <div class="youtube_kb">
-                <h3><a href="#" class="youtube_kb_link">유튜브 비디오</a></h3>
+                <h3><a href="#">유튜브 비디오</a></h3>
                 <div class="youtube_kb_txt">
                     <div class="youtube_kb_txt1">
                         탐나는전<br>
