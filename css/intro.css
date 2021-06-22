@@ -424,26 +424,29 @@
     border: 1px solid #dadada;
     box-sizing: border-box;
     margin: 0 auto 100px;
+    cursor: pointer;
 }
- .tamna_howto_KB_title>a{
+ .tamna_howto_KB_title{
     display: block;
     width: 33.333%;
-    height: 40px;
+    height: 39px;
     border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    background-color: #fff;
     box-sizing: border-box;
     text-align: center;
     line-height: 37px;
     float: left;
     transition: all 0.1s ease-in-out;
 } 
-.tamna_howto_KB_title>a:hover {
+.tamna_howto_KB_title:hover {
     width: 33.333%;
-    height: 40px;
+    height: 39px;
     font-weight: 400;
     background: #21bdbd;
     transition: all 0.1s ease-in-out;
 }
- .tamna_howto_Kona_title>a{
+ .tamna_howto_Kona_title{
     display: block;
     width: 33.333%;
     height: 40px;
@@ -456,14 +459,14 @@
     float: left;
     transition: all 0.1s ease-in-out;
 } 
-.tamna_howto_Kona_title>a:hover {
+.tamna_howto_Kona_title:hover {
     width: 33.333%;
-    height: 40px;
+    height: 39px;
     font-weight: 400;
     background: #21bdbd;
     transition: all 0.1s ease-in-out;
 }
-.tamna_howto_Paper_title>a {
+.tamna_howto_Paper_title{
     display: block;
     width: 33.333%;
     height: 40px;
@@ -473,18 +476,26 @@
     float: left;
     transition: all 0.1s ease-in-out;
 } 
-.tamna_howto_Paper_title>a:hover {
+.tamna_howto_Paper_title:hover {
     width: 33.333%;
-    height: 40px;
+    height: 39px;
     font-weight: 400;
     background: #21bdbd;
     transition: all 0.1s ease-in-out;
 }  
-
+.tablinks.active {
+    width: 33.333%;
+    height: 39px;
+    font-weight: 400;
+    background: #21bdbd;
+    transition: all 0.1s ease-in-out;
+  }
+  
 /* tamna howto KB */
 
 .tamna_howto_KB {
     position: absolute;
+    display: block;
     width: 1010px;
     height: 1195px;
     margin: auto;
@@ -690,6 +701,7 @@
 
 .tamna_howto_Kona {
     position: absolute;
+    display: none;
     width: 1010px;
     height: 1195px;
     margin: auto;
@@ -896,6 +908,7 @@
 
 .tamna_howto_paper {
     position: absolute;
+    display: none;
     width: 1010px;
     height: 1195px;
     margin: auto;

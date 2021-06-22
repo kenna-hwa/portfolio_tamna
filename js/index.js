@@ -1,11 +1,4 @@
 $(function(){
-    //gnb
-    $(".topmenu").mouseenter(function () {
-        $(".sub, .gnb_sub_box").stop().slideDown("1200");
-    });
-    $(".main").mouseenter(function () {
-        $(".sub, .gnb_sub_box").stop().slideUp("1000");
-    });
 
     //이미지 캐러셀
     $('.bxslider').bxSlider({
@@ -72,7 +65,31 @@ var submenu = document.querySelectorAll("#submenu");
 // 유튜브 링크 끝
 
 
+// 유관기관
+// 유관기관 링크 시작
 
+    // 변수 선언
+    let jejuTourism = document.querySelector(".link_jejutourism");
+    let jejuGoverment = document.querySelector(".link_jejugoverment");
+    let jejuSafeCode = document.querySelector(".link_jejusafecode");
+
+
+  
+    // DOM
+    jejuTourism.addEventListener("click", function jejuTourismOpen() {
+        this.href = "https://www.ijto.or.kr"
+        this.target = "_blank"
+    });
+
+    jejuGoverment.addEventListener("click", function jejuGovermentOpen() {
+        this.href = "http://www.jeju.go.kr"
+        this.target = "_blank"
+    });
+    jejuSafeCode.addEventListener("click", function jejuSafeCodeOpen() {
+        this.href = "https://jshop.jeju.go.kr/index.html#/"
+        this.target = "_blank"
+    });
+// 유튜브 링크 끝
 
 
 

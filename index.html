@@ -9,6 +9,9 @@
     <!-- css start -->
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/tamna_favicon.ico" />    
@@ -17,51 +20,48 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/index.js"></script>
-    <script>
-
-    </script>
+    <script src="js/gnb.js"></script>
     <!-- script end -->
 </head>
 
 <body>
     <!-- header start -->
-    <div class="header_section"></div>
     <header id="header" class="header">
             <div class="header_box">
-                <h1><a href="#" class="topmenu">탐나는전</a></h1>
+                <h1><a href="index.html" class="topmenu">탐나는전</a></h1>
                 <!-- gnb start -->
                 <nav class="gnb" id="topwrap">
                     <h2 class="blind">상단 메뉴</h2>
                     <ul>
-                        <li class="gnb_info"><a href="#" class="topmenu">탐나는전</a>
+                        <li class="gnb_info"><a href="intro.html" class="topmenu">탐나는전</a>
                              <ul class="gnb_info_sub sub">
-                                <li><a href="#">탐나는전 소개</a></li>
-                                <li><a href="#">탐나는전 혜택</a></li>
-                                <li><a href="#">탐나는전 발급방법</a></li>
+                                <li><a href="intro.html/#main">탐나는전 소개</a></li>
+                                <li><a href="intro.html/#benefit">탐나는전 혜택</a></li>
+                                <li><a href="intro.html/#howto">탐나는전 발급방법</a></li>
                             </ul>
                         </li>
-                        <li class="gnb_personal"><a href="#" class="topmenu">개인사용자</a>
+                        <li class="gnb_personal"><a href="signin.php" class="topmenu">개인사용자</a>
                             <ul class="gnb_personal_sub sub">
-                                <li><a href="#">카드 신청</a></li>
-                                <li><a href="#">카드 등록</a></li>
-                                <li><a href="#">이용 내역</a></li>
-                                <li><a href="#">가맹점 찾기</a></li>
+                                <li><a href="signin.php">카드 신청</a></li>
+                                <li><a href="signin.php">카드 등록</a></li>
+                                <li><a href="payment_view.html">이용 내역</a></li>
+                                <li><a href="shop_search1.php">가맹점 찾기</a></li>
                             </ul>
                         </li>
                         <li class="gnb_shop"><a href="#" class="topmenu">가맹점</a>
                             <ul class="gnb_shop_sub sub">
-                                <li><a href="#">가맹점 혜택</a></li>
-                                <li><a href="#">가맹점 등록</a></li>
-                                <li><a href="#">가맹점 매출확인</a></li>
-                                <li><a href="#">홍보물 다운</a></li>
+                                <li><a href="shop_benefit.html">가맹점 혜택</a></li>
+                                <li><a href="shop_apply.html">가맹점 등록</a></li>
+                                <li><a href="shop_revenue.html">가맹점 매출확인</a></li>
+                                <li><a href="shop_download.html">홍보물 다운</a></li>
                             </ul> 
                         </li>
                         <li class="gnb_customer"><a href="#" class="topmenu">고객센터</a>
                             <ul class="gnb_customer_sub sub">
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">NEWS</a></li>
-                                <li><a href="#">자주묻는질문</a></li>
-                                <li><a href="#">문의하기</a></li>
+                                <li><a href="notice.html">공지사항</a></li>
+                                <li><a href="news.html">NEWS</a></li>
+                                <li><a href="qna_toggleclose.html">자주묻는질문</a></li>
+                                <li><a href="contact.html">문의하기</a></li>
                             </ul> 
                         </li>
                     </ul>
@@ -85,22 +85,22 @@
                 <div class="bxslider">
                     <div class="main_img_1 item">
                         <img src="images/index/main_img_1.jpg" alt="탐나는전 혜택 소개">
-                        <!-- 탐나는전 혜택 소개
+                        <p class="blind"> 탐나는전 혜택 소개
                         1번 카드 충전시 10% 추가 적립
                         2번 지류 상품권 구매 시 10% 즉시 할인
                         3번 탐나는전 앱에서 카드 충전관리 기능 제공
                         4번 지류상품권 현금영수증 발급 가능
                         5번 카드사용액 30% 소득공제 (전통시장은 40%)
-                        탐나는전 앱 에서 소득공제를 신청하셔야 합니다. -->
+                        탐나는전 앱 에서 소득공제를 신청하셔야 합니다.</p>
                     </div>
                     <div class="main_img_2 item">
                         <img src="images/index/main_img_2.jpg" alt="탐나는전 어플 설치하기">
-                            <!-- 탐나는전 어플 설치하기
-                            앱에서 간편하게 탐나는전 이용 -->
+                        <p class="blind"> 탐나는전 어플 설치하기
+                            앱에서 간편하게 탐나는전 이용 </p>
                     </div>
                     <div class="main_img_3 item">
                         <img src="images/index/main_img_3.jpg" alt="가맹점 신청 안내">
-                        <a href="#" class="main_img_link">                        
+                        <a href="shop_benefit.html" class="main_img_link">                        
                             가맹점 신청 안내
                             삼춘! 아직 가맹점 신청 안하맨?
                         </a>
@@ -113,10 +113,10 @@
         <section class="quick_menu">
             <h2 class="blind">빠른 메뉴</h2>
             <ul>
-                <li class="quick_subs"><a href="#">카드발급신청</a></li>
-                <li class="quick_usage"><a href="#">이용내역보기</a></li>
-                <li class="quick_search"><a href="#">가맹점찾기</a></li>
-                <li class="quick_register"><a href="#">가맹점등록</a></li>
+                <li class="quick_subs"><a href="signin.php">카드발급신청</a></li>
+                <li class="quick_usage"><a href="payment_view.html">이용내역보기</a></li>
+                <li class="quick_search"><a href="shop_search1.php">가맹점찾기</a></li>
+                <li class="quick_register"><a href="shop_apply.html">가맹점등록</a></li>
             </ul>
         </section>
         <!-- quick menu end -->
@@ -125,7 +125,7 @@
         <div class="board">
             <div class="board_top">
                 <div class="board_notice">
-                    <h3><a href="#">공지사항</a></h3>
+                    <h3><a href="notice.html">공지사항</a></h3>
                     <ul>
                         <li><a href="#">탐나는전 제주페이 어플 다운로드 방법<span>2021-03-02</span></a></li>
                         <li><a href="#">탐나는전 가맹점 신청 안내<span>2021-02-26</span></a></li>
@@ -134,7 +134,7 @@
                     </ul>
                 </div>
                 <div class="board_news">
-                    <h3><a href="#">NEWS</a></h3>
+                    <h3><a href="news.html">NEWS</a></h3>
                     <ul>
                         <li><a href="#">제주도, 탐나는전 부정유통 등 불법행위 6건 적발<span>2021-03-06</span></a></li>
                         <li><a href="#">제주도-제주도기자협회, '탐나는전' 성공 정착 '한 뜻'<span>2021-03-04</span></a></li>
@@ -146,7 +146,7 @@
         
             <div class="board_bottom">
                 <div class="board_qna">
-                    <h3><a href="#">자주묻는질문</a></h3>
+                    <h3><a href="qna_toggleclose.html">자주묻는질문</a></h3>
                     <ul>
                         <li><a href="#">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?<span>2021-03-06</span></a></li>
                         <li><a href="#">사업주가 환전을 하려면 어디로 가나요?<span>2021-03-04</span></a></li>
@@ -236,13 +236,13 @@
     <!-- footer start -->
     <footer id="footer" class="footer">
         <div class="footer_box">
-            <h2><a href="#">탐나는전 업체 정보</a></h2>
+            <h2><a href="http://tamna.jeju.go.kr">탐나는전 업체 정보</a></h2>
             <div class="footer_txt">
                 <address>주소 : (63122) 제주특별자치도 제주시 문연로 6(연동)</address>
                 <p>대표전화 : 1600-3971 (09:00 ~ 18:00)</p>
                 <p>Copyright 2020 제주특별자치도. All rights reserved</p>
             </div>
-            <div class="footer_jejugoverment"><a href="#">제주특별자치도 바로가기</a></div>
+            <div class="footer_jejugoverment"><a href="http://www.jeju.go.kr">제주특별자치도 바로가기</a></div>
         </div>
     </footer>
     <!-- footer end -->
