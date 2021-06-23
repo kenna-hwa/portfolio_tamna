@@ -1,15 +1,13 @@
 @charset "utf-8";
 
 
-/* main */
-
 /* tamna join */
 
 .tamna_join {
     position: relative;
     width: 1080px;
     height: 310px;
-    margin: 150px auto 50px;
+    margin: 0 auto 50px;
 }
 .tamna_join h2::before {
     position: absolute;
@@ -472,4 +470,3 @@
     color: #000;
     transition: all 0.2s ease-in-out;
 }
-
