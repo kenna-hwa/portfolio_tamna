@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탐나는전 자주묻는질문</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/qna_toggleopen.css">
+    <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/tamna_favicon.ico" />
+    <!-- script start -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/gnb.js"></script>
+    <!-- script end -->
+</head>
+
+<body>
+    <!-- header start -->
+<header id="header" class="header">
+    <div class="header_box">
+        <h1><a href="index.html" class="topmenu">탐나는전</a></h1>
+        <!-- gnb start -->
+        <nav class="gnb" id="topwrap">
+            <h2 class="blind">상단 메뉴</h2>
+            <ul>
+                <li class="gnb_info"><a href="intro.html" class="topmenu">탐나는전</a>
+                     <ul class="gnb_info_sub sub">
+                        <li><a href="intro.html#main">탐나는전 소개</a></li>
+                        <li><a href="intro.html#benefit">탐나는전 혜택</a></li>
+                        <li><a href="intro.html#howto">탐나는전 발급방법</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_personal"><a href="signin.php" class="topmenu">개인사용자</a>
+                    <ul class="gnb_personal_sub sub">
+                        <li><a href="signin.php">카드 신청</a></li>
+                        <li><a href="signin.php">카드 등록</a></li>
+                        <li><a href="payment_view.html">이용 내역</a></li>
+                        <li><a href="shop_search1.php">가맹점 찾기</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_shop"><a href="#" class="topmenu">가맹점</a>
+                    <ul class="gnb_shop_sub sub">
+                        <li><a href="shop_benefit.html">가맹점 혜택</a></li>
+                        <li><a href="shop_apply.html">가맹점 등록</a></li>
+                        <li><a href="shop_revenue.html">가맹점 매출확인</a></li>
+                        <li><a href="shop_download.html">홍보물 다운</a></li>
+                    </ul> 
+                </li>
+                <li class="gnb_customer"><a href="#" class="topmenu">고객센터</a>
+                    <ul class="gnb_customer_sub sub">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="qna_toggleclose.html">자주묻는질문</a></li>
+                        <li><a href="contact.html">문의하기</a></li>
+                    </ul> 
+                </li>
+            </ul>
+            <a href="#" class="gnb_more topmenu">더보기</a>
+        </nav>
+    </div>
+    <div class="gnb_sub_box">
+        <div class="gnb_sub">
+            <h3>서브메뉴</h3>
+        </div>
+    </div> 
+    <!-- gnb end -->
+</header>
+<!-- header end -->
+
+    <!-- main start -->
+    <main id="main" class="main">
+        <!-- tamna notice -->
+        <div class="tamna_qna">
+            <h2>탐나는전 자주묻는질문</h2>
+            <div class="tamna_qna_txt">
+                탐나는전에 대한 궁금증! 여기에 다 모였다!
+            </div>
+        </div>
+
+        <!-- tamna notice search -->
+        <div class="tamna_qna_search">
+            <div class="tamna_qna_search_box">
+                <select name="qna_category" id="qna_category" class="tamna_qna_category">
+                    <option value="qna_all">전체</option>
+                    <option value="qna_shop">가맹점</option>
+                    <option value="qna_personal">개인사용자</option>
+                </select>
+                <input type="text" name="qna_search_text" id="qna_search_text" class="tamna_qna_search_text"
+                    placeholder="검색어 입력">
+                <button type="submit" id="qna_search_submit_btn" class="tamna_qna_search_submit_btn">검색</button>
+            </div>
+        </div>
+
+        <!-- tamna qna search table -->
+        <div class="tamna_qna_table_box">
+            <table class="tamna_qna_table">
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">'탐나는전'을 결제받으면 어떻게 입금처리되나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_a">
+                        <td class="tamna_qna_tableMarkerA">A</td>
+                        <td class="tamna_qna_tableAnswer" colspan="2">&#8594; 모바일&#8231;카드 결제의 경우 3영업일 이내에 POS단말기에 연결된 계좌로 입금 처리되며, <br>종이상품권형은 은행에서 환전신청 후 5영업일 이내 입금처리 됩니다.</td>
+                    </tr>
+                    <tr class="tamna_qna_q"> 
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">사업주가 환전을 하려면 어디로(어떻게) 가나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_a">
+                        <td class="tamna_qna_tableMarkerA">A</td>
+                        <td class="tamna_qna_tableAnswer" colspan="2">&#8594; 제주은행 및 농협중앙회, 지역농축협 본점에서 가능합니다.<br>
+                            준비서류 &#8208; &#8301;&#8301;&#8301;개인사업자 &#8282; (대표본인) 신분증 
+                            &#8260; (대리인) 대리인 신분증, 위임장, 인감증명 <br> &#8208; &#8301;&#8301;&#8301;&#8301;&#8301;법인사업자 &#8282; (대표본인) 사업자등록증, 법인인감증명 &#8260; (대리인) 대리인신분증, 위임장</td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">가맹점이 내야하는 별도의 수수료가 있나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_a">
+                        <td class="tamna_qna_tableMarkerA">A</td>
+                        <td class="tamna_qna_tableAnswer" colspan="2"><span>&#8594; 소비자에게 제공되는 10% 할인혜택은 도 예산으로 보전하며,<br>가맹점주는 아래 표와 같이 일반적인 체크카드결제에서 발생하는 수수료만 부담합니다. 
+                            &#8251; IC칩 카드 결제에 한함</span><br>
+                            <table>
+                                <tr>
+                                    <td>연간매출액</td>
+                                    <td>3억 이하</td>
+                                    <td>3억 초과 5억 이하</td>
+                                    <td>5억 초과 10억 이하</td>
+                                    <td>10억 초과 30억 이하</td>
+                                    <td>기준</td>
+                                </tr>
+                                <tr>
+                                    <td>수수료율</td>
+                                    <td>0.5%</td>
+                                    <td>1.0%</td>
+                                    <td>1.1%</td>
+                                    <td>1.3%</td>
+                                    <td>체크카드 <br> (전자 선불카드)</td>
+                                </tr>
+                            </table>
+                        
+                        </td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">프랜차이즈 사업장을 운영하는데 가맹점으로 신청 가능한가요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_a">
+                        <td class="tamna_qna_tableMarkerA">A</td>
+                        <td class="tamna_qna_tableAnswer" colspan="2">&#8594; 가맹점(자영) 사업자등록 소재지가 제주도인 경우 가능하지만, 직영점은 등록 불가합니다.<br>
+                        ex) 프랜차이즈 사업자등록증 상 소재지가 도외로 되어 있는 경우 등록이 거절됩니다.</td>
+                    </tr>
+                    <tr class="tamna_qna_q">
+                        <td class="tamna_qna_tableMarkerQ">Q</td>
+                        <td class="tamna_qna_tableCategory">가맹점</td>
+                        <td class="tamna_qna_tableTitle"><a href="#">가맹점 등록 신청을 하고 나면 어떤 방식으로 통보받나요?</a></td>
+                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                    </tr>
+                    <tr class="tamna_qna_a">
+                        <td class="tamna_qna_tableMarkerA">A</td>
+                        <td class="tamna_qna_tableAnswer" colspan="2">&#8594; 가맹점 신청분에 한해서 등록 승인 시 SMS안내문자가 발송되며, 스티커 배송은 2주가 소요됩니다.<br>
+                        (배부된 스티커는 이용자 눈에 띄기 쉽도록 출입구 밖에 부착)</td>
+                    </tr>
+            </table>
+            <!-- tamna qna table paging -->
+            <div class="tamna_qna_table_paging">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer id="footer" class="footer">
+        <div class="footer_box">
+            <h2><a href="#">탐나는전 업체 정보</a></h2>
+            <div class="footer_txt">
+                <address>주소 : (63122) 제주특별자치도 제주시 문연로 6(연동)</address>
+                <p>대표전화 : 1600-3971 (09:00 ~ 18:00)</p>
+                <p>Copyright 2020 제주특별자치도. All rights reserved</p>
+            </div>
+            <div class="footer_jejugoverment"><a href="#">제주특별자치도 바로가기</a></div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>

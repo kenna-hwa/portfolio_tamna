@@ -100,7 +100,7 @@
         </div>
         <!-- tamna join checklist -->
         <div class="tamna_join_chklist">
-        <form name="join1" action="join2.php" method="POST" onsubmit="return joinFormCheckFirst()">
+        <form name="join1" action="6_join2_황주화.php" method="POST" onsubmit="return joinFormCheckFirst()">
         <fieldset>
         <legend class="blind">회원가입</legend>
             <span class="chk_span1">
@@ -212,13 +212,13 @@
     <!-- footer start -->
     <footer id="footer" class="footer">
         <div class="footer_box">
-            <h2><a href="http://tamna.jeju.go.kr">탐나는전 업체 정보</a></h2>
+            <h2><a href="#">탐나는전 업체 정보</a></h2>
             <div class="footer_txt">
                 <address>주소 : (63122) 제주특별자치도 제주시 문연로 6(연동)</address>
                 <p>대표전화 : 1600-3971 (09:00 ~ 18:00)</p>
                 <p>Copyright 2020 제주특별자치도. All rights reserved</p>
             </div>
-            <div class="footer_jejugoverment"><a href="http://www.jeju.go.kr">제주특별자치도 바로가기</a></div>
+            <div class="footer_jejugoverment"><a href="#">제주특별자치도 바로가기</a></div>
         </div>
     </footer>
     <!-- footer end -->
