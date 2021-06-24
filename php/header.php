@@ -33,7 +33,7 @@
                         <ul class="gnb_customer_sub sub">
                             <li><a href="notice.php">공지사항</a></li>
                             <li><a href="news.php">NEWS</a></li>
-                            <li><a href="qna_toggleclose.php">자주묻는질문</a></li>
+                            <li><a href="qna_toggleopen.php">자주묻는질문</a></li>
                             <li><a href="contact.php">문의하기</a></li>
                         </ul>
                     </li>

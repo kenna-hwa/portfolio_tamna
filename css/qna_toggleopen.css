@@ -130,12 +130,22 @@
     color: #21bdbd;
     font-weight: bold;
 }
-.tamna_qna_tableOpen{
+.tamna_qna_tableClose{
+    display: block;
     width: 130px;
     height: 80px;
     background: url(../images/qna/qna_toggleopen_up.png) no-repeat center;
     text-indent: -9999px;
-    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+.tamna_qna_tableOpen{
+    display: none;
+    width: 130px;
+    height: 80px;
+    background: url(../images/qna/qna_toggleopen_down.png) no-repeat center;
+    text-indent: -9999px;
+    cursor: pointer;
+
 }
 
 /* table q */
@@ -143,6 +153,7 @@
     height: 80px;
     border-bottom: 1px solid #4c4c4c;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 /* category diplay none */
@@ -160,6 +171,7 @@
     width: 850px;
     padding-left: 20px;
     text-align: left;
+    cursor: pointer;
 }
 .tamna_qna_table a {
     display: block;

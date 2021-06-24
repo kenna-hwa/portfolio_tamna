@@ -18,6 +18,22 @@
     <!-- script start -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
+    <script>
+    $(function(){
+
+        $('.tamna_qna_a').hide();
+
+        $('.tamna_qna_q').click(function() {
+            var idx = $('.tamna_qna_q').index(this);
+            $('.tamna_qna_a:eq('+ idx +')').toggle();
+            $('.tamna_qna_tableClose:eq('+ idx +')').toggle();
+            $('.tamna_qna_tableOpen:eq('+ idx +')').toggle();
+
+        });
+
+    });
+    
+    </script>
     <!-- script end -->
 </head>
 
@@ -56,8 +72,10 @@
                     <tr class="tamna_qna_q">
                         <td class="tamna_qna_tableMarkerQ">Q</td>
                         <td class="tamna_qna_tableCategory">가맹점</td>
-                        <td class="tamna_qna_tableTitle"><a href="#">'탐나는전'을 결제받으면 어떻게 입금처리되나요?</a></td>
-                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                        <td class="tamna_qna_tableTitle">'탐나는전'을 결제받으면 어떻게 입금처리되나요?</td>
+                        <td class="tamna_qna_tableClose">답변 보기</td>
+                        <td class="tamna_qna_tableOpen">답변 닫기</td>
+
                     </tr>
                     <tr class="tamna_qna_a">
                         <td class="tamna_qna_tableMarkerA">A</td>
@@ -66,8 +84,9 @@
                     <tr class="tamna_qna_q"> 
                         <td class="tamna_qna_tableMarkerQ">Q</td>
                         <td class="tamna_qna_tableCategory">가맹점</td>
-                        <td class="tamna_qna_tableTitle"><a href="#">사업주가 환전을 하려면 어디로(어떻게) 가나요?</a></td>
-                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                        <td class="tamna_qna_tableTitle">사업주가 환전을 하려면 어디로(어떻게) 가나요?</td>
+                        <td class="tamna_qna_tableClose">답변 보기</td>
+                        <td class="tamna_qna_tableOpen">답변 닫기</td>
                     </tr>
                     <tr class="tamna_qna_a">
                         <td class="tamna_qna_tableMarkerA">A</td>
@@ -78,8 +97,9 @@
                     <tr class="tamna_qna_q">
                         <td class="tamna_qna_tableMarkerQ">Q</td>
                         <td class="tamna_qna_tableCategory">가맹점</td>
-                        <td class="tamna_qna_tableTitle"><a href="#">가맹점이 내야하는 별도의 수수료가 있나요?</a></td>
-                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                        <td class="tamna_qna_tableTitle">가맹점이 내야하는 별도의 수수료가 있나요?</td>
+                        <td class="tamna_qna_tableClose">답변 보기</td>
+                        <td class="tamna_qna_tableOpen">답변 닫기</td>
                     </tr>
                     <tr class="tamna_qna_a">
                         <td class="tamna_qna_tableMarkerA">A</td>
@@ -109,8 +129,9 @@
                     <tr class="tamna_qna_q">
                         <td class="tamna_qna_tableMarkerQ">Q</td>
                         <td class="tamna_qna_tableCategory">가맹점</td>
-                        <td class="tamna_qna_tableTitle"><a href="#">프랜차이즈 사업장을 운영하는데 가맹점으로 신청 가능한가요?</a></td>
-                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                        <td class="tamna_qna_tableTitle">프랜차이즈 사업장을 운영하는데 가맹점으로 신청 가능한가요?</td>
+                        <td class="tamna_qna_tableClose">답변 보기</td>
+                        <td class="tamna_qna_tableOpen">답변 닫기</td>
                     </tr>
                     <tr class="tamna_qna_a">
                         <td class="tamna_qna_tableMarkerA">A</td>
@@ -120,8 +141,9 @@
                     <tr class="tamna_qna_q">
                         <td class="tamna_qna_tableMarkerQ">Q</td>
                         <td class="tamna_qna_tableCategory">가맹점</td>
-                        <td class="tamna_qna_tableTitle"><a href="#">가맹점 등록 신청을 하고 나면 어떤 방식으로 통보받나요?</a></td>
-                        <td class="tamna_qna_tableOpen"><a href="#">답변 보기</a></td>
+                        <td class="tamna_qna_tableTitle">가맹점 등록 신청을 하고 나면 어떤 방식으로 통보받나요?</td>
+                        <td class="tamna_qna_tableClose">답변 보기</td>
+                        <td class="tamna_qna_tableOpen">답변 닫기</td>
                     </tr>
                     <tr class="tamna_qna_a">
                         <td class="tamna_qna_tableMarkerA">A</td>
