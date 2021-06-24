@@ -1,3 +1,14 @@
+<?php
+
+//DB연결
+
+include "php/inc/dbcon.php";
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -58,31 +69,19 @@
                         <th class="tamna_news_tableHead_tableCategory">카테고리</th>
                         <th class="tamna_news_tableHead_tableTitle">제목</th>
                         <th class="tamna_news_tableHead_tableDate">작성일</th>
-                    </tr>
+                    </tr>   
+                    <?php
+                    $sql = "select * from tnews order by idx DESC;";
+                    $result = mysqli_query($dbcon, $sql);
+                    while ($news = mysqli_fetch_array($result)){
+                    ?>                 
                     <tr>
-                        <td class="tamna_news_tableNum">4</td>
-                        <td class="tamna_news_tableCategory">News</td>
-                        <td class="tamna_news_tableTitle"><a href="#">제주도, 탐나는전 부정유통 등 불법행위 6건 적발</a></td>
-                        <td class="tamna_news_tableDate">2021-02-24</td>
+                        <td class="tamna_news_tableNum"><?php echo $news["idx"]; ?></td>
+                        <td class="tamna_news_tableCategory"><?php echo $news["tn_category"]; ?></td>
+                        <td class="tamna_news_tableTitle"><a href="#"><?php echo $news["tn_title"]; ?></a></td>
+                        <td class="tamna_news_tableDate"><?php echo $news["tn_writedate"]; ?></td>
                     </tr>
-                    <tr>
-                        <td class="tamna_news_tableNum">3</td>
-                        <td class="tamna_news_tableCategory">News</td>
-                        <td class="tamna_news_tableTitle"><a href="#">제주도-제주도기자협회, '탐나는전' 성공 정착 '한 뜻'</a></td>
-                        <td class="tamna_news_tableDate">2021-02-08</td>
-                    </tr>
-                    <tr>
-                        <td class="tamna_news_tableNum">2</td>
-                        <td class="tamna_news_tableCategory">News</td>
-                        <td class="tamna_news_tableTitle"><a href="#">제주지역화폐 '탐나는전' 첫 선!</a></td>
-                        <td class="tamna_news_tableDate">2021-02-08</td>
-                    </tr>
-                    <tr>
-                        <td class="tamna_news_tableNum">1</td>
-                        <td class="tamna_news_tableCategory">News</td>
-                        <td class="tamna_news_tableTitle"><a href="#">제주지역화폐 명칭 '탐나는전' 확정</a></td>
-                        <td class="tamna_news_tableDate">2021-02-08</td>
-                    </tr>
+                    <?php }; ?>
             </table>
             <!-- tamna news table paging -->
             <div class="tamna_news_table_paging">

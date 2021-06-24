@@ -1,3 +1,14 @@
+<?php
+
+//DB연결
+
+include "php/inc/dbcon.php";
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -59,30 +70,17 @@
                         <th class="tamna_notice_tableHead_tableTitle">제목</th>
                         <th class="tamna_notice_tableHead_tableDate">작성일</th>
                     </tr>
+                    <?php
+                    $sql = "select * from tnotice order by idx DESC;";
+                    $result = mysqli_query($dbcon, $sql);
+                    while ($notice = mysqli_fetch_array($result)){
+                    ?>                 
                     <tr>
-                        <td class="tamna_notice_tableNum">4</td>
-                        <td class="tamna_notice_tableCategory">이벤트</td>
-                        <td class="tamna_notice_tableTitle"><a href="#">[당첨자발표] 탐나는전 인증 이벤트</a></td>
-                        <td class="tamna_notice_tableDate">2021-02-24</td>
+                        <td class="tamna_notice_tableNum"><?php echo $notice["idx"]; ?></td>
+                        <td class="tamna_notice_tableTitle"><a href="#"><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?></a></td>
+                        <td class="tamna_notice_tableDate"><?php echo $notice["tnt_writedate"]; ?></td>
                     </tr>
-                    <tr>
-                        <td class="tamna_notice_tableNum">3</td>
-                        <td class="tamna_notice_tableCategory">이벤트</td>
-                        <td class="tamna_notice_tableTitle"><a href="#">[이벤트] 탐나는전 인증 이벤트</a></td>
-                        <td class="tamna_notice_tableDate">2021-02-17</td>
-                    </tr>
-                    <tr>
-                        <td class="tamna_notice_tableNum">2</td>
-                        <td class="tamna_notice_tableCategory">공지사항</td>
-                        <td class="tamna_notice_tableTitle"><a href="#">[공지] 탐나는전 부정유통 일제단속기간 운영 안내</a></td>
-                        <td class="tamna_notice_tableDate">2021-02-08</td>
-                    </tr>
-                    <tr>
-                        <td class="tamna_notice_tableNum">1</td>
-                        <td class="tamna_notice_tableCategory">공지사항</td>
-                        <td class="tamna_notice_tableTitle"><a href="#">[공지] '탐나는전' 이란?</a></td>
-                        <td class="tamna_notice_tableDate">2021-02-08</td>
-                    </tr>
+                    <?php }; ?>
             </table>
             <!-- tamna notice table paging -->
             <div class="tamna_notice_table_paging">
