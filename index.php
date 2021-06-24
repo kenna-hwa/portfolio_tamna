@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>탐나는전</title>
     <!-- css start -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/tamna_favicon.ico" /> 
     <link type="text/css" rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="images/tamna_favicon.ico" />    
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
     <!-- css end -->
     <!-- script start -->
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/gnb.js"></script>
+    <script src="js/bxSlider.js"></script>
     <script src="js/index.js"></script>
     <!-- script end -->
 </head>
@@ -44,7 +52,7 @@
                     </div>
                     <div class="main_img_3 item">
                         <img src="images/index/main_img_3.jpg" alt="가맹점 신청 안내">
-                        <a href="shop_benefit.html" class="main_img_link">                        
+                        <a href="shop_benefit.php" class="main_img_link">                        
                             가맹점 신청 안내
                             삼춘! 아직 가맹점 신청 안하맨?
                         </a>
@@ -58,9 +66,9 @@
             <h2 class="blind">빠른 메뉴</h2>
             <ul>
                 <li class="quick_subs"><a href="signin.php">카드발급신청</a></li>
-                <li class="quick_usage"><a href="payment_view.html">이용내역보기</a></li>
+                <li class="quick_usage"><a href="payment_view.php">이용내역보기</a></li>
                 <li class="quick_search"><a href="shop_search1.php">가맹점찾기</a></li>
-                <li class="quick_register"><a href="shop_apply.html">가맹점등록</a></li>
+                <li class="quick_register"><a href="shop_apply.php">가맹점등록</a></li>
             </ul>
         </section>
         <!-- quick menu end -->
@@ -69,7 +77,7 @@
         <div class="board">
             <div class="board_top">
                 <div class="board_notice">
-                    <h3><a href="notice.html">공지사항</a></h3>
+                    <h3><a href="notice.php">공지사항</a></h3>
                     <ul>
                         <li><a href="#">탐나는전 제주페이 어플 다운로드 방법<span>2021-03-02</span></a></li>
                         <li><a href="#">탐나는전 가맹점 신청 안내<span>2021-02-26</span></a></li>
@@ -78,7 +86,7 @@
                     </ul>
                 </div>
                 <div class="board_news">
-                    <h3><a href="news.html">NEWS</a></h3>
+                    <h3><a href="news.php">NEWS</a></h3>
                     <ul>
                         <li><a href="#">제주도, 탐나는전 부정유통 등 불법행위 6건 적발<span>2021-03-06</span></a></li>
                         <li><a href="#">제주도-제주도기자협회, '탐나는전' 성공 정착 '한 뜻'<span>2021-03-04</span></a></li>
@@ -90,7 +98,7 @@
         
             <div class="board_bottom">
                 <div class="board_qna">
-                    <h3><a href="qna_toggleclose.html">자주묻는질문</a></h3>
+                    <h3><a href="qna_toggleclose.php">자주묻는질문</a></h3>
                     <ul>
                         <li><a href="#">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?<span>2021-03-06</span></a></li>
                         <li><a href="#">사업주가 환전을 하려면 어디로 가나요?<span>2021-03-04</span></a></li>
@@ -114,7 +122,7 @@
             <h2 class="blind">홍보영상</h2>
 
             <div class="youtube_official">
-                <h3><a href="#" class="youtube_official_link">유튜브 비디오</a></h3>
+                <h3><a href="https://www.youtube.com/watch?v=_bEZYRQUcqc" class="youtube_official_link" target="_blank">유튜브 비디오</a></h3>
                 <div class="youtube_official_txt">
                     <div class="youtube_official_txt1">
                         제주형<br>
@@ -135,7 +143,7 @@
             </div>
 
             <div class="youtube_kb">
-                <h3><a href="#" class="youtube_kb_link">유튜브 비디오</a></h3>
+                <h3><a href="https://www.youtube.com/watch?v=zXVD5agK39k" class="youtube_kb_link" target="_blank">유튜브 비디오</a></h3>
                 <div class="youtube_kb_txt">
                     <div class="youtube_kb_txt1">
                         탐나는전<br>
@@ -162,13 +170,13 @@
                     혼저옵서예</p>
             </div>
             <ul class="link_box">
-                <li class="link_jejutourism"><a href="#">
+                <li class="link_jejutourism"><a href="https://www.ijto.or.kr" target="_blank">
                         제주관광공사
                     </a></li>
-                <li class="link_jejugoverment"><a href="#">
+                <li class="link_jejugoverment"><a href="http://www.jeju.go.kr" target="_blank">
                         제주특별자치도
                     </a></li>
-                <li class="link_jejusafecode"><a href="#">
+                <li class="link_jejusafecode"><a href="https://jshop.jeju.go.kr/index.html#/" target="_blank">
                         제주안심코드
                     </a></li>
             </ul>

@@ -8,11 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>탐나는전 회원가입</title>
     <!-- css start -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/tamna_favicon.ico" /> 
     <link type="text/css" rel="stylesheet" href="css/join.css">
-    <link rel="shortcut icon" href="images/tamna_favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
     <!-- css end -->
     <!-- script start -->
-    <script src="js/join1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/gnb.js"></script>
     <!-- script end -->
 </head>
 
@@ -33,9 +40,9 @@
             <!-- tamna join order -->
             <div class="tamna_join_order">
                 <ol>
-                    <li class="tamna_join_order1"><a href="#">약관동의</a></li>
-                    <li  class="tamna_join_order2"><a href="#">회원정보 입력</a></li>
-                    <li  class="tamna_join_order3"><a href="#">가입완료</a></li>
+                    <li class="tamna_join_order1">약관동의</li>
+                    <li class="tamna_join_order2">회원정보 입력</li>
+                    <li class="tamna_join_order3">가입완료</li>
                 </ol>
             </div>
             <!-- tamna join order end -->
@@ -157,9 +164,8 @@
     <?php include "php/footer.php" ?>
     <!-- footer end -->
 
-<!-- script start -->
+<!-- script add -->
 <script type="text/javascript" src="js/join1.js"></script>
-<!-- script end -->
 
 </body>
 

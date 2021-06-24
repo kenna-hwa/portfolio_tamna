@@ -2,12 +2,16 @@
 
 
 /* tamna join */
-
+.main {
+    width: 1080px;
+    height: 910px;
+    margin: 0 auto;
+}
 .tamna_join {
     position: relative;
     width: 1080px;
     height: 310px;
-    margin: 0 auto 50px;
+    margin: 150px auto 50px;
 }
 .tamna_join h2::before {
     position: absolute;
@@ -53,57 +57,39 @@
     top:230px;
     margin: 0 auto 50px;
 }
-.tamna_join_order1>a {
+.tamna_join_order1 {
     display: block;
     width: 33.22222222222%;
     height: 40px;
     border-right: 1px solid #dadada;
     float: left;
-    transition: all 0.1s ease-in-out;
 }
-/* .tamna_join_order1>a:hover:active {
-    width: 33.22222222222%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-} */
-.tamna_join_order2>a {
+.tamna_join_order2 {
     display: block;
     width: 33.22222222222%;
-    height: 40px;
+    height: 39px;
     border-right: 1px solid #dadada;
-    box-sizing: border-box;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
- .tamna_join_order2>a:hover:active {
-    width: 33.22222222222%;
     background: #21bdbd;
     font-weight: 400;
-    transition: all 0.1s ease-in-out;
-} 
-.tamna_join_order3>a {
+    box-sizing: border-box;
+    float: left;
+}
+.tamna_join_order3 {
     display: block;
     width: 33.22222222222%;
     height: 40px;
     box-sizing: border-box;
     float: left;
-    transition: all 0.1s ease-in-out;
 }
-/* .tamna_join_order3>a:hover:active {
-    width: 33.34%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-} */
 
 
 /* tamna input form */
 
 .tamna_input_form {
+    position: relative;
     width: 1080px;
     height: 400px;
-    margin: 0 auto 50px;
+    margin: 0 auto 150px;
     font-size: 16px;
 }
 
@@ -139,7 +125,9 @@
     border: 1px solid #ccc;
     padding-left: 20px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 30px;
     top: 11px;
     right: 0;
     cursor: text;
@@ -195,7 +183,7 @@
     width: 390px;
     height: 55px;
     border: 1px solid #ccc;
-    padding: 15px 0 0 20px;
+    padding: 15px 0 0 30px;
     box-sizing: border-box;
     background: #fff;
     cursor: pointer;
@@ -203,19 +191,23 @@
     left: 0;
     color:#999;
     font-weight: 400;
+    font-size: 20px;
+    line-height: 18pt;
 }
 #tamna_join_gender_male:checked~.tamna_join_gender_male_label>span {
     position: absolute;
     display: inline-block;
     width: 390px;
     height: 54px;
-    padding: 15px 0 0 20px;
+    padding: 15px 0 0 30px;
     box-sizing: border-box;
     background: #21bdbd;
     top: 0;
     left: 0;
     color:#fff;
     font-weight: 400;
+    font-size: 20px;
+    line-height: 18pt;
 }
 
 /* female */
@@ -246,7 +238,7 @@
     width: 390px;
     height: 55px;
     border: 1px solid #ccc;
-    padding: 15px 0 0 20px;
+    padding: 15px 0 0 30px;
     box-sizing: border-box;
     background: #fff;
     cursor: pointer;
@@ -254,19 +246,23 @@
     left: 0;
     color:#999;
     font-weight: 400;
+    font-size: 20px;
+    line-height: 18pt;
 }
 #tamna_join_gender_female:checked~.tamna_join_gender_female_label>span {
     position: absolute;
     display: inline-block;
     width: 390px;
     height: 54px;
-    padding: 15px 0 0 20px;
+    padding: 15px 0 0 30px;
     box-sizing: border-box;
     background: #21bdbd;
     top: 0;
     left: 0;
     color:#fff;
     font-weight: 400;
+    font-size: 20px;
+    line-height: 18pt;
 }
 
 /* birth */
@@ -302,9 +298,11 @@
     left: 300px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
+    padding-left: 30px;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42pt;
 }
 #tamna_join_birthyear:optional{
     color: #888;
@@ -317,9 +315,11 @@
     left: 595px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
+    padding-left: 30px;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42pt;
 }
 #tamna_join_birthmonth:optional{
     color: #888;
@@ -332,9 +332,11 @@
     left: 845px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    padding: 15px;
-    font-size: 16px;
+    padding-left: 30px;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42pt;
 }
 #tamna_join_birthday:optional{
     color: #888;
@@ -370,8 +372,9 @@
     height: 55px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    padding-left: 20px;
-    font-size: 16px;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 30px;
     top: 10px;
     left: 300px;
     cursor: text;
@@ -425,8 +428,9 @@
     height: 55px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    padding-left: 20px;
-    font-size: 16px;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 30px;
     top: 10px;
     left: 300px;
     cursor: text;
@@ -452,16 +456,18 @@
 
 /* tamna join next btn */
 
+
 .tamna_join_next_btn {
+    position: relative;
     display: block;
     width: 350px;
     height: 100px;
+    margin: 50px auto 0;
     background: #21bdbd;
     border: 1px solid #ddd;
     color: #fff;
     font-size: 24px;
     font-weight: 400;
-    margin: 50px auto 150px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }

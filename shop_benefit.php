@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>탐나는전 가맹점 등록 기준 및 혜택</title>
     <!-- css start -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/tamna_favicon.ico" /> 
     <link type="text/css" rel="stylesheet" href="css/shop_benefit.css">
-    <link rel="shortcut icon" href="images/tamna_favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
     <!-- css end -->
     <!-- script start -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/gnb.js"></script>
     <!-- script end -->
 </head>
 
@@ -44,7 +52,7 @@
                 </dl>
             </div>
         </div>
-        <div class="tamna_shop_benefit_to_apply_link"><a href="#">가맹점 등록</a></div>
+        <div class="tamna_shop_benefit_to_apply_link"><a href="shop_apply.php">가맹점 등록</a></div>
     </main>
 
     <!-- main end -->
@@ -52,8 +60,6 @@
     <!-- footer start -->
     <?php include "php/footer.php" ?>
     <!-- footer end -->
-
-
 
 
 </body>

@@ -82,20 +82,19 @@
     position: relative;
     -moz-box-shadow: 0 0 0px #ccc;
     -webkit-box-shadow: 0 0 0px #ccc;
-    /* box-shadow: 0 0 5px #ccc; */
-    /* border: 5px solid #fff; */
     background: #fff;
+    width: 100%;
+
+    margin: auto;
   }
   .bx-wrapper .bx-pager,
   .bx-wrapper .bx-controls-auto {
     position: absolute;
     bottom: -30px;
     width: 100%;
+    margin: auto;
   }
-  /* LOADER*/
-  .bx-wrapper .bx-loading {
-    display: none;
-  } 
+
   /* PAGER */
   .bx-wrapper .bx-pager {
     position: relative;
@@ -104,7 +103,6 @@
     bottom: 30px;
     text-align: center;
     font-size: .85em;
-    font-family: Arial;
     font-weight: bold;
     color: rgba(192, 192, 192, 0.5)
   }
@@ -135,7 +133,7 @@
   /* DIRECTION CONTROLS (NEXT / PREV) */
   .bx-wrapper .bx-prev {
     position: absolute;
-    right: 45px;
+    right: 4%;
     width: 47px;
     height: 87px;
     background: url('../images/index/main_img_next.png') no-repeat;
@@ -143,7 +141,7 @@
   }
   .bx-wrapper .bx-next {
     position: absolute;
-    left: 45px;
+    left: 4%;
     width: 47px;
     height: 87px;
     background: url('../images/index/main_img_prev.png') no-repeat;
@@ -151,7 +149,7 @@
   }
   .bx-wrapper .bx-controls-direction a {
     position: absolute;
-    top: 43%;
+    top: 44%;
     margin-top: -16px;
     outline: 0;
     width: 47px;
@@ -651,10 +649,9 @@
 
 .link {
     position: relative;
-
     width: 1181px;
     height: 240px;
-    margin: 0 auto 150px;
+    margin: 0 auto;
 }
 .link a {
     display: block;

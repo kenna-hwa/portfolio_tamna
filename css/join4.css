@@ -53,50 +53,30 @@
     top:230px;
     margin: 0 auto 50px;
 }
-.tamna_join_order1>a {
+.tamna_join_order1 {
     display: block;
     width: 33.22222222222%;
     height: 40px;
     border-right: 1px solid #dadada;
     float: left;
-    transition: all 0.1s ease-in-out;
 }
-/* .tamna_join_order1>a:hover:active {
-    width: 33.22222222222%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-} */
-.tamna_join_order2>a {
+.tamna_join_order2 {    
     display: block;
     width: 33.22222222222%;
     height: 40px;
+    box-sizing: border-box;
+    float: left;
+}
+.tamna_join_order3 {
+    display: block;
+    width: 33.22222222222%;
+    height: 39px;
     border-right: 1px solid #dadada;
-    box-sizing: border-box;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
- /* .tamna_join_order2>a:hover:active {
-    width: 33.22222222222%;
     background: #21bdbd;
     font-weight: 400;
-    transition: all 0.1s ease-in-out;
-}  */
-.tamna_join_order3>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
     box-sizing: border-box;
     float: left;
-    transition: all 0.1s ease-in-out;
 }
- .tamna_join_order3>a:hover:active {
-    width: 33.34%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-}
-
 
 /* tamna qr ad */
 

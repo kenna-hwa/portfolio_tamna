@@ -42,6 +42,7 @@
 
 /* tamna join order */
 
+
 .tamna_join_order {
     position: relative;
     width: 722px;
@@ -52,60 +53,38 @@
     border: 1px solid #dadada;
     box-sizing: border-box;
     top:230px;
-    margin-bottom: 50px;
-}
-.tamna_join_order1>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    border-right: 1px solid #dadada;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
-.tamna_join_order1>a:hover:active {
-    width: 33.22222222222%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-}
-.tamna_join_order2>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    border-right: 1px solid #dadada;
-    box-sizing: border-box;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
-/* .tamna_join_order2>a:hover:active {
-    width: 33.22222222222%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-} */
-.tamna_join_order3>a {
-    display: block;
-    width: 33.22222222222%;
-    height: 40px;
-    box-sizing: border-box;
-    float: left;
-    transition: all 0.1s ease-in-out;
-}
-/* .tamna_join_order3>a:hover:active {
-    width: 33.34%;
-    background: #21bdbd;
-    font-weight: 400;
-    transition: all 0.1s ease-in-out;
-} */
-
-/* tamna join checklist */
-.tamna_join_chklist {
-    width: 1080px;
-    height: 960px;
     margin: 0 auto 50px;
-    font-size: 18px;
 }
+.tamna_join_order1 {
+    display: block;
+    width: 33.22222222222%;
+    height: 39px;
+    background: #21bdbd;
+    border-right: 1px solid #dadada;
+    float: left;
+}
+.tamna_join_order2 {
+    display: block;
+    width: 33.22222222222%;
+    height: 40px;
+    box-sizing: border-box;
+    float: left;
+}
+.tamna_join_order3 {
+    display: block;
+    width: 33.22222222222%;
+    height: 40px;
+    box-sizing: border-box;
+    float: left;
+}
+
 /* input element */
+.main {
+    position: relative;
+    width: 1080px;
+    height: 1470px;
+    margin: auto;
+}
 
 .chk_span1 {
     display: inline-block;
@@ -605,7 +584,7 @@
     color: #fff;
     font-size: 24px;
     font-weight: 400;
-    margin: 0 auto 150px;
+    margin: 50px auto 0;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -613,61 +592,4 @@
     background: #fff;
     color: #000;
     transition: all 0.2s ease-in-out;
-}
-
-/* footer */
-
-.footer {
-    height: 180px;
-    background: #4c4c4c;
-    margin: auto;
-}
-.footer_box {
-    position: relative;
-    width: 1181px;
-    height: 180px;
-    margin: auto;
-}
-.footer_box a {
-    display: block;
-    height: 100%;
-}
-.footer_box h2 {
-    position: absolute;
-    width: 86px;
-    height: 150px;
-    background: url(../images/footer_tamna_logo.jpg) no-repeat;
-    text-indent: -9999px;
-    float: left;
-    top: 15px;
-    left: 35px;
-}
-.footer_txt {
-    position: absolute;
-    font-size: 16px;
-    color: #eee;
-    float: left;
-    top: 65px;
-    left: 220px;
-}
-address {
-    float: left;
-    margin-bottom: 5px;
-}
-address::after {
-    content: " | ";
-    margin: 0 10px 0 5px;
-}
-.footer_txt p:nth-child(2) {
-    float: left;
-    margin-bottom: 5px;
-}
-.footer_jejugoverment {
-    position: absolute;
-    width: 217px;
-    height: 70px;
-    background: url(../images/footer_jeju_logo.jpg) no-repeat center;
-    text-indent: -9999px;
-    top: 60px;
-    right: 50px;
 }
