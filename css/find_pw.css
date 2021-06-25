@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+
+/* tamna find */
+.main {
+    width: 1080px;
+    height: 660px;
+    margin: 0 auto;
+}
+.tamna_find {
+    position: relative;
+    width: 1080px;
+    height: 220px;
+    margin: 150px auto 50px;
+}
+.tamna_find h2::before {
+    position: absolute;
+    width: 82px;
+    height: 80px;
+    content: "";
+    background: url(../images/apply/tamna_card_apply_logo.jpg) no-repeat;
+    top: -130px;
+    left: 50%;
+    margin-left: -41px;
+}
+.tamna_find h2 {
+    position: relative;
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    text-align: center;
+    top: 130px;
+}
+.tamna_find_txt {
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: -1px;
+    line-height: 22px;
+    text-align: left;
+    top: 215px;
+    left: 50%;
+    margin: 0  0 50px -180px;
+}
+
+/* tamna input form */
+
+.tamna_input_form {
+    position: relative;
+    width: 1080px;
+    height: 400px;
+    margin: 0 auto 150px;
+    font-size: 16px;
+}
+
+/* id */
+.tamna_find_userid_box {
+    position: relative;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    border-top: 1px solid #444;
+    box-sizing: border-box;
+}
+
+.tamna_find_userid_label {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_find_userid_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
+#tamna_find_userid {
+    position: absolute;
+    display: inline-block;
+    width: 780px;
+    height: 55px;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 30px;
+    top: 11px;
+    right: 0;
+    cursor: text;
+}
+/* username */
+.tamna_find_username_box {
+    position: relative;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    box-sizing: border-box;
+}
+
+.tamna_find_username_label {
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_find_username_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
+#tamna_find_username {
+    position: absolute;
+    display: inline-block;
+    width: 780px;
+    height: 55px;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 30px;
+    top: 11px;
+    right: 0;
+    cursor: text;
+}
+
+/* phoneNum */
+.tamna_find_phoneNum_box {
+    position: relative;
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #444;
+    box-sizing: border-box;
+}
+.tamna_find_phoneNum_label {
+    position: absolute;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_find_phoneNum_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
+#tamna_find_phoneNum {
+    position: absolute;
+    width: 565px;
+    height: 55px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 30px;
+    top: 10px;
+    left: 300px;
+    cursor: text;
+}
+.tamna_find_phoneNum_btn {
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    border-radius: 20px;
+    top: 10px;
+    left: 880px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #21bdbd;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_find_phoneNum_btn:hover {
+    transition: all 0.1s ease-in-out;
+    background: #fff;
+    color: #000;
+}
+
+
+/* verifyNum */
+.tamna_find_verifyNum_box {
+    position: relative;
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #444;
+    box-sizing: border-box;
+}
+.tamna_find_verifyNum_label {
+    position: absolute;
+    display: inline-block;
+    width: 1080px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 75px;
+    box-sizing: border-box;    
+}
+.tamna_find_verifyNum_label::after {
+    position: absolute;
+    content: "*";
+    margin-top: 4px;
+    color: rgb(185, 0, 0);
+}
+#tamna_find_verifyNum {
+    position: absolute;
+    width: 565px;
+    height: 55px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 30px;
+    top: 10px;
+    left: 300px;
+    cursor: text;
+}
+.tamna_find_verifyNum_btn {
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    border-radius: 20px;
+    top: 10px;
+    left: 880px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #21bdbd;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.tamna_find_verifyNum_btn:hover {
+    transition: all 0.1s ease-in-out;
+    background: #fff;
+    color: #000;
+}
+
+/* tamna find next btn */
+
+
+.tamna_find_next_btn {
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 100px;
+    margin: 50px auto 0;
+    background: #21bdbd;
+    border: 1px solid #ddd;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.tamna_find_next_btn:hover {
+    background: #fff;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}

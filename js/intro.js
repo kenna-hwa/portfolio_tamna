@@ -1,5 +1,5 @@
 
-
+window.onload = function() {
 
 function openTab(evt, tabName) {
 
@@ -15,3 +15,4 @@ function openTab(evt, tabName) {
 	document.getElementById(tabName).style.display = "block";
 	evt.currentTarget.className += " active";
 }       
+};

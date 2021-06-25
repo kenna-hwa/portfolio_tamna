@@ -58,8 +58,8 @@
             <!-- tamna_card_login_find start -->
             <div class="tamna_card_login_find">
                 <ul>
-                    <li><a href="#">아이디 찾기</a></li>
-                    <li><a href="#">비밀번호 찾기</a></li>
+                    <li><a href="find_id.php">아이디 찾기</a></li>
+                    <li><a href="find_pw.php">비밀번호 찾기</a></li>
                     <li><a href="join.php">회원가입</a></li>
                 </ul>
             </div>
