@@ -29,6 +29,18 @@ include "php/inc/dbcon.php";
     <!-- script start -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
+    <script>
+        $(function(){
+            $('.tamna_notice_tableTitle').click(function () {
+                var idx = $('.tamna_notice_tableTitle').index(this);
+                console.log(idx);
+
+            });
+
+        });
+        
+
+    </script>
     <!-- script end -->
 </head>
 
@@ -75,9 +87,9 @@ include "php/inc/dbcon.php";
                     $result = mysqli_query($dbcon, $sql);
                     while ($notice = mysqli_fetch_array($result)){
                     ?>                 
-                    <tr>
+                    <tr class="tableRow" id="tableRow">
                         <td class="tamna_notice_tableNum"><?php echo $notice["idx"]; ?></td>
-                        <td class="tamna_notice_tableTitle"><a href="#"><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?></a></td>
+                        <td class="tamna_notice_tableTitle"><a href="notice_board<?php echo $notice["idx"].".php" ?>"><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?></a></td>
                         <td class="tamna_notice_tableDate"><?php echo $notice["tnt_writedate"]; ?></td>
                     </tr>
                     <?php }; ?>
