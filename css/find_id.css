@@ -85,7 +85,7 @@
     border: 1px solid #ccc;
     padding-left: 20px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 1px;
     padding-left: 30px;
     top: 11px;
@@ -125,7 +125,7 @@
     border: 1px solid #ccc;
     padding-left: 20px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 1px;
     padding-left: 30px;
     top: 11px;
@@ -162,7 +162,7 @@
     height: 55px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 1px;
     padding-left: 30px;
     top: 10px;
@@ -218,7 +218,7 @@
     height: 55px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 1px;
     padding-left: 30px;
     top: 10px;
@@ -256,7 +256,7 @@
     background: #21bdbd;
     border: 1px solid #ddd;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
