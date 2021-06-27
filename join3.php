@@ -67,7 +67,7 @@ $usermobile = $_POST["phoneNum"];
 
         <!-- tamna input form -->
         <div class="tamna_input_form">
-            <form name="join3" action="php/joinOk.php" method="POST" onsubmit="return joinFormCheckFinal()">
+            <form name="join3" action="join4.php" method="POST" onsubmit="return joinFormCheckFinal()">
                 <fieldset>
                     <legend class="blind">회원가입</legend>
                     <!-- hidden-join1 start -->

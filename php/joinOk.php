@@ -17,13 +17,13 @@ $tu_mobile = $_POST["phoneNum"];
 $tu_mail = $_POST["id"]."@".$_POST["dns"];
 $tu_pwd = $_POST["tamna_input_pw"];
 
-echo "체크:".$tu_check;
-echo "이름:".$tu_name;
-echo "성별:".$tu_gender;
-echo "생년월일:".$tu_birth;
-echo "연락처:".$tu_mobile;
-echo "아이디:".$tu_mail;
-echo "비밀번호:".$tu_pwd;
+// echo "체크:".$tu_check;
+// echo "이름:".$tu_name;
+// echo "성별:".$tu_gender;
+// echo "생년월일:".$tu_birth;
+// echo "연락처:".$tu_mobile;
+// echo "아이디:".$tu_mail;
+// echo "비밀번호:".$tu_pwd;
 
 
 // DB 연결
@@ -42,7 +42,7 @@ mysqli_query($dbcon, $sql);
 //DB 종료
 mysqli_close($dbcon);
 
-
+// 화면 이동
 
 
 
