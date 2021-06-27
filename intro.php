@@ -140,7 +140,7 @@
             </section> 
 
         </div>
-        <div class="tamna_howto_button"><a href="apply.html">탐나는전 발급</a></div>
+        <div class="tamna_howto_button"><a href="apply.php">탐나는전 발급</a></div>
     </main>
 
     <!-- main end -->
