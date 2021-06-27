@@ -44,10 +44,10 @@
             </div>
             <div class="tamna_card_apply_bank">
                 <ul>
-                <li class="tamna_card_apply_bank_KB"><a href="#">KB 국민카드</a></li>
-                <li class="tamna_card_apply_bank_Kona"><a href="#">코나아이</a></li>
-                <li class="tamna_card_apply_bank_NH"><a href="#">농협중앙회</a></li>
-                <li class="tamna_card_apply_bank_Jeju"><a href="#">제주은행</a></li>
+                <li class="tamna_card_apply_bank_KB"><a href="https://card.kbcard.com/CXPRICAC0076.cms?mainCC=a&cooperationcode=01588&_ga=2.75773334.249574056.1607904666-1341349251.1607904666">KB 국민카드</a></li>
+                <li class="tamna_card_apply_bank_Kona"><a href="https://jeju.usersite.co.kr/home#pg=apply_card_home">코나아이</a></li>
+                <li class="tamna_card_apply_bank_NH"><a href="https://www.google.com/maps/place/%EB%86%8D%ED%98%91%EC%A4%91%EC%95%99%ED%9A%8C+%EC%A0%9C%EC%A3%BC%EC%A7%80%EC%97%AD%EB%B3%B8%EB%B6%80/@33.5115042,126.5228515,17z/data=!3m1!4b1!4m5!3m4!1s0x350ce35507e8ce9b:0xa6544539761ff87d!8m2!3d33.5114997!4d126.5250402">농협중앙회</a></li>
+                <li class="tamna_card_apply_bank_Jeju"><a href="https://www.google.com/maps/search/%EC%A0%9C%EC%A3%BC+%EC%A0%9C%EC%A3%BC%EC%9D%80%ED%96%89/@33.5115131,126.5228515,17z/data=!3m1!4b1">제주은행</a></li>
                 </ul>
             </div>
         </div>
