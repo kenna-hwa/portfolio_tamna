@@ -18,7 +18,6 @@
     <!-- css end -->
         <!-- script start -->
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="js/intro.js"></script>
         <script src="js/gnb.js"></script>
         <!-- script end -->
 </head>
@@ -149,7 +148,8 @@
     <!-- footer start -->
     <?php include "php/footer.php" ?>
     <!-- footer end -->
-
+    <!-- script add -->
+    <script src="js/intro.js"></script>
 
 
 </body>
