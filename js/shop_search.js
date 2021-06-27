@@ -8,6 +8,3 @@ function openSearch(){
     location.href = "shop_search2.php"
     location.target = "_self"
 };
-
-
-    
