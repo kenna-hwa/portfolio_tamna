@@ -1,3 +1,15 @@
+<?php
+
+//DB연결
+
+include "php/inc/dbcon.php";
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -79,19 +91,31 @@
                 <div class="board_notice">
                     <h3><a href="notice.php">공지사항</a></h3>
                     <ul>
-                        <li><a href="#">탐나는전 제주페이 어플 다운로드 방법<span>2021-03-02</span></a></li>
-                        <li><a href="#">탐나는전 가맹점 신청 안내<span>2021-02-26</span></a></li>
+                    <?php
+                    $sql = "select * from tnotice order by idx DESC;";
+                    $result = mysqli_query($dbcon, $sql);
+                    while ($notice = mysqli_fetch_array($result)){
+                    ?>
+                        <li><a href="notice_board<?php echo $notice["idx"].".php" ?>"><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?><span><?php echo $notice["tnt_writedate"]; ?></span></a></li>
+                        <!-- <li><a href="#">탐나는전 가맹점 신청 안내<span>2021-02-26</span></a></li>
                         <li><a href="#">제주형 지역화폐 '탐나는전'이란?<span>2021-02-01</span></a></li>
-                        <li><a href="#">탐나는전 제주페이 홈페이지 오픈<span>2021-01-28</span></a></li>
+                        <li><a href="#">탐나는전 제주페이 홈페이지 오픈<span>2021-01-28</span></a></li> -->
+                    <?php }; ?>
                     </ul>
                 </div>
                 <div class="board_news">
                     <h3><a href="news.php">NEWS</a></h3>
                     <ul>
-                        <li><a href="#">제주도, 탐나는전 부정유통 등 불법행위 6건 적발<span>2021-03-06</span></a></li>
-                        <li><a href="#">제주도-제주도기자협회, '탐나는전' 성공 정착 '한 뜻'<span>2021-03-04</span></a></li>
+                    <?php
+                    $sql = "select * from tnews order by idx DESC;";
+                    $result = mysqli_query($dbcon, $sql);
+                    while ($news = mysqli_fetch_array($result)){
+                    ?>    
+                        <li><a href="news_board<?php echo $news["idx"].".php" ?>"><?php echo $news["tn_title"]; ?><span><?php echo $news["tn_writedate"]; ?></span></a></li>
+                        <!-- <li><a href="#">제주도-제주도기자협회, '탐나는전' 성공 정착 '한 뜻'<span>2021-03-04</span></a></li>
                         <li><a href="#">제주지역화폐 '탐나는전' 첫 선!<span>2021-02-15</span></a></li>
-                        <li><a href="#">제주지역화폐 명칭 '탐나는전' 확정<span>2021-01-30</span></a></li>
+                        <li><a href="#">제주지역화폐 명칭 '탐나는전' 확정<span>2021-01-30</span></a></li> -->
+                        <?php }; ?>
                     </ul>
                 </div>
             </div>

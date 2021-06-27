@@ -33,13 +33,9 @@ include "php/inc/dbcon.php";
         $(function(){
             $('.tamna_notice_tableTitle').click(function () {
                 var idx = $('.tamna_notice_tableTitle').index(this);
-                console.log(idx);
-
+                //console.log(idx);
             });
-
         });
-        
-
     </script>
     <!-- script end -->
 </head>
