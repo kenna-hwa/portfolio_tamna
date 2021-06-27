@@ -27,13 +27,13 @@ $tu_pwd = $_POST["tamna_input_pw"];
 
 
 // DB 연결
-include "inc/dbcon.php";
+include "php/inc/dbcon.php";
 
 //전달할 쿼리 작성
 
 $sql = "insert into tmembers (tu_check, tu_name, tu_gender, tu_birth, tu_mobile, tu_mail, tu_pwd) values ('$tu_check', '$tu_name', '$tu_gender', '$tu_birth', '$tu_mobile', '$tu_mail', '$tu_pwd');";
 
-echo $sql;
+
 
 //쿼리 전달
 
