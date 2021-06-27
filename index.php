@@ -122,12 +122,12 @@ include "php/inc/dbcon.php";
         
             <div class="board_bottom">
                 <div class="board_qna">
-                    <h3><a href="qna_toggleclose.php">자주묻는질문</a></h3>
+                    <h3><a href="qna_toggleopen.php">자주묻는질문</a></h3>
                     <ul>
-                        <li><a href="#">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?<span>2021-03-06</span></a></li>
-                        <li><a href="#">사업주가 환전을 하려면 어디로 가나요?<span>2021-03-04</span></a></li>
-                        <li><a href="#">가맹점이 내야하는 별도 수수료가 있나요?<span>2021-02-15</span></a></li>
-                        <li><a href="#">가맹점 등록 신청은 어떻게 하나요?<span>2021-01-30</span></a></li>
+                        <li><a href="qna_toggleopen.php#qna1">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?<span>2021-03-06</span></a></li>
+                        <li><a href="qna_toggleopen.php#qna2">사업주가 환전을 하려면 어디로 가나요?<span>2021-03-04</span></a></li>
+                        <li><a href="qna_toggleopen.php#qna3">가맹점이 내야하는 별도 수수료가 있나요?<span>2021-02-15</span></a></li>
+                        <li><a href="qna_toggleopen.php#qna4">가맹점 등록 신청은 어떻게 하나요?<span>2021-01-30</span></a></li>
                     </ul>
                 </div>
 

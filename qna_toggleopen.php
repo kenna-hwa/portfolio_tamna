@@ -72,7 +72,7 @@
                     <tr class="tamna_qna_q">
                         <td class="tamna_qna_tableMarkerQ">Q</td>
                         <td class="tamna_qna_tableCategory">가맹점</td>
-                        <td class="tamna_qna_tableTitle">'탐나는전'을 결제받으면 어떻게 입금처리되나요?</td>
+                        <td class="tamna_qna_tableTitle" id="qna1">'탐나는전'을 결제받으면 어떻게 입금처리되나요?</td>
                         <td class="tamna_qna_tableClose">답변 보기</td>
                         <td class="tamna_qna_tableOpen">답변 닫기</td>
 
@@ -84,7 +84,7 @@
                     <tr class="tamna_qna_q"> 
                         <td class="tamna_qna_tableMarkerQ">Q</td>
                         <td class="tamna_qna_tableCategory">가맹점</td>
-                        <td class="tamna_qna_tableTitle">사업주가 환전을 하려면 어디로(어떻게) 가나요?</td>
+                        <td class="tamna_qna_tableTitle" id="qna2">사업주가 환전을 하려면 어디로(어떻게) 가나요?</td>
                         <td class="tamna_qna_tableClose">답변 보기</td>
                         <td class="tamna_qna_tableOpen">답변 닫기</td>
                     </tr>
@@ -97,7 +97,7 @@
                     <tr class="tamna_qna_q">
                         <td class="tamna_qna_tableMarkerQ">Q</td>
                         <td class="tamna_qna_tableCategory">가맹점</td>
-                        <td class="tamna_qna_tableTitle">가맹점이 내야하는 별도의 수수료가 있나요?</td>
+                        <td class="tamna_qna_tableTitle" id="qna3">가맹점이 내야하는 별도의 수수료가 있나요?</td>
                         <td class="tamna_qna_tableClose">답변 보기</td>
                         <td class="tamna_qna_tableOpen">답변 닫기</td>
                     </tr>
