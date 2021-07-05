@@ -49,6 +49,22 @@
     height: 40px;
     margin: 0 auto 50px;
 }
+.tamna_news_write_link_wrap{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    background: #21bdbd;
+    text-align: center;
+    line-height: 2.5;
+}
+.tamna_news_write_link{
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
 .tamna_news_search_box {
     position: absolute;
     right: 0;
@@ -107,7 +123,6 @@
 }
 .tamna_news_table {
     width: 1080px;
-    height: 400px;
     font-size: 16px;
     letter-spacing: -1px;
     border-collapse: collapse;
@@ -122,54 +137,27 @@
 /* table row */
 .tamna_news_table a {
     display: block;
-    height: 100%;
+    height: 80px;
     line-height: 80px;
 }
-.tamna_news_table tr:nth-child(1) {
+.tamna_news_table tr {
     width: 1080px;
     height: 80px;
     border-bottom: 1px solid #4c4c4c;
     box-sizing: border-box;
 }
-.tamna_news_table tr:nth-child(2) {
+.tableRow {
     width: 1080px;
     height: 80px;
     border-bottom: 1px solid #4c4c4c;
     box-sizing: border-box;
     transition: all 0.1s ease-in-out;
 }
-.tamna_news_table tr:nth-child(2):hover {
+.tableRow:hover {
     background: #21bdbd;
     transition: all 0.1s ease-in-out;
 }
-.tamna_news_table tr:nth-child(3) {
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #4c4c4c;
-    box-sizing: border-box;
-}
-.tamna_news_table tr:nth-child(3):hover {
-    background: #21bdbd;
-    transition: all 0.1s ease-in-out;
-}
-.tamna_news_table tr:nth-child(4) {
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #4c4c4c;
-    box-sizing: border-box;
-}
-.tamna_news_table tr:nth-child(4):hover {
-    background: #21bdbd;
-    transition: all 0.1s ease-in-out;
-}
-.tamna_news_table tr:nth-child(5) {
-    width: 1080px;
-    height: 80px;
-}
-.tamna_news_table tr:nth-child(5):hover {
-    background: #21bdbd;
-    transition: all 0.1s ease-in-out;
-}
+
 /* table width */
 .tamna_news_tableHead_tableNum {
     width: 100px;
@@ -183,6 +171,7 @@
 
 /* tableTitle align */
 .tamna_news_tableTitle {
+    height: 80px;
     text-align: left;
     padding-left: 20px;
     box-sizing: border-box;

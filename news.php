@@ -49,6 +49,7 @@ include "php/inc/dbcon.php";
 
         <!-- tamna news search -->
         <div class="tamna_news_search">
+            <div class="tamna_news_write_link_wrap"><a class="tamna_news_write_link" href="news_write.php">글쓰기</a></div>
             <div class="tamna_news_search_box">
                 <select name="news_category" id="news_category" class="tamna_news_category">
                     <option value="news_all">전체</option>
@@ -64,24 +65,28 @@ include "php/inc/dbcon.php";
         <!-- tamna news search table -->
         <div class="tamna_news_table_box">
             <table class="tamna_news_table">
+            <caption class="blind">뉴스</caption>
+                <thead>
                     <tr>
                         <th class="tamna_news_tableHead_tableNum">번호</th>
-                        <th class="tamna_news_tableHead_tableCategory">카테고리</th>
                         <th class="tamna_news_tableHead_tableTitle">제목</th>
                         <th class="tamna_news_tableHead_tableDate">작성일</th>
                     </tr>   
+                    </thead>
+                    <tbody>
                     <?php
                     $sql = "select * from tnews order by idx DESC;";
                     $result = mysqli_query($dbcon, $sql);
                     while ($news = mysqli_fetch_array($result)){
+                        $idx = $news["idx"];
                     ?>                 
-                    <tr>
+                    <tr class="tableRow" id="tableRow">
                         <td class="tamna_news_tableNum"><?php echo $news["idx"]; ?></td>
-                        <td class="tamna_news_tableCategory"><?php echo $news["tn_category"]; ?></td>
-                        <td class="tamna_news_tableTitle"><a href="#"><?php echo $news["tn_title"]; ?></a></td>
+                        <td class="tamna_news_tableTitle"><a href="./news_view.php?idx='<?php echo $idx?>'"><?php echo $news["tn_title"]; ?></a></td>
                         <td class="tamna_news_tableDate"><?php echo $news["tn_writedate"]; ?></td>
                     </tr>
                     <?php }; ?>
+                    </tbody>
             </table>
             <!-- tamna news table paging -->
             <div class="tamna_news_table_paging">

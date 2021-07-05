@@ -29,14 +29,6 @@ include "php/inc/dbcon.php";
     <!-- script start -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
-    <script>
-        $(function(){
-            $('.tamna_notice_tableTitle').click(function () {
-                var idx = $('.tamna_notice_tableTitle').index(this);
-                //console.log(idx);
-            });
-        });
-    </script>
     <!-- script end -->
 </head>
 
@@ -57,6 +49,7 @@ include "php/inc/dbcon.php";
 
         <!-- tamna notice search -->
         <div class="tamna_notice_search">
+            <div class="tamna_notice_write_link_wrap"><a class="tamna_notice_write_link" href="notice_write.php">글쓰기</a></div>
             <div class="tamna_notice_search_box">
                 <select name="notice_category" id="notice_category" class="tamna_notice_category">
                     <option value="notice_all">전체</option>
@@ -72,23 +65,28 @@ include "php/inc/dbcon.php";
         <!-- tamna notice search table -->
         <div class="tamna_notice_table_box">
             <table class="tamna_notice_table">
+			    <caption class="blind">공지사항</caption>
+                <thead>
                     <tr>
                         <th class="tamna_notice_tableHead_tableNum">번호</th>
-                        <th class="tamna_notice_tableHead_tableCategory">카테고리</th>
                         <th class="tamna_notice_tableHead_tableTitle">제목</th>
                         <th class="tamna_notice_tableHead_tableDate">작성일</th>
                     </tr>
+                </thead>
+                <tbody>
                     <?php
                     $sql = "select * from tnotice order by idx DESC;";
                     $result = mysqli_query($dbcon, $sql);
                     while ($notice = mysqli_fetch_array($result)){
+                            $idx = $notice["idx"];
                     ?>                 
                     <tr class="tableRow" id="tableRow">
                         <td class="tamna_notice_tableNum"><?php echo $notice["idx"]; ?></td>
-                        <td class="tamna_notice_tableTitle"><a href="notice_board<?php echo $notice["idx"].".php" ?>"><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?></a></td>
+                        <td class="tamna_notice_tableTitle"><a href="./notice_view.php?idx='<?php echo $idx?>'"><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?></a></td>
                         <td class="tamna_notice_tableDate"><?php echo $notice["tnt_writedate"]; ?></td>
                     </tr>
                     <?php }; ?>
+                    </tbody>
             </table>
             <!-- tamna notice table paging -->
             <div class="tamna_notice_table_paging">

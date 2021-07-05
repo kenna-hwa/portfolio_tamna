@@ -33,12 +33,16 @@
                         <ul class="gnb_customer_sub sub">
                             <li><a href="notice.php">공지사항</a></li>
                             <li><a href="news.php">NEWS</a></li>
-                            <li><a href="qna_toggleopen.php">자주묻는질문</a></li>
+                            <li><a href="qna_toggleclose.php">자주묻는질문</a></li>
                             <li><a href="contact.php">문의하기</a></li>
                         </ul>
                     </li>
                 </ul>
                 <a href="#" class="gnb_more topmenu">더보기</a>
+                <ul class="gnb_signin_join_wrap">
+                    <li class="gnb_signin"><a href="signin.php" class="gnb_signin_link">로그인</a></li>
+                    <li class="gnb_join"><a href="join.php" class="gnb_join_link">회원가입</a></li>
+                </ul>
             </nav>
         </div>
         <div class="gnb_sub_box">

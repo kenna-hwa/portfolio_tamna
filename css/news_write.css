@@ -1,16 +1,20 @@
 @charset "utf-8";
 
 /* main */
+.main {
+    width: 1080px;
+    margin: auto;
+}
 
-/* tamna notice */
+/* tamna news */
 
-.tamna_notice{
+.tamna_news{
     position: relative;
     width: 190px;
     height: 222px;
     margin:150px auto 50px;
 }
-.tamna_notice h2::before {
+.tamna_news h2::before {
     position: absolute;
     width: 82px;
     height: 80px;
@@ -20,7 +24,7 @@
     left: 50%;
     margin-left: -41px;
 }
-.tamna_notice h2 {
+.tamna_news h2 {
     position: relative;
     display: block;
     font-size: 28px;
@@ -29,7 +33,7 @@
     text-align: center;
     top: 130px;
 }
-.tamna_notice_txt {
+.tamna_news_txt {
     position: absolute;
     font-size: 16px;
     letter-spacing: -1px;
@@ -40,35 +44,19 @@
     margin: 0 0 50px -85px;
 }
 
-/* tamna notice search */
+/* tamna news search */
 
-.tamna_notice_search {
+.tamna_news_search {
     position: relative;
     width: 1080px;
     height: 40px;
     margin: 0 auto 50px;
 }
-.tamna_notice_write_link_wrap{
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    border: 1px solid #777;
-    box-sizing: border-box;
-    background: #21bdbd;
-    text-align: center;
-    line-height: 2.5;
-}
-.tamna_notice_write_link{
-    height: 100%;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-}
-.tamna_notice_search_box {
+.tamna_news_search_box {
     position: absolute;
     right: 0;
 }
-.tamna_notice_category {
+.tamna_news_category {
     width: 100px;
     height: 40px;
     border: 1px solid #777;
@@ -81,7 +69,7 @@
     margin-right: 10px;
     cursor: pointer;
 }
-.tamna_notice_search_text {
+.tamna_news_search_text {
     width: 250px;
     height: 40px;
     border: 1px solid #777;
@@ -94,7 +82,7 @@
     float: left;
     margin-right: 10px;
     }
-.tamna_notice_search_submit_btn {
+.tamna_news_search_submit_btn {
     width: 100px;
     height: 40px;
     border: 1px solid #777;
@@ -107,7 +95,7 @@
     float: left;
     transition: all 0.2s linear;
 }
-.tamna_notice_search_submit_btn:hover {
+.tamna_news_search_submit_btn:hover {
     background: #fff;
     color: #000;
     border: 1px solid #777;
@@ -116,99 +104,102 @@
 }
 
 /* table */
-.tamna_notice_table_box {
+.tamna_news_table_box {
     width: 1080px;
     margin: 0 auto 150px;
 }
-.tamna_notice_table {
+.tamna_news_table {
     width: 1080px;
+    height: 400px;
     font-size: 16px;
-    letter-spacing: -1px;
     border-collapse: collapse;
     font-size: 16px;
     text-align: center;
     border-top: 2px solid #4c4c4c;
-    border-bottom: 1px solid #4c4c4c;
+    border-bottom: 2px solid #4c4c4c;
     box-sizing: border-box;
     margin-bottom: 50px;
 }
 
 /* table row */
-.tamna_notice_table a {
+.tamna_news_table a {
     display: block;
-    height: 80px;
+    height: 100%;
     line-height: 80px;
 }
-.tamna_notice_table tr {
+.tamna_news_table tr:nth-child(1) {
     width: 1080px;
     height: 80px;
     border-bottom: 1px solid #4c4c4c;
     box-sizing: border-box;
 }
-.tableRow {
-    width: 1080px;
-    height: 80px;
-    border-bottom: 1px solid #4c4c4c;
-    box-sizing: border-box;
-    transition: all 0.1s ease-in-out;
-}
-.tableRow:hover {
-    background: #21bdbd;
-    transition: all 0.1s ease-in-out;
-}
-
-/* table width */
-.tamna_notice_tableHead_tableNum {
-    width: 100px;
-}
-.tamna_notice_tableHead_tableTitle {
-    width: 850px;
-}
-.tamna_notice_tableHead_tableDate {
-    width: 130px;
-}
-
-/* tableTitle align */
-.tamna_notice_tableTitle {
-    height: 80px;
-    text-align: left;
+#title{
+    width: 450px;
+    height: 50px;
     padding-left: 20px;
+    font-size: 20px;
+    border: 1px solid #444;
     box-sizing: border-box;
 }
-
-/* tableData color */
-.tamna_notice_tableDate {
-    color: #999;
-    cursor: default;
-
-}
-
-/* category diplay none */
-.tamna_notice_tableHead_tableCategory {
-    width: 2px;
-    display: none;
-}
-.tamna_notice_tableCategory {
-    width: 2px;
-    display: none;
-}
-
-/* paging */
-.tamna_notice_table_paging {
-    width: 160px;
-    height: 40px;
-    margin: 0 auto;
-}
-.tamna_notice_table_paging a{
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: auto;
-    border: 1px solid #eee;
+#category{
+    width: 150px;
+    height: 50px;    
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
     box-sizing: border-box;
-    background: #21bdbd;
-    color: #fff;
+}
+#date{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #444;
+    box-sizing: border-box;
+}
+#pwd{
+    width: 70px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: 1px solid #444;
+    box-sizing: border-box;
+}
+.tamna_news_tableBody {
+    width: 1080px;
+    box-sizing: border-box;
+}
+.tamna_news_desc{
     height: 100%;
-    text-align: center;
-    line-height: 38px; 
+    box-sizing: border-box;
+    padding: 50px;
 }
+.desc_label{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#desc{
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #444;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.button{
+    display: block;
+    width: 350px;
+    height: 100px;
+    margin: 0 auto;
+    background: #21bdbd;
+    border: 1px solid #ddd;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 95px;
+}
+
