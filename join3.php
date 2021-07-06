@@ -1,9 +1,6 @@
 <?php
-
 //세션 inc
 include "phpsrc/session.php";
-
-//join2에서 두 페이지의 값 히든으로 다시 받아오기
 
 $chk = $_POST["chkbox"];
 $username = $_POST["username"];
@@ -103,8 +100,10 @@ $usermobile = $_POST["phoneNum"];
                     </div>
 
                     <div class="tamna_input_pw_check_box">
-                        <label for="tamna_input_pw_check" class="tamna_input_pw_check_label">비밀번호 확인</label>
-                        <input type="password" name="tamna_input_pw_check" id="tamna_input_pw_check" placeholder="영문(대소문자), 숫자, 특수문자 포함 8자리 이상 12자리 이하">
+                        <label for="tamna_input_pw_check" 
+                        class="tamna_input_pw_check_label">비밀번호 확인</label>
+                        <input type="password" name="tamna_input_pw_check" id="tamna_input_pw_check"
+                         placeholder="영문(대소문자), 숫자, 특수문자 포함 8자리 이상 12자리 이하">
                     </div>
                     <!-- tamna input form end -->
                     <button type="submit" class="tamna_join_finish_btn">회원가입 완료</button>
