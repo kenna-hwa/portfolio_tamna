@@ -6,7 +6,7 @@ include "phpsrc/session.php";
 // 값 다 받아오기
 
 //1p
-$tu_check = $_POST["chkbox"];
+$tu_check = $_POST["chkbox12"];
 //2p
 $tu_name = $_POST["username"];
 $tu_gender = $_POST["gender"];

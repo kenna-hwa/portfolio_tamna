@@ -72,7 +72,7 @@ $usermobile = $_POST["phoneNum"];
                 <fieldset>
                     <legend class="blind">회원가입</legend>
                     <!-- hidden-join1 start -->
-                    <input type="hidden" name="chkbox" value="<?php echo $chk ?>">
+                    <input type="hidden" name="chkbox12" value="<?php echo $chkbox12 ?>">
                     <!-- hidden-join1 end -->
                     <!-- hidden-join2 start -->
                     <input type="hidden" name="username" value="<?php echo $username ?>">

@@ -1,21 +1,13 @@
 <?php
 
 //세션 inc
+
 include "phpsrc/session.php";
 
-//이미 로그인한 경우 접속 불가
-if($s_id){
+//로그인 체크
 
-    echo "
-    <script type=\"text/javascript\" charset=\"utf-8\">
-    
-    alert(\"이미 가입된 회원입니다.\");
-    location.href=\"../index.php\";
-    
-    </script>
-    
-    ";
-};
+include "phpsrc/loginCheck.php";
+
 
 ?>
 

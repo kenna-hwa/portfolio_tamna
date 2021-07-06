@@ -67,6 +67,7 @@
     display: block;
     width: 33.22222222222%;
     height: 40px;
+    border-right: 1px solid #dadada;
     box-sizing: border-box;
     float: left;
 }

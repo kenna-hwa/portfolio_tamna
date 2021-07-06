@@ -32,7 +32,7 @@ $chk = $_POST["chkbox12"];
 
 <body>
   <!-- header start -->
-  <?php include "phpsrc/header.php" ?>
+  <?php include "header.php" ?>
 <!-- header end -->
 
 <!-- main start -->
@@ -62,7 +62,7 @@ $chk = $_POST["chkbox12"];
                 <fieldset>
                 <legend class="blind"> 회원가입 </legend>
                     <!-- hidden-join1 start -->
-                    <input type="hidden" name="chkbox" value="<?php echo $chk ?>">
+                    <input type="hidden" name="chkbox12" value="<?php echo $chkbox12 ?>">
                     <!-- hidden-join1 end -->
 
                     <!-- username -->

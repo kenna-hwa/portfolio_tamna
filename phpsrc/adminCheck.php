@@ -7,7 +7,7 @@ if($s_id != "admin"){
     <script type=\"text/javascript\" charset=\"utf-8\">
     
     alert(\"관리자 권한이 필요합니다.\");
-    location.href=\"../index.php\";
+    location.href=\"index.php\";
     
     </script>
     

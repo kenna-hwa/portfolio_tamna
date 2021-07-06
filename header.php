@@ -33,7 +33,7 @@ function log_out(){
                     <li class="gnb_personal"><a href="signin.php" class="topmenu" title="개인사용자 메뉴">개인사용자</a>
                         <ul class="gnb_personal_sub sub">
                             <li><a href="apply.php" title="카드 신청">카드 신청</a></li>
-                            <li><a href="signin.php" title="카드 등록">카드 등록</a></li>
+                            <li><a href="mycardapply.php" title="카드 등록">카드 등록</a></li>
                             <li><a href="payment_view.php" title="이용 내역">이용 내역</a></li>
                             <li><a href="shop_search1.php" title="가맹점 찾기">가맹점 찾기</a></li>
                         </ul>

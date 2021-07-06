@@ -11,8 +11,8 @@ if($s_id){
     echo "
     <script type=\"text/javascript\" charset=\"utf-8\">
     
-    alert(\"이미 가입된 회원입니다.\");
-    location.href=\"./index.php\";
+    alert(\"이미 로그인한 회원입니다.\");
+    history.back();
     
     </script>
     
