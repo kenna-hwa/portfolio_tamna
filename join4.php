@@ -1,10 +1,9 @@
 <?php
 
+//세션 inc
+include "phpsrc/session.php";
 
 // 값 다 받아오기
-
-
-
 
 //1p
 $tu_check = $_POST["chkbox"];
@@ -27,13 +26,11 @@ $tu_pwd = $_POST["tamna_input_pw"];
 
 
 // DB 연결
-include "php/inc/dbcon.php";
+include "phpsrc/dbcon.php";
 
 //전달할 쿼리 작성
 
 $sql = "insert into tmembers (tu_check, tu_name, tu_gender, tu_birth, tu_mobile, tu_mail, tu_pwd) values ('$tu_check', '$tu_name', '$tu_gender', '$tu_birth', '$tu_mobile', '$tu_mail', '$tu_pwd');";
-
-
 
 //쿼리 전달
 
@@ -41,9 +38,6 @@ mysqli_query($dbcon, $sql);
 
 //DB 종료
 mysqli_close($dbcon);
-
-
-
 
 ?>
 
@@ -76,7 +70,7 @@ mysqli_close($dbcon);
 <body>
  
  <!-- header start -->
- <?php include "php/header.php" ?>
+ <?php include "header.php" ?>
 <!-- header end -->
 
     <!-- main start -->
@@ -116,7 +110,7 @@ mysqli_close($dbcon);
     </main>
     <!-- main end -->
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
 </body>

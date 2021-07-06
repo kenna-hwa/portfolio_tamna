@@ -1,9 +1,12 @@
-
 <?php
+
+//세션 inc
+
+include "phpsrc/session.php";
 
 //DB연결
 
-include "php/inc/dbcon.php";
+include "phpsrc/dbcon.php";
 
 
 //쿼리 작성
@@ -79,7 +82,6 @@ if($e_pageNum > $total_page){
     <link type="text/css" rel="stylesheet" href="css/footer.css">
     <!-- css end -->
     <!-- script start -->
-    <script src="js/shop_search.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
     <!-- script end -->
@@ -87,7 +89,7 @@ if($e_pageNum > $total_page){
 
 <body>
  <!-- header start -->
- <?php include "php/header.php" ?>
+ <?php include "header.php" ?>
 <!-- header end -->
 
 
@@ -136,11 +138,12 @@ if($e_pageNum > $total_page){
     <!-- main end -->
 
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
 
 <!-- script add -->
+<script src="js/shop_search.js" charset="utf-8"></script>
 
 </body>
 

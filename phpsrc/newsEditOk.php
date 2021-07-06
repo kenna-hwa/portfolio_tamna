@@ -1,7 +1,16 @@
 <?php
 
+//세션 inc
+
+include "session.php";
+
+//DB연결
+
+include "dbcon.php";
+
 //입력 값 끌어오기
 
+$idx = $_GET['idx'];
 $title = $_POST['title'];
 $category = $_POST['category'];
 $date = $_POST['date'];
@@ -10,36 +19,30 @@ $desc = $_POST['desc'];
 $author = $_POST['author'];
 
 
-//DB연결
-
-include "inc/dbcon.php";
-
-
- $sql = "insert into tnotice (tnt_category, tnt_title, tnt_writedate, tnt_author, tnt_desc, tnt_pw) values ('$category', '$title', '$date', '$author', '$desc', '$pwd');";
+$sql = "update tnews set idx = $idx, tn_category = '$category', tn_title = '$title', tn_desc = '$desc' where idx = $idx;";
 
 $result = mysqli_query($dbcon, $sql);
-
 
 
 if($result) { // query가 정상실행 되었다면,
 
     $msg = "정상적으로 글이 등록되었습니다.";
-        
-    $idx = mysqli_insert_id($dbcon);
-    $replaceURL = "../notice_view.php?idx=".$idx;
+    
+    $replaceURL = "../news_view.php?idx="."$idx" ;
     } else {
     
      $msg = "글을 등록하지 못했습니다.";
      ?>
-    <script>
+    <script type="text/javascript" charset="utf-8">
     alert("<?php echo $msg?>");
     history.back();
     </script>
+
     <?php } ?>
 
 
 
-    <script>
+    <script type="text/javascript" charset="utf-8">
     alert("<?php echo $msg?>");
     location.replace("<?php echo $replaceURL?>");
     </script> 

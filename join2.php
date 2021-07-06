@@ -1,10 +1,11 @@
-
 <?php 
+
+//세션 inc
+include "phpsrc/session.php";
 
 $chk = $_POST["chkbox12"];
 
- ?>
-
+?>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -27,13 +28,11 @@ $chk = $_POST["chkbox12"];
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
     <!-- script end -->
-
-
 </head>
 
 <body>
   <!-- header start -->
-  <?php include "php/header.php" ?>
+  <?php include "phpsrc/header.php" ?>
 <!-- header end -->
 
 <!-- main start -->
@@ -196,15 +195,15 @@ $chk = $_POST["chkbox12"];
                         </select>
                         <select id="tamna_join_birthday" name="birthday">
                             <option value="none">일</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
                             <option value="10">10</option>
                             <option value="11">11</option>
                             <option value="12">12</option>
@@ -255,11 +254,11 @@ $chk = $_POST["chkbox12"];
     <!-- main end -->
     
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
     <!-- script add -->
-    <script type="text/javascript" src="js/join2.js"></script>
+    <script type="text/javascript" src="js/join2.js" charset="utf-8"></script>
 
 
 

@@ -1,3 +1,12 @@
+<?php
+
+//세션 inc
+
+include "phpsrc/session.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -27,7 +36,7 @@
 
 <body>
   <!-- header start -->
-  <?php include "php/header.php" ?>
+  <?php include "header.php" ?>
 <!-- header end -->
 
     <!-- main start -->
@@ -41,7 +50,7 @@
 
         <!-- tamna_card_login_input start -->
             <div class="tamna_card_login_input">
-                <form name="signin" action="php/signinOk.php" method="POST" onsubmit="return signinFormCheck()">
+                <form name="signin" action="phpsrc/signinOk.php" method="POST" onsubmit="return signinFormCheck()">
                 <fieldset>
                 <legend class="blind">로그인</legend>
                 <input class="tamna_card_login_id" type="text" name="email" id="email" placeholder="아이디(이메일 주소)">
@@ -75,11 +84,11 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
     <!-- script add -->
-    <script type="text/javascript" src="js/signin.js"></script>
+    <script src="js/signin.js" charset="utf-8"></script>
 
 </body>
 

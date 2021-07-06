@@ -1,3 +1,16 @@
+<?php
+
+
+//세션 inc
+include "phpsrc/session.php";
+
+//로그인 체크
+
+include "phpsrc/adminCheck.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -25,7 +38,7 @@
 
 <body>
   <!-- header start -->
-  <?php include "php/header.php" ?>
+  <?php include "header.php" ?>
 <!-- header end -->
 
 <!-- main start -->
@@ -76,11 +89,11 @@
     <!-- main end -->
     
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
     <!-- script add -->
-    <script type="text/javascript" src="js/find_id.js"></script>
+    <script type="text/javascript" src="js/find_id.js" charset="utf-8"></script>
 
 
 

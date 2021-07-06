@@ -1,3 +1,11 @@
+<?php
+
+//세션 inc
+
+include "phpsrc/session.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -24,7 +32,7 @@
 
 <body>
   <!-- header start -->
-  <?php include "php/header.php" ?>
+  <?php include "header.php" ?>
 <!-- header end -->
 
     <!-- main start -->
@@ -45,7 +53,7 @@
             </div>
         </div>
         <div class="tamna_shop_apply_input_box">
-            <form name="busiNum" action="php/busiNumOk.php" method="POST" onsubmit="return busiNumCheck()">
+            <form name="busiNum" action="phpsrc/busiNumOk.php" method="POST" onsubmit="return busiNumCheck()">
                 <fieldset>
                     <legend class="blind">사업자등록번호</legend>
                     <input type="text" name="businessRegistrationNumber" id="tamna_shop_apply_input_busiNum" class="shopNum"
@@ -60,11 +68,11 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
     <!-- script add -->
-    <script src="js/shop_apply.js"></script>
+    <script src="js/shop_apply.js" charset="utf-8"></script>
 
 </body>
 

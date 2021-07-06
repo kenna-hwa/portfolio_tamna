@@ -31,11 +31,15 @@
 /* gnb */
 .topmenu, .sub, .gnb_sub_box{
     display: none;
-}
-.gnb ul li a {
+} 
+.topmenu {
     display: block;
     height: 100%;
 }
+ .sub>li a {
+    display: block;
+    height: 20%;
+} 
 .gnb_info {
     position: absolute;
     width: 126px;
@@ -89,7 +93,7 @@
 }
 .gnb_signin_join_wrap{
     position: absolute;
-    width: 95px;
+    width: 120px;
     height: 12px;
     top: 10px;
     left: 1180px;
@@ -112,6 +116,16 @@
     font-weight: 500;
     color: #aaa;
 }
+.gnb_signout>a::after {
+    position: relative;
+    display: inline-block;
+    content: " | ";
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    top: -2px;
+}
+
 /* sub menu */
 
 .gnb_sub {

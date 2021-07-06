@@ -1,10 +1,12 @@
 <?php
 
+//세션 inc
+
+include "phpsrc/session.php";
+
 //DB연결
 
-include "php/inc/dbcon.php";
-
-
+include "phpsrc/dbcon.php";
 
 ?>
 
@@ -34,7 +36,7 @@ include "php/inc/dbcon.php";
 
 <body>
  <!-- header start -->
- <?php include "php/header.php" ?>
+ <?php include "header.php" ?>
 <!-- header end -->
 
     <!-- main start -->
@@ -49,7 +51,11 @@ include "php/inc/dbcon.php";
 
         <!-- tamna notice search -->
         <div class="tamna_notice_search">
+        <?php
+        if($s_name === "관리자"){
+        ?>
             <div class="tamna_notice_write_link_wrap"><a class="tamna_notice_write_link" href="notice_write.php">글쓰기</a></div>
+        <?php } ?>
             <div class="tamna_notice_search_box">
                 <select name="notice_category" id="notice_category" class="tamna_notice_category">
                     <option value="notice_all">전체</option>
@@ -97,7 +103,7 @@ include "php/inc/dbcon.php";
     <!-- main end -->
 
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
 

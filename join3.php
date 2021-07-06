@@ -1,7 +1,9 @@
 <?php
 
-//join2에서 두 페이지의 값 히든으로 다시 받아오기
+//세션 inc
+include "phpsrc/session.php";
 
+//join2에서 두 페이지의 값 히든으로 다시 받아오기
 
 $chk = $_POST["chkbox"];
 $username = $_POST["username"];
@@ -10,7 +12,6 @@ $userbirth = $_POST["birthyear"].$_POST["birthmonth"].$_POST["birthday"];
 $usermobile = $_POST["phoneNum"];
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -40,7 +41,7 @@ $usermobile = $_POST["phoneNum"];
 <body>
 
  <!-- header start -->
- <?php include "php/header.php" ?>
+ <?php include "header.php" ?>
 <!-- header end -->
 
     <!-- main start -->
@@ -115,11 +116,11 @@ $usermobile = $_POST["phoneNum"];
     <!-- main end -->
 
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
     <!-- script add -->
-    <script type="text/javascript" src="js/join3.js"></script>
+    <script type="text/javascript" src="js/join3.js" charset="utf-8"></script>
 
 
 </body>

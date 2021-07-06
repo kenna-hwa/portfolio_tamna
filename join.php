@@ -1,3 +1,24 @@
+<?php
+
+//세션 inc
+include "phpsrc/session.php";
+
+//이미 로그인한 경우 접속 불가
+if($s_id){
+
+    echo "
+    <script type=\"text/javascript\" charset=\"utf-8\">
+    
+    alert(\"이미 가입된 회원입니다.\");
+    location.href=\"../index.php\";
+    
+    </script>
+    
+    ";
+};
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -25,7 +46,7 @@
 
 <body>
  <!-- header start -->
- <?php include "php/header.php" ?>
+ <?php include "header.php" ?>
 <!-- header end -->
     <!-- main start -->
     <main id="main" class="main">
@@ -158,14 +179,12 @@
         </form>
     </main>
     <!-- main end -->
-
-
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
 <!-- script add -->
-<script type="text/javascript" src="js/join1.js"></script>
+<script type="text/javascript" src="js/join1.js" charset="utf-8"></script>
 
 </body>
 

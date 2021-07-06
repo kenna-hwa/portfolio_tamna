@@ -1,10 +1,11 @@
 <?php
 
+//세션 inc
+include "phpsrc/session.php";
+
 //DB연결
 
-include "php/inc/dbcon.php";
-
-
+include "phpsrc/dbcon.php";
 
 ?>
 
@@ -32,13 +33,13 @@ include "php/inc/dbcon.php";
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
     <script src="js/bxSlider.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js" charset="utf-8"></script>
     <!-- script end -->
 </head>
 
 <body>
    <!-- header start -->
- <?php include "php/header.php" ?>
+ <?php include "header.php" ?>
 <!-- header end -->
 
     <!-- main start -->
@@ -64,7 +65,7 @@ include "php/inc/dbcon.php";
                     </div>
                     <div class="main_img_3 item">
                         <img src="images/index/main_img_3.jpg" alt="가맹점 신청 안내">
-                        <a href="shop_benefit.php" class="main_img_link">                        
+                        <a href="shop_benefit.php" class="main_img_link" title="가맹점 신청하기">                        
                             가맹점 신청 안내
                             삼춘! 아직 가맹점 신청 안하맨?
                         </a>
@@ -77,10 +78,10 @@ include "php/inc/dbcon.php";
         <section class="quick_menu">
             <h2 class="blind">빠른 메뉴</h2>
             <ul>
-                <li class="quick_subs"><a href="signin.php">카드발급신청</a></li>
-                <li class="quick_usage"><a href="payment_view.php">이용내역보기</a></li>
-                <li class="quick_search"><a href="shop_search1.php">가맹점찾기</a></li>
-                <li class="quick_register"><a href="shop_apply.php">가맹점등록</a></li>
+                <li class="quick_subs"><a href="signin.php" title="카드발급신청">카드발급신청</a></li>
+                <li class="quick_usage"><a href="payment_view.php" title="이용내역보기">이용내역보기</a></li>
+                <li class="quick_search"><a href="shop_search1.php" title="가맹점찾기">가맹점찾기</a></li>
+                <li class="quick_register"><a href="shop_apply.php" title="가맹점등록">가맹점등록</a></li>
             </ul>
         </section>
         <!-- quick menu end -->
@@ -92,14 +93,12 @@ include "php/inc/dbcon.php";
                     <h3><a href="notice.php">공지사항</a></h3>
                     <ul>
                     <?php
-                    $sql = "select * from tnotice order by idx DESC;";
+                    $sql = "select * from tnotice order by idx DESC limit 4;";
                     $result = mysqli_query($dbcon, $sql);
                     while ($notice = mysqli_fetch_array($result)){
+                        $noticeidx = $notice["idx"];
                     ?>
-                        <li><a href="notice_board<?php echo $notice["idx"].".php" ?>"><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?><span><?php echo $notice["tnt_writedate"]; ?></span></a></li>
-                        <!-- <li><a href="#">탐나는전 가맹점 신청 안내<span>2021-02-26</span></a></li>
-                        <li><a href="#">제주형 지역화폐 '탐나는전'이란?<span>2021-02-01</span></a></li>
-                        <li><a href="#">탐나는전 제주페이 홈페이지 오픈<span>2021-01-28</span></a></li> -->
+                        <li><a title="<?php echo $notice["tnt_title"] ?>" href="../news_view.php?idx="<?php $noticeidx ?>><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?><span><?php echo $notice["tnt_writedate"]; ?></span></a></li>
                     <?php }; ?>
                     </ul>
                 </div>
@@ -107,27 +106,25 @@ include "php/inc/dbcon.php";
                     <h3><a href="news.php">NEWS</a></h3>
                     <ul>
                     <?php
-                    $sql = "select * from tnews order by idx DESC;";
+                    $sql = "select * from tnews order by idx DESC limit 4;";
                     $result = mysqli_query($dbcon, $sql);
                     while ($news = mysqli_fetch_array($result)){
+                        $newsidx = $news["idx"];
                     ?>    
-                        <li><a href="news_board<?php echo $news["idx"].".php" ?>"><?php echo $news["tn_title"]; ?><span><?php echo $news["tn_writedate"]; ?></span></a></li>
-                        <!-- <li><a href="#">제주도-제주도기자협회, '탐나는전' 성공 정착 '한 뜻'<span>2021-03-04</span></a></li>
-                        <li><a href="#">제주지역화폐 '탐나는전' 첫 선!<span>2021-02-15</span></a></li>
-                        <li><a href="#">제주지역화폐 명칭 '탐나는전' 확정<span>2021-01-30</span></a></li> -->
-                        <?php }; ?>
+                        <li><a title="<?php $news["tn_title"] ?>" href="../notice_view.php?idx="<?php $newsidx ?>><?php echo $news["tn_title"]; ?><span><?php echo $news["tn_writedate"]; ?></span></a></li>
+                    <?php }; ?>
                     </ul>
                 </div>
             </div>
         
             <div class="board_bottom">
                 <div class="board_qna">
-                    <h3><a href="qna_toggleopen.php">자주묻는질문</a></h3>
+                    <h3><a href="qna_toggleopen.php" title="자주 묻는 질문">자주묻는질문</a></h3>
                     <ul>
-                        <li><a href="qna_toggleopen.php#qna1">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?<span>2021-03-06</span></a></li>
-                        <li><a href="qna_toggleopen.php#qna2">사업주가 환전을 하려면 어디로 가나요?<span>2021-03-04</span></a></li>
-                        <li><a href="qna_toggleopen.php#qna3">가맹점이 내야하는 별도 수수료가 있나요?<span>2021-02-15</span></a></li>
-                        <li><a href="qna_toggleopen.php#qna4">가맹점 등록 신청은 어떻게 하나요?<span>2021-01-30</span></a></li>
+                        <li><a href="qna_toggleopen.php#qna1" title="'탐나는전'을 결제받으면 어떻게 입금처리 되나요?">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?<span>2021-03-06</span></a></li>
+                        <li><a href="qna_toggleopen.php#qna2" title="사업주가 환전을 하려면 어디로 가나요?">사업주가 환전을 하려면 어디로 가나요?<span>2021-03-04</span></a></li>
+                        <li><a href="qna_toggleopen.php#qna3" title="가맹점이 내야하는 별도 수수료가 있나요?">가맹점이 내야하는 별도 수수료가 있나요?<span>2021-02-15</span></a></li>
+                        <li><a href="qna_toggleopen.php#qna4" title="가맹점 등록 신청은 어떻게 하나요?">가맹점 등록 신청은 어떻게 하나요?<span>2021-01-30</span></a></li>
                     </ul>
                 </div>
 
@@ -146,7 +143,8 @@ include "php/inc/dbcon.php";
             <h2 class="blind">홍보영상</h2>
 
             <div class="youtube_official">
-                <h3><a href="https://www.youtube.com/watch?v=_bEZYRQUcqc" class="youtube_official_link" target="_blank">유튜브 비디오</a></h3>
+                <h3>유튜브 비디오</h3>
+                <iframe class="youtube_official_iframe" src="https://www.youtube.com/embed/_bEZYRQUcqc" title="youtube_official_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="youtube_official_txt">
                     <div class="youtube_official_txt1">
                         제주형<br>
@@ -167,7 +165,8 @@ include "php/inc/dbcon.php";
             </div>
 
             <div class="youtube_kb">
-                <h3><a href="https://www.youtube.com/watch?v=zXVD5agK39k" class="youtube_kb_link" target="_blank">유튜브 비디오</a></h3>
+                <h3>유튜브 비디오</h3>
+                <iframe class="youtube_kb_iframe" src="https://www.youtube.com/embed/zXVD5agK39k" class="youtube_kb_link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="youtube_kb_txt">
                     <div class="youtube_kb_txt1">
                         탐나는전<br>
@@ -194,13 +193,13 @@ include "php/inc/dbcon.php";
                     혼저옵서예</p>
             </div>
             <ul class="link_box">
-                <li class="link_jejutourism"><a href="https://www.ijto.or.kr" target="_blank">
+                <li class="link_jejutourism"><a href="https://www.ijto.or.kr" title="제주관광공사" target="_blank">
                         제주관광공사
                     </a></li>
-                <li class="link_jejugoverment"><a href="http://www.jeju.go.kr" target="_blank">
+                <li class="link_jejugoverment"><a href="http://www.jeju.go.kr" title="제주특별자치도" target="_blank">
                         제주특별자치도
                     </a></li>
-                <li class="link_jejusafecode"><a href="https://jshop.jeju.go.kr/index.html#/" target="_blank">
+                <li class="link_jejusafecode"><a href="https://jshop.jeju.go.kr/index.html#/" title="제주안심코드" target="_blank">
                         제주안심코드
                     </a></li>
             </ul>
@@ -210,7 +209,7 @@ include "php/inc/dbcon.php";
     <!-- main end -->
 
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
 

@@ -118,3 +118,24 @@
     padding: 10px;
     font-weight: bold;
 }
+
+.tamna_notice_edit_del {
+    width: 1080px;
+    height: 20px;
+    margin: -40px auto 150px;    
+    font-size: 16px;
+    color: #999;
+}
+.tamna_notice_edit a {
+    margin-right: 10px;
+    float: right;
+    border: 1px solid #888;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.tamna_notice_del a {
+    float: right;
+    border: 1px solid #888;
+    padding: 5px;
+    box-sizing: border-box;
+}

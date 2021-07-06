@@ -1,3 +1,11 @@
+<?php
+
+//세션 inc
+
+include "phpsrc/session.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -18,7 +26,7 @@
     <!-- script start -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
-    <script>
+    <script type="text/javascript" charset="utf-8">
     $(function(){
 
         $('.tamna_qna_a').hide();
@@ -39,7 +47,7 @@
 
 <body>
  <!-- header start -->
- <?php include "php/header.php" ?>
+ <?php include "header.php" ?>
 <!-- header end -->
 
     <!-- main start -->
@@ -162,7 +170,7 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
 

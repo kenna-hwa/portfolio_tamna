@@ -1,3 +1,9 @@
+<?php
+
+//세션 inc
+include "phpsrc/session.php";
+
+?>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -23,7 +29,7 @@
 
 <body>
   <!-- header start -->
-  <?php include "php/header.php" ?>
+  <?php include "header.php" ?>
 <!-- header end -->
 
     <!-- main start -->
@@ -48,7 +54,7 @@
     <!-- main end -->
 
      <!-- footer start -->
-<?php include "php/footer.php" ?>
+<?php include "footer.php" ?>
     <!-- footer end -->
 
 

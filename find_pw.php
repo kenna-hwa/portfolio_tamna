@@ -1,3 +1,16 @@
+<?php
+
+
+//세션 inc
+include "phpsrc/session.php";
+
+//로그인 체크
+
+include "phpsrc/adminCheck.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -19,13 +32,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
     <!-- script end -->
-
-
 </head>
 
 <body>
   <!-- header start -->
-  <?php include "php/header.php" ?>
+  <?php include "header.php" ?>
 <!-- header end -->
 
 <!-- main start -->
@@ -82,11 +93,11 @@
     <!-- main end -->
     
     <!-- footer start -->
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     <!-- footer end -->
 
     <!-- script add -->
-    <script type="text/javascript" src="js/find_idpw.js"></script>
+    <script type="text/javascript" src="js/find_idpw.js" charset="utf-8"></script>
 
 
 
