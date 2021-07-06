@@ -96,9 +96,9 @@ include "phpsrc/dbcon.php";
                     $sql = "select * from tnotice order by idx DESC limit 4;";
                     $result = mysqli_query($dbcon, $sql);
                     while ($notice = mysqli_fetch_array($result)){
-                        $noticeidx = $notice["idx"];
+                       $idx = $notice["idx"];
                     ?>
-                        <li><a title="<?php echo $notice["tnt_title"] ?>" href="../news_view.php?idx="<?php $noticeidx ?>><?php echo $notice["tnt_category"]." ".$notice["tnt_title"]; ?><span><?php echo $notice["tnt_writedate"]; ?></span></a></li>
+                        <li><a title="<?php echo $notice["tnt_title"] ?>" href="notice_view.php?idx=<?php echo $idx; ?>"><?php echo $notice["tnt_title"]; ?><span><?php echo $notice["tnt_writedate"]; ?></span></a></li>
                     <?php }; ?>
                     </ul>
                 </div>
@@ -109,9 +109,9 @@ include "phpsrc/dbcon.php";
                     $sql = "select * from tnews order by idx DESC limit 4;";
                     $result = mysqli_query($dbcon, $sql);
                     while ($news = mysqli_fetch_array($result)){
-                        $newsidx = $news["idx"];
+                       $idx = $news["idx"];
                     ?>    
-                        <li><a title="<?php $news["tn_title"] ?>" href="../notice_view.php?idx="<?php $newsidx ?>><?php echo $news["tn_title"]; ?><span><?php echo $news["tn_writedate"]; ?></span></a></li>
+                        <li><a title="<?php $news["tn_title"] ?>" href="notice_view.php?idx=<?php echo $idx; ?>"><?php echo $news["tn_title"]; ?><span><?php echo $news["tn_writedate"]; ?></span></a></li>
                     <?php }; ?>
                     </ul>
                 </div>

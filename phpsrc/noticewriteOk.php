@@ -20,6 +20,7 @@ include "dbcon.php";
 
  $sql = "insert into tnotice (tnt_category, tnt_title, tnt_writedate, tnt_author, tnt_desc, tnt_pw) values ('$category', '$title', '$date', '$author', '$desc', '$pwd');";
 
+
 $result = mysqli_query($dbcon, $sql);
 
 
@@ -29,23 +30,30 @@ if($result) { // query가 정상실행 되었다면,
         
     $idx = mysqli_insert_id($dbcon);
     $replaceURL = "../notice_view.php?idx="."$idx" ;
+    
+    echo "
+    
+    <script type=\"text/javascript\" charset=\"utf-8\">
+    alert(\" $msg\");
+    location.replace(\"$replaceURL\");
+    </script> 
+
+    ";
     } else {
     
      $msg = "글을 등록하지 못했습니다.";
-     ?>
-    <script type="text/javascript" charset="utf-8">
-    alert("<?php echo $msg?>");
-    history.back();
-    </script>
 
-    <?php } ?>
+     echo "
+    
+     <script type=\"text/javascript\" charset=\"utf-8\">
+     alert(\" $msg\");
+     history.back();
+     </script> 
+ 
+     ";
+} ?>
 
 
-
-    <script type="text/javascript" charset="utf-8">
-    alert("<?php echo $msg?>");
-    location.replace("<?php echo $replaceURL?>");
-    </script> 
 
 
 

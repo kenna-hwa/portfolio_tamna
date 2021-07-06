@@ -84,7 +84,7 @@ include "phpsrc/dbcon.php";
                     $sql = "select * from tnotice order by idx DESC;";
                     $result = mysqli_query($dbcon, $sql);
                     while ($notice = mysqli_fetch_array($result)){
-                            $idx = $notice["idx"];
+                        $idx = $notice["idx"];
                     ?>                 
                     <tr class="tableRow" id="tableRow">
                         <td class="tamna_notice_tableNum"><?php echo $notice["idx"]; ?></td>

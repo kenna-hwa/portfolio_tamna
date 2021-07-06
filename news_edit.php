@@ -18,6 +18,7 @@ if($s_name != "관리자"){
         
     ";
 };
+
 //DB연결
 
 include "phpsrc/dbcon.php";
