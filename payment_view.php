@@ -47,8 +47,8 @@ include "phpsrc/session.php";
         </div>
         
             <div class="tamna_payment_view_link">
-                <div class="card_apply"><a href="#">카드 안내·신청</a></div>
-                <div class="tamna_signin"><a href="#">카드 등록</a></div>
+                <div class="card_apply"><a href="apply.php">카드 안내·신청</a></div>
+                <div class="tamna_signin"><a href="mycardapply.php">카드 등록</a></div>
             </div>
         
     </main>
