@@ -126,6 +126,7 @@ body {
 .sub{
     display: flex;
     align-items: center;
+    visibility: hidden;
 }
 .sub a{
     color: #222;
@@ -145,6 +146,7 @@ body {
 }
 .gnb_sub_box{
     position: relative;
+    display: block;
     width: 767px;
     height: 280px;
     background: rgba(33, 189, 189, 0.9);
@@ -503,4 +505,8 @@ body {
     height: 19px;
     background: url(../images/tamna_mobile_index_footer_jejulogo.jpg) no-repeat;
     text-indent: -9999px;
+}
+
+.none {
+    display: none;
 }
