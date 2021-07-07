@@ -4,9 +4,7 @@
 /* body */
 body {
     width: 100%;
-    height: 100%;
-    background: beige;
-    
+    height: 100%;   
 }
 /* header */
 .header{
@@ -88,8 +86,14 @@ body {
     font-weight: 500;
     transition: all 0.5s;
 }
-.gnb_signin{
-    float: left;
+.gnb_signin_link::after{
+    position: relative;
+    content: "|";
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    top: -1px;
+    color: #f47f26;
 }
 .gnb_menu_wrap{
     position: relative;
@@ -109,6 +113,11 @@ body {
     font-size: 16px;
     color: #f3f3f3;
     font-weight: 500;
+    transition: all 0.5s;
+}
+.gnb_menu_wrap a:hover{
+    color: #fece08;
+    transition: all 0.5s;
 }
 .gnb_info, .gnb_personal, .gnb_shop, .gnb_customer{
     display: flex;
@@ -119,7 +128,6 @@ body {
     align-items: center;
 }
 .sub a{
-    font-size: 14px;
     color: #222;
     margin-left: 25px;
 }
@@ -148,7 +156,6 @@ body {
 .main{
     width: 767px;
     height: 1440px;
-    background: green;
     margin: 0 auto;
     z-index: 0;
 }
@@ -178,7 +185,6 @@ body {
     position: relative;
     width: 767px;
     height: 200px;
-    border-bottom: 2px solid #595959;
     box-sizing: border-box;
 }
 .quick_menu a{
@@ -256,9 +262,9 @@ body {
     height: 100px;
     margin: 0;
     border-right: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
     box-sizing: border-box;
     align-items: center;
+    border-bottom: 2px solid #595959;
 }
 .quick_search a{
     position: relative;
@@ -283,9 +289,9 @@ body {
     width: 370px;
     height: 100px;
     margin: 0;
-    border-bottom: 1px solid #e6e6e6;
     box-sizing: border-box;
     align-items: center;
+    border-bottom: 2px solid #595959;
 }
 .quick_register a{
     position: relative;
@@ -304,9 +310,197 @@ body {
     background: url(../images/tamna_mobile_index_shopapply.jpg) no-repeat;
     margin-right: 20px;
 }
+/* board */
+.board{
+    width: 744px;
+    height: 200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.board_top{
+    display: flex;
+    width: 744px;
+    height: 100px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+}
+.board_notice{
+    width: 373px;
+    height: 100px;
+    border-right: 1px solid #e6e6e6;
+    padding: 20px 0 0 50px;
+    box-sizing: border-box;
+}
+.board_notice ul li{
+    position: relative;
+    list-style-image: url(../images/tamna_mobile_index_list_orange.jpg);
+    text-overflow: ellipsis;
+    left: 13px;
+    margin-top: 15px;
+}
+.board_notice ul li a{
+    position: relative;
+    font-size: 12px;
+    top: -5px;
+}
+.board_news{
+    width: 370px;
+    height: 100px;
+    padding: 20px 0 0 50px;
+    box-sizing: border-box;
+}
+.board_news ul li{
+    position: relative;
+    list-style-image: url(../images/tamna_mobile_index_list_blue.jpg);
+    text-overflow: ellipsis;
+    left: 13px;
+    margin-top: 15px;
+}
+.board_news ul li a{
+    position: relative;
+    font-size: 12px;
+    top: -5px;
+}
+.board_bottom{
+    display: flex;
+    width: 744px;
+    height: 100px;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+}
+.board_qna{
+    width: 373px;
+    height: 100px;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+.board_qna h3 a{
+    position: relative;
+    display: flex;
+    width: 374px;
+    height: 100px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.board_qna h3 a::after{
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 20px;
+    content: "";
+    background: url(../images/tamna_mobile_index_list_rime.jpg) no-repeat;
+    left: 174px;
+}
+.board_qr{
+    display: flex;
+    width: 370px;
+    height: 98px;
+    box-sizing: border-box;
+    flex-flow: row-reverse nowrap;
+    background: url(../images/tamna_mobile_index_qr_back.jpg) no-repeat center;
+}
+.board_qr a{
+    display: block;
+    width: 370px;
+    height: 100px;
+    padding: 30px 50px 0 0;
+    box-sizing: border-box;
+}
+.board_qr h3 {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+    line-height: 20px;
+}
+.board_qr>h3>a>span{
+    font-weight: 500;
+}
+/* youtube */
+.youtube{
+    width: 767px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.youtube_official_iframe{
+    width: 767px;
+    height: 400px;
+}
+.link{
+    display: flex;
+    width: 645px;
+    height: 100px;
+    margin: auto;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.link_header p{
+    width: 152px;
+    height: 99px;
+    background: url(../images/tamna_mobile_index_linkimg.jpg) no-repeat;
+    text-indent: -9999px;
+}
+.link_box{
+    display: flex;
+    width: 470px;
+    height: 99px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.link_box a{
+    display: block;
+    height: 100%;
+}
+.link_jejutourism{
+    width: 115px;
+    height: 99px;
+    background: url(../images/tamna_mobile_index_link_jejutour.jpg) no-repeat;
+    text-indent: -9999px;
+}
+.link_jejugoverment{
+    width: 115px;
+    height: 99px;
+    background: url(../images/tamna_mobile_index_link_jejugover.jpg) no-repeat;
+    text-indent: -9999px;
+}
+.link_jejusafecode{
+    width: 115px;
+    height: 99px;
+    background: url(../images/tamna_mobile_index_link_jejusafe.jpg) no-repeat;
+    text-indent: -9999px;
+}
 /* footer */
 .footer{
+    display: flex;
     width: 767px;
-    background: blue;
+    height: 200px;
+    background: #4b4b4b;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.footer_box{
+    display: flex;
+    width: 565px;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_box h2{
+    width: 58px;
+    height: 97px;
+    background: url(../images/tamna_mobile_index_footer_logo.jpg) no-repeat;
+    text-indent: -9999px;
+}
+.footer_txt{
+    color: #e6e6e6;
+}
+.footer_jejugoverment{
+    width: 150px;
+    height: 19px;
+    background: url(../images/tamna_mobile_index_footer_jejulogo.jpg) no-repeat;
+    text-indent: -9999px;
 }

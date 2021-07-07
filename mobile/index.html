@@ -31,9 +31,9 @@
         <nav class="gnb" id="topwrap">
             <h2>상단 메뉴</h2>
             <ul class="gnb_signin_join_wrap">
-                    <li class="gnb_signin"><a href="signin.php" title="로그인" class="gnb_signin_link">로그인</a></li>
+                    <li class="gnb_signin gnb_login"><a href="signin.php" title="로그인" class="gnb_signin_link">로그인</a></li>
                     <li class="gnb_join"><a href="join.php" title="회원가입" class="gnb_join_link">회원가입</a></li>
-                    <li class="gnb_signout"><a href="#" title="로그아웃" class="gnb_signin_link" onclick="log_out()">로그아웃</a></li>
+                    <li class="gnb_signout gnb_login"><a href="#" title="로그아웃" class="gnb_signin_link" onclick="log_out()">로그아웃</a></li>
                     <li class="gnb_join"><a href="mypage.php?idx=<?php echo $s_idx; ?>" title="마이페이지" class="gnb_join_link">마이페이지</a></li>
             </ul>
             <ul class="gnb_menu_wrap">
@@ -122,54 +122,28 @@
             </ul>
         </section>
         <!-- quick menu end -->
-
         <!-- board start -->
         <div class="board">
             <div class="board_top">
                 <div class="board_notice">
                     <h3><a href="notice.php">공지사항</a></h3>
                     <ul>
-                    <?php
-                    $sql = "select * from tnotice order by idx DESC limit 4;";
-                    $result = mysqli_query($dbcon, $sql);
-                    while ($notice = mysqli_fetch_array($result)){
-                       $idx = $notice["idx"];
-                    ?>
-                        <li><a title="<?php echo $notice["tnt_title"] ?>" href="notice_view.php?idx=<?php echo $idx; ?>"><?php echo $notice["tnt_title"]; ?><span><?php echo $notice["tnt_writedate"]; ?></span></a></li>
-                    <?php }; ?>
+                        <li><a href="qna_toggleopen.php#qna1" title="'탐나는전'을 결제받으면 어떻게 입금처리 되나요?">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?</a></li>
                     </ul>
                 </div>
                 <div class="board_news">
                     <h3><a href="news.php">NEWS</a></h3>
                     <ul>
-                    <?php
-                    $sql = "select * from tnews order by idx DESC limit 4;";
-                    $result = mysqli_query($dbcon, $sql);
-                    while ($news = mysqli_fetch_array($result)){
-                       $idx = $news["idx"];
-                    ?>    
-                        <li><a title="<?php $news["tn_title"] ?>" href="notice_view.php?idx=<?php echo $idx; ?>"><?php echo $news["tn_title"]; ?><span><?php echo $news["tn_writedate"]; ?></span></a></li>
-                    <?php }; ?>
+                        <li><a href="qna_toggleopen.php#qna1" title="'탐나는전'을 결제받으면 어떻게 입금처리 되나요?">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?</a></li>
                     </ul>
                 </div>
             </div>
-        
             <div class="board_bottom">
                 <div class="board_qna">
                     <h3><a href="qna_toggleopen.php" title="자주 묻는 질문">자주묻는질문</a></h3>
-                    <ul>
-                        <li><a href="qna_toggleopen.php#qna1" title="'탐나는전'을 결제받으면 어떻게 입금처리 되나요?">'탐나는전'을 결제받으면 어떻게 입금처리 되나요?<span>2021-03-06</span></a></li>
-                        <li><a href="qna_toggleopen.php#qna2" title="사업주가 환전을 하려면 어디로 가나요?">사업주가 환전을 하려면 어디로 가나요?<span>2021-03-04</span></a></li>
-                        <li><a href="qna_toggleopen.php#qna3" title="가맹점이 내야하는 별도 수수료가 있나요?">가맹점이 내야하는 별도 수수료가 있나요?<span>2021-02-15</span></a></li>
-                        <li><a href="qna_toggleopen.php#qna4" title="가맹점 등록 신청은 어떻게 하나요?">가맹점 등록 신청은 어떻게 하나요?<span>2021-01-30</span></a></li>
-                    </ul>
                 </div>
-
                 <div class="board_qr">
-                    <h3>탐나는전 어플 다운로드</h3>
-                    <p>탐나는전 어플 아이콘</p>
-                    <p>구글 플레이 QR코드</p>
-                    <p>애플 앱스토어 QR코드</p>
+                    <h3><a href="#">탐나는전 <br><span>어플</span> 다운로드</a></h3>
                 </div>
             </div>
         </div>
@@ -178,56 +152,17 @@
         <!-- youtube start -->
         <article class="youtube">
             <h2 class="blind">홍보영상</h2>
-
             <div class="youtube_official">
-                <h3>유튜브 비디오</h3>
-                <!-- <iframe class="youtube_official_iframe" src="https://www.youtube.com/embed/_bEZYRQUcqc" title="youtube_official_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                <div class="youtube_official_txt">
-                    <div class="youtube_official_txt1">
-                        제주형<br>
-                        지역화폐<br>
-                        <span>'탐나는전'</span>
-                    </div>
-
-                    <div class="youtube_official_txt2">
-                        11.30일<br>
-                        제주형 지역화폐<br>
-                        <span>'탐나는전'</span>
-                        이 첫 선을 보입니다.<br>
-                        탐나는전 구매 시<br>
-                        <span>10% 할인혜택</span>
-                        까지!
-                    </div>
-                </div>
-            </div>
-
-            <div class="youtube_kb">
-                <h3>유튜브 비디오</h3>
-                <!-- <iframe class="youtube_kb_iframe" src="https://www.youtube.com/embed/zXVD5agK39k" class="youtube_kb_link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                <div class="youtube_kb_txt">
-                    <div class="youtube_kb_txt1">
-                        탐나는전<br>
-                        X<br>
-                        이날치
-                    </div>
-                    <div class="youtube_kb_txt2">
-                        '탐나는전' 체크카드의<br>
-                        혜택을 담은 노래,<br>
-                        <span>'조선의 힘' 이날치</span>가<br>
-                        직접 제작한 [탐나는전]의<br>
-                        뮤직비디오가 드디어 공개!
-                    </div>
-                </div>
+                <h3 class="blind">유튜브 비디오</h3>
+                <iframe class="youtube_official_iframe" src="https://www.youtube.com/embed/_bEZYRQUcqc" title="youtube_official_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </article>
         <!-- youtube end -->
-
         <!-- link start -->
         <section class="link">
             <div class="link_header">
                 <h2 class="blind">유관기관 링크</h2>
-                <p>제주로<br>
-                    혼저옵서예</p>
+                <p>제주로 혼저옵서예</p>
             </div>
             <ul class="link_box">
                 <li class="link_jejutourism"><a href="https://www.ijto.or.kr" title="제주관광공사" target="_blank">
@@ -244,7 +179,6 @@
         <!-- link end -->
     </main>
     <!-- main end -->
-
     <!-- footer start -->
     <footer id="footer" class="footer">
         <div class="footer_box">
