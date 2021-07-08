@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+/* main */
+
+.main{
+    width: 767px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.tamna_what_is{
+    width: 645px;
+    height: 538px;
+    margin: 0 auto 100px;
+}
+.tamna_what_is>h2::before{
+    display: block;
+    content: "";
+    width: 80px;
+    height: 82px;
+    background: url(../images/tamna_mobile_logo.jpg) no-repeat;
+    margin-bottom: 50px;
+}
+.tamna_what_is>h2{
+    margin-bottom: 50px;
+}
+.tamna_what_is_txt{
+    width: 530px;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+.tamna_what_is>ul{
+    width: 645px;
+    height: 209px;
+}
+.tamna_what_is>ul>li:nth-child(1){
+    width: 132px;
+    height: 209px;
+    background: url(../images/intro/tamna_mobile_intro_kbyellow.jpg);
+    text-indent: -9999px;
+    margin-right: 124px;
+    float: left;
+}
+.tamna_what_is>ul>li:nth-child(2){
+    width: 132px;
+    height: 209px;
+    background: url(../images/intro/tamna_mobile_intro_kbgreen.jpg);
+    text-indent: -9999px;
+    margin-right: 124px;
+    float: left;
+}
+.tamna_what_is>ul>li:nth-child(3){
+    width: 132px;
+    height: 209px;
+    background: url(../images/intro/tamna_mobile_intro_paper.jpg);
+    text-indent: -9999px;
+    float: left;
+}
+.tamna_what_is>ul>li:nth-child(3)>br{
+    display: none;
+}
+.tamna_user_benefit{
+    width: 645px;
+    height: 503px;
+    margin: 0 auto 100px;
+}
+.tamna_user_benefit>h2{
+    margin-bottom: 50px;
+}
+.tamna_user_benefit_txt{
+    font-size: 12px;
+}
+.tamna_user_benefit_txt>p:nth-child(1){
+    margin-bottom: 20px;
+}
+.tamna_user_benefit_txt>p:nth-child(2){
+    font-weight: 500;
+    width: 495px;
+    margin-bottom: 50px;
+}
+.tamna_user_benefit ol{
+    width: 645px;
+    height: 271px;
+}
+.tamna_user_benefit ol li:nth-child(1){
+    width: 195px;
+    height: 273px;
+    float: left;
+    background: url(../images/intro/tamna_mobile_intro_bf1.jpg)no-repeat;
+    text-indent: -9999px;
+}
+.tamna_user_benefit ol li:nth-child(2){
+    width: 195px;
+    height: 273px;
+    float: left;
+    margin-left: 30px;
+    background: url(../images/intro/tamna_mobile_intro_bf2.jpg)no-repeat;
+    text-indent: -9999px;
+}
+.tamna_user_benefit ol li:nth-child(3){
+    width: 195px;
+    height: 273px;
+    float: left;
+    margin-left: 30px;
+    background: url(../images/intro/tamna_mobile_intro_bf3.jpg)no-repeat;
+    text-indent: -9999px;
+}
+.tamna_howto{
+    position: relative;
+    width: 645px;
+    height: 100%;
+    margin: 0 auto 50px;
+}
+.tamna_howto>h2{
+    margin-bottom: 50px;
+}
+.tamna_intro_svg1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -35px;
+    left: 257px;
+    cursor: pointer;
+}
+.tamna_intro_svg2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -35px;
+    left: 402px;
+    cursor: pointer;
+}
+.tamna_intro_svg3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -35px;
+    left: 545px;
+    cursor: pointer;
+}
+.tamna_howto_tap_menu{
+    display: none;
+}
+/* KB */
+.tamna_howto_KB{
+    display: none;
+}
+.KB_online_title{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.KB_online_ol{
+    margin-bottom: 50px;
+}
+.tamna_howto_KB ul>li:nth-child(1){
+    width: 645px;
+    height: 113px;
+    margin-bottom: 70px;
+}
+.tamna_howto_KB_on_1{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 48px;
+    float: left;
+}
+.tamna_howto_KB_on_1>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_KB_on_2{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 48px;
+    float: left;
+}
+.tamna_howto_KB_on_2>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_KB_on_3{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    float: left;
+}
+.tamna_howto_KB_on_3>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_KB ul>li:nth-child(2){
+    width: 645px;
+    height: 113px;
+    margin-bottom: 70px;
+}
+.KB_offline_title{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.KB_offline_ol{
+    margin-bottom: 50px;
+}
+.tamna_howto_KB_off_1{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 130px;
+    float: left;
+}
+.tamna_howto_KB_off_1>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_KB_off_2{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 135px;
+    float: left;
+}
+.tamna_howto_KB_off_2>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_KB_off_3{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    float: left;
+}
+.tamna_howto_KB_off_3>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* Kona */
+.tamna_howto_Kona{
+    display: none;
+}
+.Kona_online_title{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.Kona_online_ol{
+    margin-bottom: 50px;
+}
+.tamna_howto_Kona ul>li:nth-child(1){
+    width: 645px;
+    height: 113px;
+    margin-bottom: 70px;
+}
+.tamna_howto_Kona_on_1{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 69px;
+    float: left;
+}
+.tamna_howto_Kona_on_1>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_Kona_on_2{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 69px;
+    float: left;
+}
+.tamna_howto_Kona_on_2>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_Kona_on_3{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    float: left;
+}
+.tamna_howto_Kona_on_3>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_Kona ul>li:nth-child(2){
+    width: 645px;
+    height: 113px;
+    margin-bottom: 70px;
+}
+.Kona_offline_title{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.Kona_offline_ol{
+    margin-bottom: 50px;
+}
+.tamna_howto_Kona_off_1{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 200px;
+    float: left;
+}
+.tamna_howto_Kona_off_1>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_Kona_off_2{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 155px;
+    float: left;
+}
+.tamna_howto_Kona_off_2>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_Kona_off_3{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    float: left;
+}
+.tamna_howto_Kona_off_3>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* Paper */
+.paper_offline_title{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.paper_offline_ol{
+    margin-bottom: 50px;
+}
+.tamna_howto_paper ul>li:nth-child(1){
+    width: 645px;
+    height: 235px;
+    margin-bottom: 50px;
+}
+.tamna_howto_paper_off_1{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 150px;
+    float: left;
+}
+.tamna_howto_paper_off_1>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_paper_off_2{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 95px;
+    float: left;
+}
+.tamna_howto_paper_off_2>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_paper_off_3{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    float: left;
+}
+.tamna_howto_paper_off_3>span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tamna_howto_paper_img{
+    position: relative;
+    display: block;
+    width: 367px;
+    height: 162px;
+    background: url(../images/intro/tamna_mobile_intro_howto_paper.jpg) no-repeat;
+    margin: 0 auto 50px;
+}
+.tamna_howto_paper_txt{
+    width: 500px;
+    height: 55px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* button */
+.tamna_howto_button{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto 100px;
+    background: #21bdbd;
+    text-align: center;
+    padding-top: 36px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+.tamna_howto_button a{
+    display: block;
+    height: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+.tamna_howto_button:hover{
+    font-weight: 500;
+    font-size: 18px;
+    background: #fece08;
+    color: #fff;
+    transition: all 0.3s;
+}
