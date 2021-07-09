@@ -1,0 +1,746 @@
+
+
+
+
+
+/* 타블렛 */
+@media screen and (max-width:1023px) {
+
+    body{
+        width: 1023px;
+        font-size: 16px;
+    }
+    .header{
+        width: 1023px;
+        height: 125px;
+        background: #fff;
+        border-top: 5px solid #ae2223;
+        box-sizing: border-box;
+    }
+    .header_container{
+        display: flex;
+        width: 945px;
+        height: 120px;
+        margin: auto;
+        padding-top: 24px;
+        border-bottom: 1px solid #ddd;
+        flex-flow: row nowrap;
+        box-sizing: border-box;
+    }
+    .sam_top_menu_wrap{
+        width: 240px;
+        height: 80px;
+    }
+    .sam_top_menu{
+        display: flex;
+        width: 145px;
+        height: 12px;
+        font-size: 0.75rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sam_top_menu a{
+        font-weight: 500;
+        color: #ae2223;
+    }
+    .sam_main_menu_wrap{
+        display: flex;
+        width: 469px;
+        height: 80px;
+        flex-flow: column nowrap
+    }
+    .sam_logo{
+        width: 469px;
+        height: 40px;
+    }
+    .sam_logo>h1{
+        width: 100px;
+        height: 40px;
+        background: url(../images/sam_logo.jpg) no-repeat;
+        text-indent: -9999px;
+        margin: 5px auto 0;
+    }
+    .sam_logo>h1>a{
+        display: block;
+        height: 100%;
+    }
+    .sam_logo_menu_wrap{
+        width: 464px;
+        height: 40px;
+    }
+    .sam_logo_menu{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        box-sizing: border-box;
+        flex-flow: row nowrap;
+    }
+    .sam_logo_menu li a{
+        color: #333;
+        font-weight: 500;
+    }
+    .sam_user_menu_wrap{
+        width: 236px;
+        height: 80px;
+    }
+    .sam_user_menu{
+        display: flex;
+        width: 200px;
+        height: 12px;
+        margin-left: auto;
+        font-size: 0.75rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sam_user_menu a {
+        font-weight: 500;
+        color: #999;
+    }
+    .sam_user_menu>li:nth-child(2)::after{
+        content:"|";
+        margin-left: 10px;
+        font-size: 0.625rem;
+        color: rgba(44, 44, 44, 0.6);
+    }
+    .sam_user_menu>li:nth-child(3)::after{
+        content:"|";
+        margin-left: 10px;
+        font-size: 0.625rem;
+        color: rgba(44, 44, 44, 0.6);
+    }
+    .search_btn{
+        position: relative;
+        width: 15px;
+        height: 15px;
+        background: url(../images/search.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    /* sub menu */
+    .sam_sub_box{
+        position: absolute;
+        display: none;
+        width: 1023px;
+        height: 45px;
+        top: 125px;
+        left: 0;
+        background: #fff;
+    }
+     #sub1, #sub2, #sub3, #sub4{
+        /* display: none; */
+    }
+    /* 개별 sub */
+    
+    /* 우리맛 연구 */
+    .nav_list:nth-child(1):hover{
+        border-bottom: 2px solid #a8a4a1;
+        padding-bottom: 13px;
+        box-sizing: border-box;
+    }
+    .nav_list>:nth-child(1){
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .sub_research{
+        position: absolute;
+        display: flex;
+        width: 355px;
+        height: 45px;
+        top: 125px;
+        left: 140px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+    }
+    .sub_research a{
+        display: inline-block;
+        float: left;
+        font-size: 0.825rem;
+        font-weight: 500;
+        color: #666;
+    }
+    /* 우리맛 체험 */
+    .nav_list:nth-child(2):hover{
+        border-bottom: 2px solid #a8a4a1;
+        padding-bottom: 13px;
+    }
+    .nav_list>:nth-child(2){
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .sub_ex{
+        position: absolute;
+        display: flex;
+        width: 910px;
+        height: 45px;
+        top: 125px;
+        left: 55px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+    }
+    .sub_ex a{
+        display: inline-block;
+        float: left;
+        font-size: 0.825rem;
+        font-weight: 500;
+        color: #666;
+    }
+    /* 샘표 소개 */
+    .nav_list:nth-child(3):hover{
+        border-bottom: 2px solid #a8a4a1;
+        padding-bottom: 13px;
+    }
+    .nav_list>:nth-child(3){
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .sub_comp_intro{
+        position: absolute;
+        display: flex;
+        width: 335px;
+        height: 45px;
+        top: 125px;
+        left: 375px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+    }
+    .sub_comp_intro a{
+        display: inline-block;
+        float: left;
+        font-size: 0.825rem;
+        font-weight: 500;
+        color: #666;
+    }
+    /* 제품 소개 */
+    .nav_list:nth-child(4):hover{
+        border-bottom: 2px solid #a8a4a1;
+        padding-bottom: 13px;
+    }
+    .nav_list>:nth-child(4){
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .sub_prod_intro{
+        position: absolute;
+        display: flex;
+        width: 910px;
+        height: 45px;
+        top: 125px;
+        left: 55px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+    }
+    .sub_prod_intro a{
+        display: inline-block;
+        float: left;
+        font-size: 0.825rem;
+        font-weight: 500;
+        color: #666;
+    }
+    /* main */
+    main{
+        width: 945px;
+        height: 100%;
+        margin: 0 auto 40px;
+    }
+    .sam_caresel_img_wrap{
+        width: 945px;
+        height: 438px;
+    }
+    .sam_caresel_img{
+        width: 944px;
+        height: 437px;
+        background: url(../images/1024/sam_1024_caresel.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-indent: -9999px;
+        z-index: -1;
+    }
+    .sam_caresel_img_prev{
+        position: relative;
+        width: 25px;
+        height: 48px;
+        top: -238px;
+        left: 60px;
+        background: url(../images/arrow_next.png) no-repeat;
+        background-size: contain;
+    }
+    .sam_caresel_img_next{
+        position: relative;
+        width: 25px;
+        height: 48px;
+        top: -285px;
+        left: 860px;
+        background: url(../images/arrow_prev.png) no-repeat;
+        background-size: contain;
+    }
+    .sam_caresel_img_arrow a{
+        display: block;
+        height: 48px;
+    }
+    .sam_middle_menu_wrap {
+        width: 945px;
+        background: #999;
+        height: 177px;
+    }
+    .sam_middle_menu{
+        display: flex;
+        width: 945px;
+        height: 177px;
+    }
+    .sam_middle_menu li:nth-child(1){
+        width: 315px;
+        height: 177px;
+        background: url(../images/1024/sam_1024_mainmenu1.jpg);
+        text-indent: -9999px;
+    }
+    .sam_middle_menu li:nth-child(2){
+        width: 315px;
+        height: 177px;
+        background: url(../images/1024/sam_1024_mainmenu2.jpg);
+        text-indent: -9999px;
+    }
+    .sam_middle_menu li:nth-child(3){
+        width: 315px;
+        height: 177px;
+        background: url(../images/1024/sam_1024_mainmenu3.jpg);
+        text-indent: -9999px;
+    }
+    .sam_middle_menu a{
+        display: block;
+        height: 100%;
+    }
+
+    /* middle menu end */
+    /* notice event start */
+    .sam_notice_event_wrap{
+        width: 945px;
+        height: 97px;
+        background: #fff;
+    }
+    .sam_notice_event{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .sam_notice_wrap{
+        display: flex;
+        width: 472px;
+        height: 97px;
+        border-right: 1px solid #e0e0e0;
+        flex-flow: row nowrap;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .notice_title{
+        width: 64px;
+        height: 97px;
+        margin-left: 25px;
+        margin-right: 30px;
+    }
+    .notice_title>a{
+        display: block;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #aea288;
+    }
+    .sam_notice{
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* overflow: hidden;*/
+    }
+    .sam_notice li{
+        position: relative;
+        width: 192px;
+        top: 56px;
+        font-size: 1rem;
+        line-height: 3.5rem;
+    }
+    .notice_go{
+        position: relative;
+        width: 9px;
+        height: 15px;
+        align-items: center;
+        margin: 0;
+        right: -110px;
+        background: url(../images/notice_arrow.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    .sam_event_wrap{
+        display: flex;
+        width: 472px;
+        height: 97px;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    .event_title{
+        width: 50px;
+        height: 97px;
+        margin-left: 25px;
+        margin-right: 42px;
+    }
+    .event_title>a{
+        display: block;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #aea288;
+    }
+    .sam_event{
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* overflow: hidden;*/
+    }
+    .sam_event li{
+        position: relative;
+        width: 297px;
+        top: 85px;
+        font-size: 1rem;
+        line-height: 3.5rem;
+    }
+    .event_go{
+        position: relative;
+        width: 9px;
+        height: 15px;
+        align-items: center;
+        margin: 0;
+        right: -10px;
+        background: url(../images/notice_arrow.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    /* notice event end  */
+    .sam_brand_recipe_wrap{
+        width: 945px;
+        height: 419px;
+        border-top: 2px solid #696363;
+    }
+    .sam_brand_recipe{
+        display: flex;
+        width: 945px;
+        flex-flow: row wrap;
+    }
+    .sam_brand_recipe a{
+        display: block;
+        height: 100%;
+    }
+    .yeondu{
+        width: 315px;
+        height: 419px;
+        background: url(../images/sam_brand1.jpg) no-repeat center;
+        background-size: cover;
+        text-indent: -9999px;
+    }
+    .store{
+        width: 314px;
+        height: 419px;
+        background: url(../images/sam_brand2.jpg) no-repeat center;
+        background-size: cover;
+        text-indent: -9999px;
+    }
+    .semi{
+        width: 315px;
+        height: 419px;
+        background: url(../images/sam_brand3.jpg) no-repeat center;
+        background-size: cover;
+        text-indent: -9999px;
+    }
+    
+    /* footer */
+    
+    .footer {
+        width: 1023px;
+        height: 368px;
+    }
+    .footer_wrap{
+        width: 1023px;
+    }
+    .sam_link_wrap{
+        width: 1023px;
+        height: 60px;
+        margin: auto;
+        background: #79746e;
+    }
+    .sam_link{
+        display: flex;
+        width: 790px;
+        height: 100%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sam_link a{
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #c7c5c8;
+    }
+    .sam_link>li:nth-child(1)::after {
+        content: " | ";
+        margin-left: 15px;
+        color: #eee;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        opacity: 30%;
+    }
+    .sam_link>li:nth-child(2)::after {
+        content: " | ";
+        margin-left: 15px;
+        color: #eee;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        opacity: 30%;
+    }
+    .sam_link>li:nth-child(3)::after {
+        content: " | ";
+        margin-left: 15px;
+        color: #eee;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        opacity: 30%;
+    }
+    .sam_link>li:nth-child(4)::after {
+        content: " | ";
+        margin-left: 15px;
+        color: #eee;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        opacity: 30%;
+    }
+    .sam_link>li:nth-child(5)::after {
+        content: " | ";
+        margin-left: 15px;
+        color: #eee;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        opacity: 30%;
+    }
+    .sam_link>li:nth-child(6)::after {
+        content: " | ";
+        margin-left: 15px;
+        color: #eee;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        opacity: 30%;
+    }
+    .sam_link>li:nth-child(7)::after {
+        content: " | ";
+        margin-left: 15px;
+        color: #eee;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        opacity: 30%;
+    }
+    .sam_link>li:nth-child(8)::after {
+        content: " | ";
+        margin-left: 15px;
+        color: #eee;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        opacity: 30%;
+    }
+    .footer_bottom_wrap{
+        display: flex;
+        width: 945px;
+        height: 260px;
+        margin: 0 auto;
+        padding-top: 30px;
+        box-sizing: border-box;
+        font-size: 0.75rem;
+        align-items: center;
+    }
+    .footer_bottom_wrap h3{
+        font-size: 0.75rem;
+        color: #482f28;
+        margin-bottom: 12px;
+    }
+    .sam_for_customer{
+        display: flex;
+        width: 220px;
+        height: 202px;
+        padding-top: 5px;
+        box-sizing: border-box;
+        flex-flow: column nowrap;
+    }
+    .sam_for_customer>h3{
+        margin-right: 0;
+    }
+    .sam_for_customer li{
+        line-height: 1.25rem;
+    }
+    .customer_tel{
+        display: block;
+    }
+    .customer_fax{
+        display: block;
+    }
+    .sam_company_inicis_wrap{
+        width: 504px;
+        height: 202px;
+        padding-top: 5px;
+        padding-left: 60px;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        box-sizing: border-box;
+    }
+    .sam_company_inicis{
+        display: flex;
+        width: 372px;
+        height: 198px;
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+        flex-flow: column wrap;
+        align-content: space-between;
+    }
+    .sam_our_company{
+        display: flex;
+        width: 349px;
+        height: 108px;
+        margin-bottom: 25px;
+        flex-flow: column nowrap;
+        line-height: 1.25rem;
+    }
+    .boss, .comp_num {
+        display: block;
+    }
+    .sam_inicis_service{
+        display: flex;
+        width: 371px;
+        height: 59px;
+        flex-flow: column nowrap;
+    }
+    .sam_relation_lang_sns{
+        width: 220px;
+        height: 202px;
+        padding-left: 59px;
+        box-sizing: border-box;
+    }
+    .sam_relation_lang_sns a{
+        display: block;
+        height: 100%;
+    }
+    .sam_relation_lang_wrap{
+        display: flex;
+        width: 160px;
+        height: 76px;
+        margin: 0;
+        justify-content: space-between;
+        flex-flow: column nowrap;
+    }
+    .sam_relation_site{
+        width: 160px;
+        height: 34px;
+        background: url(../images/1024/sam_1024_site_lang_arrow.jpg);
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .sam_relation_site li{
+        position: relative;
+        width: 160px;
+        padding-left: 7px;
+        top: -68px;
+        line-height: 2rem;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        box-sizing: border-box;
+    }
+    .sam_lang{
+        display: flex;
+        width: 160px;
+        height: 34px;
+        background: url(../images/1024/sam_1024_site_lang_arrow.jpg);
+        box-sizing: border-box;
+        flex-flow: column nowrap;
+        overflow: hidden;
+    }
+    .sam_lang li{
+        position: relative;
+        width: 160px;
+        top: 0;
+        padding-left: 7px;
+        line-height: 2rem;
+        background: #fff;
+        border: 1px solid #eee;
+        box-sizing: border-box;
+    
+    }
+    .sam_official_sns{
+        width: 148px;
+        height: 16px;
+        margin-top: 109px;
+        margin-left: 4px;
+    }
+    .sam_official_sns_list{
+        display: flex;
+        width: 148px;
+        height: 17px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sam_official_sns_list a{
+        display: block;
+        height: 100%;
+    }
+    .sam_official_sns_list li:nth-child(1){
+        width: 16px;
+        height: 17px;
+        background: url(../images/sam_facebook.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    .sam_official_sns_list li:nth-child(2){
+        width: 16px;
+        height: 17px;
+        background: url(../images/sam_twitter.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    .sam_official_sns_list li:nth-child(3){
+        width: 16px;
+        height: 17px;
+        background: url(../images/sam_youtube.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    .sam_official_sns_list li:nth-child(4){
+        width: 16px;
+        height: 17px;
+        background: url(../images/sam_cafe.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    .sam_official_sns_list li:nth-child(5){
+        width: 16px;
+        height: 17px;
+        background: url(../images/sam_blog.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    .footer_bottom_last{
+        width: 100%;
+        height: 45px;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #000;
+    }
+    .footer_bottom_last>p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.75rem;
+        margin-top: 15px;
+    }
+    .top{
+        position: fixed;
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+        background: url(../images/top.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+}

@@ -11,21 +11,31 @@ include "phpsrc/dbcon.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>탐나는전</title>
-    <!-- css start -->
+    <!-- link start -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="images/tamna_favicon.ico" /> 
+
+    <meta property="og:title" content="황주화 포트폴리오 : 탐나는전">
+    <meta property="og:url" content="http://kenna.dothome.co.kr/web/">
+    <meta property="og:description" content="이 웹페이지는 황주화의 포토폴리오로 만든 가상의 웹페이지입니다.">
+    <meta property="og:image" content="http://kenna.dothome.co.kr/hidden/images/ogimg.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="탐나는전">
+    <link rel="shortcut icon" href="images\tamna_favicon.ico">
+    <link rel="apple-touch-icon" href="images\tamna_favicon.ico" sizes="144x144">
+
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/header.css">
     <link type="text/css" rel="stylesheet" href="css/footer.css">
-    <!-- css end -->
+    <!-- link end -->
     <!-- script start -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/gnb.js"></script>
     <script src="js/bxSlider.js"></script>
     <script src="js/index.js" charset="utf-8"></script>
+
     <!-- script end -->
 </head>
 <body>
@@ -176,10 +186,26 @@ include "phpsrc/dbcon.php";
             </ul>
         </section>
         <!-- link end -->
+        <div class="tamna_topbtn" id="topbtn_wrap"><a class="tamna_topbtnlink" id="topbtn" href="#header">▲<br>top</a></div>
     </main>
     <!-- main end -->
     <!-- footer start -->
     <?php include "footer.php" ?>
     <!-- footer end -->
+    <!-- script add -->
+    <script type="text/javascript">
+    window.onscroll = function(){topbtn()};
+        function topbtn(){
+            var btn = document.getElementById("topbtn_wrap");
+            var btnlink = document.getElementById("topbtn");
+        if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+            btnlink.style.display = "block";
+            btn.style.display = "block";
+        } else {
+            btnlink.style.display = "none";
+            btn.style.display = "none";
+        };
+    };
+    </script>
 </body>
 </html>
