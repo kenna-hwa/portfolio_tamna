@@ -71,14 +71,14 @@ include "phpsrc/loginCheck.php";
             <!-- tamna_card_login_find start -->
             <div class="tamna_card_login_find">
                 <ul>
-                    <li><a href="find_id.php">아이디 찾기</a></li>
-                    <li><a href="find_pw.php">비밀번호 찾기</a></li>
-                    <li><a href="join.php">회원가입</a></li>
+                    <li><a href="find_id.php" title="아이디 찾기">아이디 찾기</a></li>
+                    <li><a href="find_pw.php" title="비밀번호 찾기">비밀번호 찾기</a></li>
+                    <li><a href="join.php" title="회원가입">회원가입</a></li>
                 </ul>
             </div>
 
             <div class="tamna_card_login_fromapp">
-                <a href="join.php">앱에서 가입한 회원인가요?</a>
+                <a href="join.php" title="앱 회원가입자 정보입력">앱에서 가입한 회원인가요?</a>
             </div>
             <!-- tamna_card_login_find end -->
 

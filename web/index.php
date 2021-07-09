@@ -131,7 +131,7 @@ include "phpsrc/dbcon.php";
             <div class="youtube_official">
                 <h3>유튜브 비디오</h3>
                 <iframe class="youtube_official_iframe" src="https://www.youtube.com/embed/_bEZYRQUcqc" 
-                    title="youtube_official_iframe" frameborder="0" 
+                    title="youtube official video" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
                 <div class="youtube_official_txt">
@@ -146,7 +146,7 @@ include "phpsrc/dbcon.php";
             <div class="youtube_kb">
                 <h3>유튜브 비디오</h3>
                 <iframe class="youtube_kb_iframe" src="https://www.youtube.com/embed/zXVD5agK39k" class="youtube_kb_link" 
-                    title="YouTube video player" frameborder="0" 
+                    title="youtube kb cf" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
                 <div class="youtube_kb_txt">

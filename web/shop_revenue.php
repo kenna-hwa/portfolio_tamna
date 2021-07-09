@@ -63,14 +63,14 @@ include "phpsrc/session.php";
 
             <div class="tamna_shop_login_find">
                 <ul>
-                    <li><a href="#">아이디 찾기</a></li>
-                    <li><a href="#">비밀번호 찾기</a></li>
-                    <li><a href="#">회원가입</a></li>
+                    <li><a href="find_id.php" title="아이디 찾기">아이디 찾기</a></li>
+                    <li><a href="find_pw.php" title="비밀번호 찾기">비밀번호 찾기</a></li>
+                    <li><a href="join.php" title="회원가입">회원가입</a></li>
                 </ul>
             </div>
 
             <div class="tamna_shop_login_fromapp">
-                <a href="signin.php">개인회원인가요?</a>
+                <a href="signin.php" title="개인회원인가요?">개인회원인가요?</a>
             </div>
 
         </div>

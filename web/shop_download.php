@@ -50,9 +50,9 @@ include "phpsrc/session.php";
         <div class="tamna_shop_download_list_box">
             <div class="tamna_shop_download_list">
                 <ul>
-                    <li class="tamna_shop_download_list1"><a href="#">가맹점 신청안내 전단 다운로드</a></li>
-                    <li class="tamna_shop_download_list2"><a href="#">가맹점 부착 스티커 다운로드</a></li>
-                    <li class="tamna_shop_download_list3"><a href="#">가맹점 홍보물 우편 신청</a></li>
+                    <li class="tamna_shop_download_list1"><a href="#" title="가맹점 신청 안내 다운로드">가맹점 신청안내 전단 다운로드</a></li>
+                    <li class="tamna_shop_download_list2"><a href="#" title="가맹점 부착 스티커 다운로드">가맹점 부착 스티커 다운로드</a></li>
+                    <li class="tamna_shop_download_list3"><a href="#" title="가맹점 홍보물 우편 신청">가맹점 홍보물 우편 신청</a></li>
                 </ul>
             </div>
         </div>

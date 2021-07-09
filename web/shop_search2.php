@@ -109,19 +109,19 @@ if($e_pageNum > $total_page){
         <div class="tamna_shop_search_box">
             <table class="tamna_shop_search_table">
                 <tr>
-                    <td class="tamna_table_td"><a href="#">의류/직물/잡화</a></td>
-                    <td class="tamna_table_td"><a href="#">일반,휴게음식/식품</a></td>
-                    <td class="tamna_table_td"><a href="#">주거생활/내구재</a></td>
-                    <td class="tamna_table_td"><a href="#">자동차/주유</a></td>
-                    <td class="tamna_table_td"><a href="#">유통</a></td>
-                    <td rowspan="2" class="tamna_shop_search_table_rowspan"><a href="#">기타</a></td>
+                    <td class="tamna_table_td"><a href="#" title="의류/직물/잡화">의류/직물/잡화</a></td>
+                    <td class="tamna_table_td"><a href="#" title="일반,휴게음식/식품">일반,휴게음식/식품</a></td>
+                    <td class="tamna_table_td"><a href="#" title="주거생활/내구재">주거생활/내구재</a></td>
+                    <td class="tamna_table_td"><a href="#" title="자동차/주유">자동차/주유</a></td>
+                    <td class="tamna_table_td"><a href="#" title="유통">유통</a></td>
+                    <td rowspan="2" class="tamna_shop_search_table_rowspan"><a href="#" title="기타">기타</a></td>
                 </tr>
                 <tr>
-                    <td class="tamna_table_td"><a href="#">여행</a></td>
-                    <td class="tamna_table_td"><a href="#">레포츠/문화/취미</a></td>
-                    <td class="tamna_table_td"><a href="#">의료/미용</a></td>
-                    <td class="tamna_table_td"><a href="#">교육</a></td>
-                    <td class="tamna_table_td"><a href="#">서비스</a></td>
+                    <td class="tamna_table_td"><a href="#" title="여행">여행</a></td>
+                    <td class="tamna_table_td"><a href="#" title="레포츠/문화/취미">레포츠/문화/취미</a></td>
+                    <td class="tamna_table_td"><a href="#" title="의료/미용">의료/미용</a></td>
+                    <td class="tamna_table_td"><a href="#" title="교육">교육</a></td>
+                    <td class="tamna_table_td"><a href="#" title="서비스">서비스</a></td>
                 </tr>
             </table>
 
