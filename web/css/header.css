@@ -177,7 +177,9 @@
     left: 50%;
     width: 0;
 }
-.gnb_info_sub a:hover::after {
+.gnb_info_sub a:hover::after,
+.gnb_info_sub a:focus::after,
+.gnb_info_sub a:active::after {
     transition: all 0.2s ease-in-out;
     left: 1px;
     width: 135px;
@@ -209,7 +211,9 @@
     left: 50%;
     width: 0;
 }
-.gnb_personal_sub a:hover::after {
+.gnb_personal_sub a:hover::after,
+.gnb_personal_sub a:focus::after,
+.gnb_personal_sub a:active::after  {
     transition: all 0.2s ease-in-out;
     left: 25px;
     width: 90px;
@@ -242,7 +246,9 @@
     left: 50%;
     width: 0;
 }
-.gnb_shop_sub a:hover::after {
+.gnb_shop_sub a:hover::after,
+.gnb_shop_sub a:focus::after,
+.gnb_shop_sub a:active::after {
     transition: all 0.2s ease-in-out;
     left: 1px;
     width: 135px;
@@ -275,7 +281,9 @@
     left: 50%;
     width: 0;
 }
-.gnb_customer_sub a:hover::after {
+.gnb_customer_sub a:hover::after,
+.gnb_customer_sub a:focus::after,
+.gnb_customer_sub a:active::after {
     transition: all 0.2s ease-in-out;
     left: 20px;
     width: 100px;

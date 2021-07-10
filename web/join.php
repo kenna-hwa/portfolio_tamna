@@ -25,9 +25,9 @@ include "phpsrc/loginCheck.php";
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="images/tamna_favicon.ico" /> 
-    <link type="text/css" rel="stylesheet" href="css/join.css">
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/join.css">
     <link type="text/css" rel="stylesheet" href="css/footer.css">
     <!-- css end -->
     <!-- script start -->
@@ -78,7 +78,7 @@ include "phpsrc/loginCheck.php";
                 <input type="checkbox" name="chkbox_2" id="chkbox_2" class="checkinput">
                 <label for="chkbox_2" class="chk_label2">
                     <span class="chk_label2_txt">
-                    본인은 만 14세 이상입니다. <span class="chk_label2_txt2">(만 14세 미만일 경우 회원가입이 불가합니다.)</span>
+                    [필수] 본인은 만 14세 이상입니다. <span class="chk_label2_txt2">(만 14세 미만일 경우 회원가입이 불가합니다.)</span>
                     </span>
                 </label>
             </span>

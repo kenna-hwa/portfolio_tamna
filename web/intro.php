@@ -13,14 +13,14 @@ include "phpsrc/session.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>탐나는전 소개</title>
     <!-- css start -->
-    <link type="text/css" rel="stylesheet" href="css/reset.css">
-    <link type="text/css" rel="stylesheet" href="css/intro.css">    
-    <link type="text/css" rel="stylesheet" href="css/header.css">
-    <link type="text/css" rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="images/tamna_favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/intro.css">    
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
     <!-- css end -->
         <!-- script start -->
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

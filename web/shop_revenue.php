@@ -19,9 +19,9 @@ include "phpsrc/session.php";
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="images/tamna_favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="css/shop_revenue.css">
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/shop_revenue.css">
     <link type="text/css" rel="stylesheet" href="css/footer.css">
     <!-- css end -->
     <!-- script start -->

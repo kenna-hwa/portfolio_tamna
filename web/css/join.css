@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 /* main */
+body{
+    font-size: 16px;
+}
 
 /* tamna join */
-
 .tamna_join {
     position: relative;
     width: 721px;
@@ -86,7 +88,6 @@
     height: 1470px;
     margin: auto;
 }
-
 .chk_span1 {
     display: inline-block;
     width: 1080px;
@@ -99,6 +100,7 @@
 }
 
 /* checkbox custom */
+
 .chkbox_all {
     position: absolute; 
     width: 1px; 
@@ -108,6 +110,7 @@
     overflow: hidden; 
     clip:rect(0,0,0,0); 
     border: 0;
+    font-size: 16px;
 }
 .chk_label1  {
     display: inline-block;
@@ -124,8 +127,8 @@
     background: url(../images/join/join_checked.png) no-repeat;
 }
 .chk_label1_txt {
-    font-size: 16px;
     margin-left: 50px;
+    font-size: 16px;
 }
 /* checkbox custom end */
 
@@ -137,6 +140,7 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 /* checkbox custom */
@@ -164,13 +168,11 @@
     height: 80px;
     background: url(../images/join/join_checked.png) no-repeat;
 }
-.chk_label2_txt {
-    position: relative;
-    font-size: 16px;
-    margin-left: 50px;
-}
 .chk_label2_txt2 {
-    color: #aaa;
+    position: relative;
+    margin-left: 50px;
+    color: #555;
+    font-size: 16px;
 }
 /* checkbox custom end */
 
@@ -193,6 +195,7 @@
     overflow: hidden; 
     clip:rect(0,0,0,0); 
     border: 0;
+    font-size: 16px;
 }
 .chk_label3  {
     display: inline-block;
@@ -223,6 +226,7 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
 /* checkbox custom */
 #chkbox_4 {
@@ -264,6 +268,7 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 /* checkbox custom */
@@ -306,8 +311,11 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
 /* checkbox custom */
+
 #chkbox_6 {
     position: absolute; 
     width: 1px; 
@@ -337,6 +345,7 @@
     font-size: 16px;
     margin-left: 50px;
 }
+
 /* checkbox custom end */
 
 .chk_span7 {
@@ -347,8 +356,11 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
 /* checkbox custom */
+
 #chkbox_7 {
     position: absolute; 
     width: 1px; 
@@ -375,9 +387,10 @@
 }
 .chk_label7_txt {
     position: relative;
-    font-size: 16px;
     margin-left: 50px;
+    font-size: 16px;
 }
+
 /* checkbox custom end */
 
 .chk_span8 {
@@ -389,7 +402,9 @@
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 /* checkbox custom */
+
 #chkbox_8 {
     position: absolute; 
     width: 1px; 
@@ -399,6 +414,7 @@
     overflow: hidden; 
     clip:rect(0,0,0,0); 
     border: 0;
+    font-size: 16px;
 }
 .chk_label8 {
     display: inline-block;
@@ -416,9 +432,10 @@
 }
 .chk_label8_txt {
     position: relative;
-    font-size: 16px;
     margin-left: 50px;
+    font-size: 16px;
 }
+
 /* checkbox custom end */
 
 .chk_span9 {
@@ -429,8 +446,11 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
 /* checkbox custom */
+
 #chkbox_9 {
     position: absolute; 
     width: 1px; 
@@ -457,9 +477,10 @@
 }
 .chk_label9_txt {
     position: relative;
-    font-size: 16px;
     margin-left: 50px;
+    font-size: 16px;
 }
+
 /* checkbox custom end */
 
 .chk_span10 {
@@ -470,8 +491,11 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
 /* checkbox custom */
+
 #chkbox_10 {
     position: absolute; 
     width: 1px; 
@@ -481,6 +505,7 @@
     overflow: hidden; 
     clip:rect(0,0,0,0); 
     border: 0;
+    font-size: 16px;
 }
 .chk_label10 {
     display: inline-block;
@@ -498,9 +523,10 @@
 }
 .chk_label10_txt {
     position: relative;
-    font-size: 16px;
     margin-left: 50px;
+    font-size: 16px;
 }
+
 /* checkbox custom end */
 
 .chk_span11 {
@@ -511,8 +537,11 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
 /* checkbox custom */
+
 #chkbox_11 {
     position: absolute; 
     width: 1px; 
@@ -539,9 +568,10 @@
 }
 .chk_label11_txt {
     position: relative;
-    font-size: 16px;
     margin-left: 50px;
+    font-size: 16px;
 }
+
 /* checkbox custom end */
 
 .chk_span12 {
@@ -552,8 +582,11 @@
     left: 0;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
 /* checkbox custom */
+
 #chkbox_12 {
     position: absolute; 
     width: 1px; 
@@ -571,6 +604,7 @@
     background: url(../images/join/join_unchecked.png) no-repeat;
     margin: 25px 0 0 50px;
     cursor: pointer;
+    font-size: 16px;
 }
 #chkbox_12:checked~.chk_label12 {
     display: inline-block;
@@ -580,14 +614,15 @@
 }
 .chk_label12_txt {
     position: relative;
-    font-size: 16px;
     margin-left: 50px;
+    font-size: 16px;
 }
+
 /* checkbox custom end */
+
 /* tamna join checklist end */
 
 /* tamna join next btn */
-
 .tamna_join_next_btn {
     display: block;
     width: 350px;

@@ -24,10 +24,9 @@ include "phpsrc/dbcon.php";
     <meta property="og:site_name" content="탐나는전">
     <link rel="shortcut icon" href="images\tamna_favicon.ico">
     <link rel="apple-touch-icon" href="images\tamna_favicon.ico" sizes="144x144">
-
-    <link type="text/css" rel="stylesheet" href="css/main.css">
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
     <link type="text/css" rel="stylesheet" href="css/footer.css">
     <!-- link end -->
     <!-- script start -->

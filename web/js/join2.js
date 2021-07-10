@@ -47,7 +47,7 @@ function verify_check_Num(){
     var tuVerifyLength = tuVerify.value.length;
 
     if(tuVerify.value == "") {
-        alert("인증번호를 입력해주세요.");
+        alert("휴대폰으로 발송된 인증번호를 입력해주세요.");
         tuVerify.focus();
         return false;
     }else if(tuVerifyLength <5 || tuVerifyLength > 5) {
@@ -55,7 +55,7 @@ function verify_check_Num(){
         tuVerify.focus();
         return false;
     }else{
-        var conf = confirm("인증되었습니다.");
+        var conf = confirm("휴대폰 번호가 인증되었습니다.");
     };
 };
 
