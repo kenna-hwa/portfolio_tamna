@@ -82,8 +82,10 @@ $usermobile = $_POST["phoneNum"];
                     <div class="tamna_join_id_box">
                         <label for="tamna_join_id" class="tamna_join_id_label">아이디(이메일주소)</label>
                         <input type="text" name="id" id="tamna_join_id" value="">
-                        <input type="text" name="dns" class="tamna_join_id_select_input">
+                        <label for="tamna_join_dns" class="blind">도메인</label>
+                        <input type="text" name="dns" class="tamna_join_id_select_input" id="tamna_join_dns">
                         <span id="at">＠</span>
+                        <label for="tamna_join_id_domain" class="blind">선택</label>
                         <select name="id_domain" id="tamna_join_id_domain" onchange="emailChange()">
                             <option value="">직접입력</option>
                             <option value="naver.com">naver.com</option>

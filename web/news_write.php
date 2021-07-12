@@ -65,7 +65,8 @@ if($s_name != "관리자"){
         <div class="tamna_news_table_box">
             <form action="phpsrc/newswriteOk.php" method="POST" name="writeform" id="writeform">
                 <fieldset class="blind">공지사항 작성</fieldset>
-            <table class="tamna_news_table">
+            <table class="tamna_news_table" summary="탐나는전 뉴스 작성하기">
+            <caption class="blind">뉴스 작성하기</caption>
                 <thead>
                     <tr class="tamna_news_tableHead">
                         <th class="tamna_news_tableHead_tableNum"><label for="title">글제목</label></th>

@@ -89,7 +89,7 @@ $mail = $array["tu_mail"];
 
                     <!-- gender -->
                     <div class="tamna_edit_gender_box">
-                    <label for="tamna_edit_gender" class="tamna_edit_gender_label">성별</label>
+                    <label for="tamna_edit_usergender" class="tamna_edit_gender_label">성별</label>
                         <input type="text" name="gender" id="tamna_edit_usergender" value="<?php 
                         if($gender === 'm'){
                         echo "남";}else
@@ -100,7 +100,7 @@ $mail = $array["tu_mail"];
                     </div>
 
                     <div class="tamna_edit_birth_box">
-                    <label for="tamna_edit_birthyear" class="tamna_edit_birth_label">생년월일</label>
+                    <label for="tamna_edit_birth" class="tamna_edit_birth_label">생년월일</label>
                         <input type="text" name="birth" id="tamna_edit_birth" value="<?php echo $birth; ?>" readonly="readonly">
                         </input>             
                     </div>
@@ -111,7 +111,7 @@ $mail = $array["tu_mail"];
                     </div>
                     <!-- email -->
                     <div class="tamna_edit_id_box">
-                        <label for="tamna_id_label" class="tamna_edit_id_label">아이디(이메일주소)</label>
+                        <label for="tamna_edit_id" class="tamna_edit_id_label">아이디(이메일주소)</label>
                         <input type="text" name="email" id="tamna_edit_id" value="<?php echo $mail; ?>" readonly="readonly">
                     </div>
 

@@ -75,7 +75,8 @@ $pwd = $array["tnt_pw"];
         <div class="tamna_notice_table_box">
             <form action="phpsrc/noticeEditOk.php?idx=<?php echo $idx; ?>" method="POST" name="writeform" id="writeform" onsubmit="return editFormCheck()">
                 <fieldset class="blind">공지사항 수정</fieldset>
-            <table class="tamna_notice_table">
+            <table class="tamna_notice_table" summary="공지사항 수정하기">
+            <caption class="blind">공지사항 수정</caption>
                 <thead>
                     <tr class="tamna_notice_tableHead">
                         <th class="tamna_notice_tableHead_tableNum"><label for="title">글제목</label></th>

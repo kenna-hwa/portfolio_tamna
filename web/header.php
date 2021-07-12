@@ -24,7 +24,7 @@ function log_out(){
                 <h2 class="blind">상단 메뉴</h2>
                 <ul>
                     <li class="gnb_info"><a href="intro.php" class="topmenu" title="탐나는전 안내">탐나는전</a>
-                        <ul class="gnb_info_sub sub">
+                        <ul class="sub gnb_info_sub">
                             <li><a href="intro.php#main" title="탐나는전 소개">탐나는전 소개</a></li>
                             <li><a href="intro.php#benefit" title="탐나는전 혜택">탐나는전 혜택</a></li>
                             <li><a href="intro.php#howto" title="탐나는전 발급방법">탐나는전 발급방법</a></li>

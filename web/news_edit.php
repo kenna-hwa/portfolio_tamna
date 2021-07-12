@@ -76,7 +76,8 @@ $pwd = $array["tn_pw"];
         <div class="tamna_news_table_box">
             <form action="phpsrc/newsEditOk.php?idx=<?php echo $idx; ?>" method="POST" name="writeform" id="writeform" onsubmit="return editFormCheck()">
                 <fieldset class="blind">공지사항 수정</fieldset>
-            <table class="tamna_news_table">
+            <table class="tamna_news_table" summary="탐나는전 뉴스 내용수정">
+            <caption class="blind">뉴스 수정</caption>
                 <thead>
                     <tr class="tamna_news_tableHead">
                         <th class="tamna_news_tableHead_tableNum"><label for="title">글제목</label></th>

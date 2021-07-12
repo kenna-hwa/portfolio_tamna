@@ -58,11 +58,13 @@ include "phpsrc/dbcon.php";
             </div>
         <?php } ?>
             <div class="tamna_news_search_box">
+             <label for="news_category" class="blind">검색 범위 선택</label>
                 <select name="news_category" id="news_category" class="tamna_news_category">
                     <option value="news_all">전체</option>
                     <option value="news_title">제목</option>
                     <option value="news_text">본문</option>
                 </select>
+                <label for="news_search_text" class="blind">검색어 입력</label>
                 <input type="text" name="news_search_text" id="news_search_text" class="tamna_news_search_text"
                     placeholder="검색어 입력">
                 <button type="submit" id="news_search_submit_btn" class="tamna_news_search_submit_btn">검색</button>
@@ -71,7 +73,7 @@ include "phpsrc/dbcon.php";
 
         <!-- tamna news search table -->
         <div class="tamna_news_table_box">
-            <table class="tamna_news_table">
+            <table class="tamna_news_table" summary="탐나는전 뉴스">
             <caption class="blind">뉴스</caption>
                 <thead>
                     <tr>

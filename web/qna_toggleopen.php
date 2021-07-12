@@ -64,11 +64,13 @@ include "phpsrc/session.php";
         <!-- tamna notice search -->
         <div class="tamna_qna_search">
             <div class="tamna_qna_search_box">
+                <label for="qna_category" class="blind">검색 범위 선택</label>
                 <select name="qna_category" id="qna_category" class="tamna_qna_category">
                     <option value="qna_all">전체</option>
                     <option value="qna_shop">가맹점</option>
                     <option value="qna_personal">개인사용자</option>
                 </select>
+                <label for="qna_search_text" class="blind">검색어 입력</label>
                 <input type="text" name="qna_search_text" id="qna_search_text" class="tamna_qna_search_text"
                     placeholder="검색어 입력">
                 <button type="submit" id="qna_search_submit_btn" class="tamna_qna_search_submit_btn">검색</button>

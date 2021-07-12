@@ -179,6 +179,7 @@ $chk = $_POST["chkbox12"];
                             <option value="1922">1922</option>
                             <option value="1921">1921</option>
                         </select>
+                        <label for="tamna_join_birthmonth" class="blind">태어난 월</label>
                         <select id="tamna_join_birthmonth" name="birthmonth">
                             <option value="none">월</option>
                             <option value="1">1</option>
@@ -194,6 +195,7 @@ $chk = $_POST["chkbox12"];
                             <option value="11">11</option>
                             <option value="12">12</option>
                         </select>
+                        <label for="tamna_join_birthday" class="blind">태어난 날</label>
                         <select id="tamna_join_birthday" name="birthday">
                             <option value="none">일</option>
                             <option value="01">01</option>

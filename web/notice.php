@@ -58,11 +58,13 @@ include "phpsrc/dbcon.php";
             <div class="tamna_notice_write_link_wrap"><a class="tamna_notice_write_link" href="notice_write.php">글쓰기</a></div>
         <?php } ?>
             <div class="tamna_notice_search_box">
+                <label for="notice_category" class="blind">검색 범위 선택</label>
                 <select name="notice_category" id="notice_category" class="tamna_notice_category">
                     <option value="notice_all">전체</option>
                     <option value="notice_title">제목</option>
                     <option value="notice_text">본문</option>
                 </select>
+                <label for="notice_search_text" class="blind">검색어 입력</label>
                 <input type="text" name="notice_search_text" id="notice_search_text" class="tamna_notice_search_text"
                     placeholder="검색어 입력">
                 <button type="submit" id="notice_search_submit_btn" class="tamna_notice_search_submit_btn">검색</button>
@@ -71,7 +73,7 @@ include "phpsrc/dbcon.php";
 
         <!-- tamna notice search table -->
         <div class="tamna_notice_table_box">
-            <table class="tamna_notice_table">
+            <table class="tamna_notice_table" summary="탐나는전 공지사항 글번호 제목 작성일">
 			    <caption class="blind">공지사항</caption>
                 <thead>
                     <tr>

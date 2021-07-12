@@ -65,7 +65,8 @@ if($s_name != "관리자"){
         <div class="tamna_notice_table_box">
             <form action="phpsrc/noticewriteOk.php" method="POST" name="writeform" id="writeform" onsubmit="return editFormCheck()">
                 <fieldset class="blind">공지사항 작성</fieldset>
-            <table class="tamna_notice_table">
+            <table class="tamna_notice_table" summary="공지사항 수정하기">
+            <caption class="blind">공지사항 수정</caption>
                 <thead>
                     <tr class="tamna_notice_tableHead">
                         <th class="tamna_notice_tableHead_tableNum"><label for="title">글제목</label></th>

@@ -31,9 +31,7 @@ include "phpsrc/dbcon.php";
     <!-- link end -->
     <!-- script start -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="js/gnb.js"></script>
-    <script src="js/bxSlider.js"></script>
-    <script src="js/index.js" charset="utf-8"></script>
+
 
     <!-- script end -->
 </head>
@@ -192,19 +190,23 @@ include "phpsrc/dbcon.php";
     <?php include "footer.php" ?>
     <!-- footer end -->
     <!-- script add -->
+    <script src="js/index.js" charset="utf-8"></script>
+    <script src="js/gnb.js"></script>
+    <script src="js/bxSlider.js"></script>
     <script type="text/javascript">
-    window.onscroll = function(){topbtn()};
-        function topbtn(){
-            var btn = document.getElementById("topbtn_wrap");
-            var btnlink = document.getElementById("topbtn");
-        if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-            btnlink.style.display = "block";
-            btn.style.display = "block";
-        } else {
-            btnlink.style.display = "none";
-            btn.style.display = "none";
-        };
-    };
+    
+  window.onscroll = function(){topbtn()};
+  function topbtn(){
+      var btn = document.getElementById("topbtn_wrap");
+      var btnlink = document.getElementById("topbtn");
+  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+      btnlink.style.display = "block";
+      btn.style.display = "block";
+  } else {
+      btnlink.style.display = "none";
+      btn.style.display = "none";
+  };
+};
     </script>
 </body>
 </html>

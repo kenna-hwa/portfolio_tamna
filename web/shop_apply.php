@@ -56,6 +56,7 @@ include "phpsrc/session.php";
             <form name="busiNum" action="phpsrc/busiNumOk.php" method="POST" onsubmit="return busiNumCheck()">
                 <fieldset>
                     <legend class="blind">사업자등록번호</legend>
+                    <label for="tamna_shop_apply_input_busiNum" class="blind">사업자등록번호</label>
                     <input type="text" name="businessRegistrationNumber" id="tamna_shop_apply_input_busiNum" class="shopNum"
                         placeholder="사업자등록번호를 입력해 주세요.">
                     <p class="tamna_shop_apply_input_busiNum_txt">- 없이 사업자등록번호를 입력해 주세요.</p>

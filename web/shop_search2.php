@@ -107,7 +107,8 @@ if($e_pageNum > $total_page){
         </div>
 
         <div class="tamna_shop_search_box">
-            <table class="tamna_shop_search_table">
+            <table summary="탐나는전 가맹점 찾기 표" class="tamna_shop_search_table">
+                <caption class="blind">가맹점 찾기</caption>
                 <tr>
                     <td class="tamna_table_td"><a href="#" title="의류/직물/잡화">의류/직물/잡화</a></td>
                     <td class="tamna_table_td"><a href="#" title="일반,휴게음식/식품">일반,휴게음식/식품</a></td>
@@ -126,14 +127,15 @@ if($e_pageNum > $total_page){
             </table>
 
             <div class="tamna_shop_search_city_box">
-                <select class="tamna_shop_search_city">
+                <label for="city" class="blind">도시 선택</label>
+                <select class="tamna_shop_search_city" id="city">
                     <option value="jejusi">제주시</option>
                     <option value="seogwiposi">서귀포시</option>
                 </select>
-
+                <label for="tamna_shop_search_text_box" class="blind">매장명 입력</label>
                 <input type="text" name="shopname" id="tamna_shop_search_text_box" placeholder="매장명을 입력해주세요.">
                 <p class="tamna_shop_search_city_txt">* 카테고리, 지역, 매장명 중 최소 한 가지를 입력 후 검색 버튼을 눌러주세요.</p>
-                <button type="submit" id="tamna_shop_search_btn">검색</button>
+                <button type="submit" id="tamna_shop_search_btn" onclick="openSearch();">검색</button>
             </div>
         </div>
         <div class="tamna_shop_search_result">

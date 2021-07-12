@@ -54,7 +54,8 @@ $array = mysqli_fetch_array($result);
         </div>
         <!-- tamna notice search table -->
         <div class="tamna_notice_table_box">
-            <table class="tamna_notice_table">
+            <table class="tamna_notice_table" summary="탐나는전 공지사항 내용보기">
+			    <caption class="blind">공지사항 내용</caption>
                     <tr class="tamna_notice_tableHead">
                         <th class="tamna_notice_tableHead_tableNum"><?php echo $array["idx"];  ?></th>
                         <th class="tamna_notice_tableHead_tableTitle"><?php echo $array["tnt_title"]; ?></th>
