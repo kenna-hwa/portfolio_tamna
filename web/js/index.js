@@ -3,7 +3,7 @@ $(function(){
     $('.bxslider').bxSlider({
         auto: true,
         autoDelay: 0,
-        speed: 1500,
+        speed: 1200,
         autoControls: true,
         stopAutoOnClick: true,
         pager: true,

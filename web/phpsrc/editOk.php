@@ -17,7 +17,7 @@ $tu_pwd = $_POST["password"];
 
 // DB 연결
 
-include "inc/dbcon.php";
+include "dbcon.php";
 
 
 

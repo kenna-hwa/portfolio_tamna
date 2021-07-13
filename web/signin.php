@@ -23,7 +23,8 @@ include "phpsrc/loginCheck.php";
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="images/tamna_favicon.ico" />
+        <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../favicon.ico" sizes="144x144">
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/header.css">
     <link type="text/css" rel="stylesheet" href="css/signin.css">
@@ -47,9 +48,9 @@ include "phpsrc/loginCheck.php";
     <main id="main" class="main">
         <div class="tamna_card_login">
 
-            <h2>카드 등록</h2>
+            <h2>로그인</h2>
             <div class="tamna_card_login_txt">
-                발급 받으신 탐나는전 카드 등록을 위해 회원가입 또는 로그인을 해주세요.
+                탐나는전 회원이시면 로그인을 해주세요.
             </div>
 
         <!-- tamna_card_login_input start -->

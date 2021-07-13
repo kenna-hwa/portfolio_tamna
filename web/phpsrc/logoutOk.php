@@ -15,7 +15,7 @@ echo "
 
     <script type=\"text/javascript\" charset=\"utf-8\">
     alert(\"로그아웃 되었습니다\");
-    location.href=\"../index.php\";
+    history.back();
 
     </script> 
     

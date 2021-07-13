@@ -16,7 +16,8 @@ include "phpsrc/session.php";
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="images/tamna_favicon.ico" />
+        <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../favicon.ico" sizes="144x144">
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/header.css">
     <link type="text/css" rel="stylesheet" href="css/intro.css">    
@@ -147,6 +148,7 @@ include "phpsrc/session.php";
 
         </div>
         <div class="tamna_howto_button"><a href="apply.php">탐나는전 발급</a></div>
+        <div class="tamna_topbtn" id="topbtn_wrap" onclick="topClick()"><a class="tamna_topbtnlink" id="topbtn" href="">▲<br>top</a></div>
     </main>
 
     <!-- main end -->
@@ -156,7 +158,31 @@ include "phpsrc/session.php";
     <!-- footer end -->
     <!-- script add -->
     <script src="js/intro.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    
 
+  window.onscroll = function(){topbtn()};
+ 
+  function topbtn(){
+      var btn = document.getElementById("topbtn_wrap");
+      var btnlink = document.getElementById("topbtn");
+  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+      btnlink.style.display = "block";
+      btn.style.display = "block";
+  } else {
+      btnlink.style.display = "none";
+      btn.style.display = "none";
+  };
+};
+
+
+function topClick(){
+    window.scrollTo({
+  top: 0,
+  behavior: 'smooth'
+});
+};
+    </script>
 
 </body>
 

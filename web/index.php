@@ -22,8 +22,8 @@ include "phpsrc/dbcon.php";
     <meta property="og:image" content="http://kenna.dothome.co.kr/hidden/images/ogimg.jpg">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="탐나는전">
-    <link rel="shortcut icon" href="images\tamna_favicon.ico">
-    <link rel="apple-touch-icon" href="images\tamna_favicon.ico" sizes="144x144">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../favicon.ico" sizes="144x144">
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/header.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
@@ -183,7 +183,7 @@ include "phpsrc/dbcon.php";
             </ul>
         </section>
         <!-- link end -->
-        <div class="tamna_topbtn" id="topbtn_wrap"><a class="tamna_topbtnlink" id="topbtn" href="#header">▲<br>top</a></div>
+        <div class="tamna_topbtn" id="topbtn_wrap" onclick="topClick()"><a class="tamna_topbtnlink" id="topbtn" href="">▲<br>top</a></div>
     </main>
     <!-- main end -->
     <!-- footer start -->
@@ -195,7 +195,9 @@ include "phpsrc/dbcon.php";
     <script src="js/bxSlider.js"></script>
     <script type="text/javascript">
     
+
   window.onscroll = function(){topbtn()};
+ 
   function topbtn(){
       var btn = document.getElementById("topbtn_wrap");
       var btnlink = document.getElementById("topbtn");
@@ -206,6 +208,14 @@ include "phpsrc/dbcon.php";
       btnlink.style.display = "none";
       btn.style.display = "none";
   };
+};
+
+
+function topClick(){
+    window.scrollTo({
+  top: 0,
+  behavior: 'smooth'
+});
 };
     </script>
 </body>

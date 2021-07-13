@@ -810,5 +810,30 @@
     color: #fff;
     transition: all 0.15s ease-in-out;
 }
-
+.tamna_topbtn{
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: #21bdbd;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    bottom: 50px;
+    right: 20px;
+    z-index: 20;
+    opacity: 0.7;
+}
+.tamna_topbtnlink{
+    display: none;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: 400;    
+    bottom: 50px;
+    right: 20px;
+    font-size: 12px;
+}
 /* main end */

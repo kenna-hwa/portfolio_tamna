@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+.header_wrap{
+    position: fixed;
+    display: flex;
+    width: 99vw;
+    height: 100px;
+    padding-right: 5vw;
+    flex-flow: row-reverse;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 100;
+    background: violet;
+}
+.logo{
+    width: 122px;
+    height: 39px;
+    background: url(../images/kenna.png) no-repeat;
+    text-indent: -9999px;
+}
+/* main */
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    position: relative;
+    width: 98.9vw;
+    height: 99.5vh;
+    margin: auto;
+    padding-left: 1vw;
+    box-sizing: border-box;
+    background: pink;
+    z-index: 1;
+}
+.title_header{
+    position: absolute;
+    font-size: 0.8571rem;
+    font-weight: 900;
+    letter-spacing: -0.015rem;
+    top: 120px;
+}
+.title_header_text{
+    position: absolute;
+    font-size: 0.8571rem;
+    letter-spacing: -0.015rem;
+    text-align: right;
+    top: 50vh;
+    right: 5vw;
+}
+.responsive{
+    font-size: 1.714rem;
+    font-weight: 900;
+    letter-spacing: -0.05rem;
+}
+.front{
+    font-size: 1.429rem;
+    font-weight: 200;
+    letter-spacing: -0.07rem;
+    line-height: 1rem;
+}
+.name{
+    font-size: 1.143rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+}
+.down_wrap{
+    position: absolute;
+    width: 173px 10vw;
+    height: 121px;
+    background: url(../images/arrow.png) no-repeat;
+    background-size: contain;
+    top: 90vh;
+    left: 47vw;
+    opacity: 50%;
+}
+.about{
+    position: relative;
+    width: 98.9vw;
+    height: 99.5vh;
+    margin: auto;
+    padding-left: 1vw;
+    background: powderblue;
+    z-index: 1;
+}
+.about_header{
+    position: absolute;
+    font-size: 0.8571rem;
+    font-weight: 900;
+    letter-spacing: -0.015rem;
+    top: 120px;
+}
+.web{
+    position: relative;
+    width: 98.9vw;
+    height: 99.5vh;
+    margin: auto;
+    padding-left: 1vw;
+    background: salmon;
+    z-index: 1;
+}
+.web_header{
+    position: absolute;
+    font-size: 0.8571rem;
+    font-weight: 900;
+    letter-spacing: -0.015rem;
+    top: 120px;
+}
+.web_left{
+    position: absolute;
+    margin-left: 100px;
+    top: 200px;
+}
+.web_ex{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background: url(../images/web_sample.png) no-repeat;
+    top: 20vh;
+}
+
+.mobile{
+    position: relative;
+    width: 98.9vw;
+    height: 99.5vh;
+    margin: auto;
+    background: yellowgreen;
+    z-index: 1;
+}
+.rwd{
+    position: relative;
+    width: 98.9vw;
+    height: 99.5vh;
+    margin: auto;
+    background: antiquewhite;
+    z-index: 1;
+}
