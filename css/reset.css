@@ -1,26 +1,118 @@
 @charset "utf-8";
+
 /* css reset */
 /* block 요소 m,p reset */
-body, h1, h2, h3, h4, div, p, ol, ul, li, dl, dt, dd, header, section, article, span, label, form, a, fieldset, legend {margin:0;padding:0;border:0}
+body,
+h1,
+h2,
+h3,
+h4,
+div,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+header,
+section,
+article,
+span,
+label,
+form,
+a,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
 /* another */
-form,fieldset,legend{border-style:none;border:0}
-a{text-decoration:none;color:#000}
-ul,li{list-style:none}
-address{font-style:normal}
-button{border:0;padding:0;background:transparent;cursor:pointer;*overflow:visible}
-input{border:0;padding:0;background:transparent;cursor:pointer;*overflow:visible}
+form,
+fieldset,
+legend {
+    border-style: none;
+    border: 0
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+ul,
+li {
+    list-style: none
+}
+
+address {
+    font-style: normal
+}
+
+button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    *overflow: visible
+}
+
+input {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    *overflow: visible
+}
+
 /* select 네이티브 외형 감추기 */
-select {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
-table {border-collapse:collapse;border-spacing:0;}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /* IE 10, 11의 네이티브 화살표 숨기기 */
-select::-ms-expand {display:none;}
+select::-ms-expand {
+    display: none;
+}
+
 /* 
 /* font setting */
-body{font-size:14px;font-family:'Noto Sans KR','돋움',sans-serif;font-weight:200}
+body {
+    font-size: 14px;
+    font-family: 'Noto Sans KR', '돋움', sans-serif;
+    font-weight: 200
+}
+
 /* ------------------------------------------------------------------------------- */
 /* Common class */
 /* .blind {visibility: hidden; } 글자있던 자리는 남아있게 됨 */
-.blind{position:absolute;clip:rect(0, 0, 0, 0);width:1px;height:1px;margin:-1px;overflow:hidden}
-/* scroll 숨김 */
-body {overflow:auto;overflow-x:hidden;}
+.blind {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden
+}
+
+/* scroll 가로 숨김, 세로 스크롤 살리고 숨기기 */
+body {
+    overflow: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* -------------------------------------------------------------------------------- */

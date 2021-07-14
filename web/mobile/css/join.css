@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* main */
+
+.main{
+    width: 767px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.tamna_join{
+    width: 645px;
+    height: 100%;
+    margin: 0 auto 25px;
+}
+.tamna_join>h2::before{
+    display: block;
+    content: "";
+    width: 80px;
+    height: 82px;
+    background: url(../images/tamna_mobile_logo.jpg) no-repeat;
+    margin-bottom: 50px;
+}
+.tamna_join>h2{
+    margin-bottom: 50px;
+}
+.tamna_join_txt{
+    width: 530px;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+.tamna_join_order{
+    width: 400px;
+    height: 30px;
+    margin: 0;
+}
+.tamna_join_order ol{
+    width: 400px;
+    height: 30px;
+    font-size: 12px;
+}
+.tamna_join_order ol li:nth-child(1){
+    width: 69px;
+    height: 30px;
+    float: left;
+    font-weight: 600;
+    color: #21bdbd;
+}
+.tamna_join_order ol li:nth-child(1)::after{
+    content: " 〉";
+    margin-left: 5px;
+}
+.tamna_join_order ol li:nth-child(2){
+    width: 90px;
+    height: 30px;
+    float: left;
+}
+.tamna_join_order ol li:nth-child(2)::after{
+    content: " 〉";
+    margin-left: 5px;
+}
+.tamna_join_order ol li:nth-child(3){
+    width: 50px;
+    height: 30px;
+    float: left;
+}
+
+/* tamna join checklist start */
+
+.tamna_join_chklist{
+    position: relative;
+    width: 645px;
+    height: 100%;
+    margin: 0 auto 50px;
+}
+.chk_span1, .chk_span2, .chk_span3,
+.chk_span4, .chk_span5, .chk_span6,
+.chk_span8, .chk_span7, .chk_span9,
+.chk_span10, .chk_span11, .chk_span12{
+    display: block;
+    width: 650px;
+    height: 50px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    box-sizing: border-box;
+}
+.chk_span12{
+    border-bottom: 1px solid #444;
+}
+.checkbox{
+    margin-top: 20px;
+}
+span{
+    font-size: 12px;
+}
+.chk_label1, .chk_label2, .chk_label3,
+.chk_label4, .chk_label5, .chk_label6,
+.chk_label7, .chk_label8, .chk_label9,
+.chk_label10, .chk_label11, .chk_label12{
+    display: inline;
+    width: 650px;
+    height: 50px;
+    background: url(../images/join/tamna_mobile_join_nonchk.png) no-repeat;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+#chkbox_all, #chkbox_2, #chkbox_3, #chkbox_4,
+#chkbox_5, #chkbox_6, #chkbox_7, #chkbox_8,
+#chkbox_9, #chkbox_10, #chkbox_11, #chkbox_12 {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+}
+.chkbox_all:checked~.chk_label1,
+#chkbox_2:checked~.chk_label2,
+#chkbox_3:checked~.chk_label3,
+#chkbox_4:checked~.chk_label4,
+#chkbox_5:checked~.chk_label5,
+#chkbox_6:checked~.chk_label6,
+#chkbox_7:checked~.chk_label7,
+#chkbox_8:checked~.chk_label8,
+#chkbox_9:checked~.chk_label9,
+#chkbox_10:checked~.chk_label10,
+#chkbox_11:checked~.chk_label11,
+#chkbox_12:checked~.chk_label12 {
+    display: inline-block;
+    width: 500px;
+    height: 50px;
+    margin-left: 20px;
+    background: url(../images/join/tamna_mobile_join_chked.png)  no-repeat;
+}
+.chk_label1_txt, .chk_label2_txt, .chk_label3_txt,
+.chk_label4_txt, .chk_label5_txt, .chk_label6_txt,
+.chk_label7_txt, .chk_label8_txt, .chk_label9_txt,
+.chk_label10_txt, .chk_label11_txt, .chk_label12_txt {
+    position: relative;
+    margin-left: 50px;
+}
+
+/* tamna join checklist end */
+
+/* tamna join next btn */
+.tamna_join_next_btn {
+    display: block;
+    width: 240px;
+    height: 80px;
+    background: #21bdbd;
+    border: 1px solid #ddd;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 50px auto 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.tamna_join_next_btn:hover {
+    background: #fff;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
