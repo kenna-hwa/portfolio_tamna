@@ -24,7 +24,7 @@
     </header>
 
     <main id="main" class="main">
-        
+
         <section class="title">
             <h2 class="title_header">PORTFOLIO</h2>
             <div class="title_header_text">
@@ -32,13 +32,118 @@
                 <p class="kenna">KENNA HWANG</p>
                 <p class="name">황주화</p>
             </div>
-            <div class="down_wrap">
+            <div class="down_wrap" onclick="downAction();">
                 <p class="down">아래로</p>
             </div>
-        </section> 
+        </section>
 
-       <section class="about">
+        <section class="about">
             <h2 class="about_header">ABOUT</h2>
+            <div class="about_top">
+                <section class="about_img">
+                    <h3 class="blind">이미지</h3>
+                </section>
+                <section class="about_txt">
+                    <h3 class="blind">소개글</h3>
+                    <p class="name">황주화</p>
+                    <p class="engname">HWANG JUHWA (KENNA HWANG)</p>
+                    <p class="talk">이야기 구구절절 구구절절</p>
+                    <p class="mail">Mail</p>
+                    <label for="github" class="github">Github &#10133;</label>
+                    <input type="checkbox" class="chartbox" name="github" id="github">
+                    <img src="http://ghchart.rshah.org/kenna-hwa" alt="kenna-hwa's Github chart" class="chart"/>
+                    <p class="Blog">Blog</p>
+
+                </section>
+            </div>
+            <section class="about_skills">
+                <div class="about_skills_top">
+                    <article class="html">
+                        <label for="html" class="label">HTML &#10133;</label>
+                        <input type="checkbox" name="html" class="toggle" id="html">
+                        <div class="skills_html skillbox">
+                            <p>&#9643;&#65039; HTML5 마크업</p>
+                            <p>&#9643;&#65039; 웹 표준 및 접근성 (WAI-ARIA, KWCAG 2.1) 준수
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="js">
+                    <label for="javascript" class="label">JAVASCRIPT &#10133;</label>
+                    <input type="checkbox" name="javascript" class="toggle" id="javascript">
+                    <div class="skills_javascript skillbox">
+                        <p>&#9643;&#65039; ES6 활용</p>
+                        <p>&#9643;&#65039; JQuery 라이브러리</p>
+                    </div>
+                    </article>
+
+                    <article class="sql">
+                    <label for="mysql" class="label">MySQL &#10133;</label>
+                    <input type="checkbox" name="mysql" class="toggle" id="mysql">
+                    <div class="skills_mysql skillbox">
+                        <p>&#9643;&#65039; MySQL 기본 지식 보유</p>
+                    </div>
+                    </article>
+                </div>
+                <div class="about_skills_bottom">
+                    <article class="css">
+                        <label for="css" class="label">CSS &#10133;</label>
+                        <input type="checkbox" name="css" class="toggle" id="css">
+                        <div class="skills_css skillbox">
+                            <p>&#9643;&#65039; CSS3</p>
+                            <p>&#9643;&#65039; Media Query 반응형 페이지</p>
+                            <p>&#9643;&#65039; Flex, Grid 사용 가능</p>
+                        </div>
+                    </article>
+                    <article class="react">
+                        <label for="react" class="label">REACT &#10133;</label>
+                        <input type="checkbox" name="react" class="toggle" id="react">
+                        <div class="skills_react skillbox">
+                            <p>&#9643;&#65039; 열심히 배우는 중..</p>
+                        </div>
+                    </article>
+                    <article class="php">
+                        <label for="php" class="label">PHP &#10133;</label>
+                        <input type="checkbox" name="php" class="toggle" id="php">
+                        <div class="skills_php skillbox">
+                            <p>&#9643;&#65039; 사용 가능 사용 가능</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="about_skills_etc">
+                    <label for="etc" class="label">ETC &#10133;</label>
+                    <input type="checkbox" name="etc" class="toggle" id="etc">
+
+                    <div class="skills_etc skillbox">
+                    
+                        <article class="grap">
+                            <label for="graphics" class="label">GRAPHICS &#10133;</label>
+                            <input type="checkbox" name="graphics" class="toggle" id="graphics">
+                            <div class="skills_grap skillbox">
+                                <p>&#9643;&#65039; Adobe Photoshop</p>
+                                <p>&#9643;&#65039; Adobe Illustrator</p>
+                            </div>
+                        </article>
+                        <article class="git">
+                            <label for="git" class="label">GIT &#10133;</label>
+                            <input type="checkbox" name="git" class="toggle" id="git">
+                            <div class="skills_git skillbox">
+                                <p>&#9643;&#65039; Adobe Photoshop</p>
+                                <p>&#9643;&#65039; Adobe Illustrator</p>
+                            </div>
+                        </article>
+                        <article class="python">
+                            <label for="python" class="label">Python &#10133;</label>
+                            <input type="checkbox" name="python" class="toggle" id="python">
+                            <div class="skills_python skillbox">
+                                <p>&#9643;&#65039; Django</p>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </section>
+
         </section>
         <section class="web">
             <h2 class="web_header">WEB</h2>
@@ -110,7 +215,8 @@
                     <p class="desctxt">샘표식품 웹의 랜딩페이지를 반응형으로 제작하였습니다.
                     </p>
                     <p class="process">PROCESS</p>
-                    <p class="processtxt">주제 선정 &gt; 사용자 분석 &gt; 화면 설계 &gt; 인터페이스 정의 &gt; 마크업 &gt; 스타일 시트 &gt; 스크립트 &gt; 배포</p>
+                    <p class="processtxt">주제 선정 &gt; 사용자 분석 &gt; 화면 설계 &gt; 인터페이스 정의 &gt; 마크업 &gt; 스타일 시트 &gt; 스크립트 &gt;
+                        배포</p>
                     <p class="skill">SKILL</p>
                     <P class="processtxt">Adobe Photoshop / Adobe Illustrator <br>
                         HTML5 / CSS3 </P>
@@ -125,6 +231,9 @@
         </section>
     </main>
     <footer></footer>
+    <script src="js/parallax.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>

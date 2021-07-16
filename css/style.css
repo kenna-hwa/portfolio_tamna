@@ -1,5 +1,9 @@
 @charset "utf-8";
-
+body{
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .header_wrap{
     position: fixed;
     display: flex;
@@ -12,9 +16,9 @@
     z-index: 100;
 }
 .logo{
-    width: 122px;
-    height: 39px;
-    background: url(../images/kenna.png) no-repeat;
+    width: 90px;
+    height: 29px;
+    background: url(../images/kenna9029.png) no-repeat;
     text-indent: -9999px;
 }
 
@@ -24,7 +28,6 @@
     position: relative;
     width: 99.8vw;
     height: 100%;
-    background: #e9e9e9;
 }
 
 /* title */
@@ -106,6 +109,144 @@
     letter-spacing: -0.015rem;
     margin-top: 10vh;
 } 
+.about_top{
+    display: flex;
+    width: 98.9vw;
+    height: 45vh;
+    flex-flow: row nowrap;
+}
+.about_img{
+    display: flex;
+    width: 50%;
+    background: url(../images/img.png) no-repeat;
+    background-position: center;
+    background-size: 30%;
+}
+.about_txt{
+    width: 50%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.engname{
+    font-size: 1rem;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+.talk{
+    margin-top: 1%;
+}
+.mail{
+    font-weight: 500;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.github{
+    font-weight: 500;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+.chart{
+    display: block;
+    width: 80%;
+}
+/* toggle 기능 구현 */
+
+.chartbox, .chart{
+    display:none;
+}
+.chartbox:checked+.chart{display: block;}
+
+.Blog{
+    font-weight: 500;
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+/* skills */
+
+.about_skills{
+    display: flex;
+    width: 98.9vw;
+    height: 45vh;
+    flex-flow: column wrap;
+    align-items: stretch;
+}
+.label{
+    font-size: medium;
+    font-weight: 600;
+}
+.skillbox{
+    margin-top: 4%;
+}
+.about_skills_top{
+    display: flex;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+    box-sizing: border-box;
+    order: 0;
+}
+.html{
+    width: 25%;
+    height: 100%;
+}
+.js{
+    width: 25%;
+    height: 100%;
+}
+.sql{
+    width: 25%;
+    height: 100%;
+}
+
+.about_skills_bottom{
+    display: flex;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+    box-sizing: border-box;
+    order: 1;
+}
+.css{
+    width: 25%;
+    height: 100%;
+}
+.react{
+    width: 25%;
+    height: 100%;
+}
+.php{
+    width: 25%;
+    height: 100%;
+}
+
+.about_skills_etc{
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    order: 2;
+}
+.skills_etc{
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+}
+.grap{
+    margin-bottom: 5%;
+}
+.git{
+    margin-bottom: 5%;
+}
+
+/* toggle 기능 구현 */
+
+.toggle, .skillbox{
+    display:none;
+}
+.toggle:checked+.skillbox{display: block;}
 
 /* web */
 
