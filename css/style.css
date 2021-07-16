@@ -120,10 +120,14 @@ body{
     width: 50%;
     background: url(../images/img.png) no-repeat;
     background-position: center;
-    background-size: 30%;
+    background-size: 100%;
+}
+.about_img{
+    background: url(../images/img_2.png) no-repeat;
 }
 .about_txt{
     width: 50%;
+    box-sizing: border-box;
 }
 .name{
     font-size: 1.2rem;
@@ -136,10 +140,14 @@ body{
 }
 .talk{
     margin-top: 1%;
+    margin-bottom: 2%;
 }
 .mail{
     font-weight: 500;
     margin-top: 1%;
+    margin-bottom: 2%;
+}
+.mailaddr{
     margin-bottom: 2%;
 }
 .github{
@@ -149,20 +157,22 @@ body{
 }
 .chart{
     display: block;
-    width: 80%;
+    width: 65%;
 }
-/* toggle 기능 구현 */
-
-.chartbox, .chart{
-    display:none;
-}
-.chartbox:checked+.chart{display: block;}
-
-.Blog{
+.blog{
     font-weight: 500;
     margin-top: 1%;
     margin-bottom: 0.5%;
 }
+/* toggle 기능 구현 */
+
+.chartbox, .mailbox, .chart, .mailaddr, .blogbox, .blogaddr {
+    display:none;
+}
+.chartbox:checked+.chart{display: block;}
+.mailbox:checked+.mailaddr{display: block;}
+.blogbox:checked+.blogaddr{display: block;}
+
 /* skills */
 
 .about_skills{
