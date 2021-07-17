@@ -9,10 +9,12 @@ body{
     display: flex;
     width: 99.8vw;
     height: 10vh;
-    padding-right: 1vw;
-    flex-flow: row-reverse;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    flex-flow: row;
+    justify-content: space-between;
     box-sizing: border-box;
-    align-items: center;
+    align-items:center;
     z-index: 100;
 }
 .logo{
@@ -21,7 +23,10 @@ body{
     background: url(../images/kenna9029.png) no-repeat;
     text-indent: -9999px;
 }
-
+.toggleTheme{
+    border: 1px solid #444;
+    cursor: pointer;
+}
 /* main */
  
 .main{
@@ -495,4 +500,30 @@ body{
     margin-right: 1em;
     border: 1px solid #333;
     border-radius: 10px;
+}
+
+/* darkmode */
+body.dark {
+    background: url(../images/dbackground.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #aaa;
+}
+
+body.dark a {
+    color: #aaa;
+}
+body.dark input {
+    color: #aaa;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: url(../images/dbackground.jpg) no-repeat;
+        color: #bbb;
+    }
+
+    a {
+        color: #eee;
+    }
 }
