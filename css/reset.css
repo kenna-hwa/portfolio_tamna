@@ -87,7 +87,6 @@ select::-ms-expand {
 /* 
 /* font setting */
 body {
-    font-size: 0.85vw;
     font-family: 'Noto Sans KR', '돋움', sans-serif;
     font-weight: 200
 }

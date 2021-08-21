@@ -1,5 +1,12 @@
 @charset "utf-8";
+@viewport {
+    zoom: 1;
+    min-zoom: 1;
+    max-zoom: 1;
+}
+
 body{
+    font-size: 0.8vw;
     background: url(../images/background.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -34,7 +41,15 @@ body{
     width: 99.8vw;
     height: 100%;
 }
-
+    /* link hover */
+    .link{
+        cursor: pointer;
+        transition: all 0.7s;
+    }
+    .link:hover{
+        font-weight: 500;
+        transition: all 0.7s;
+    }
 /* title */
 
 .title{
@@ -48,15 +63,16 @@ body{
     border-top: 1px solid #eee;
     box-sizing: border-box;
     z-index: 1;
+    overflow: hidden;
 }
 .title_header{
-    font-size: 0.8571rem;
+    font-size: 0.8rem;
     font-weight: 900;
     letter-spacing: -0.015rem;
     margin-top: 10vh;
 }
 .title_header_text{
-    font-size: 0.8571rem;
+    font-size: 0.8rem;
     letter-spacing: -0.015rem;
     text-align: right;
     margin-top: 28vh;
@@ -67,24 +83,23 @@ body{
     font-weight: 900;
     letter-spacing: -0.05rem;
 }
-.kenna{
-    font-size: 1.429rem;
-    font-weight: 200;
-    letter-spacing: -0.07rem;
-    line-height: 1rem;
-}
 .name{
-    font-size: 1.143rem;
+    font-size: 1.429rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+.name span{
+    font-size: 1rem;
     font-weight: 200;
-    line-height: 2.5rem;
 }
 .down_wrap{
     position: absolute;
     width: 4vw;
     margin: auto;
-    opacity: 50%;
+    opacity: 0.5;
     left: 48vw;
     bottom: 5vh;
+    cursor: pointer;
 }
 .down{
     width: 80%;
@@ -107,75 +122,118 @@ body{
     border-top: 1px solid #eee;
     box-sizing: border-box;
     z-index: 1;
+    overflow: hidden;
 }
 .about_header{
-    font-size: 0.8571rem;
+    font-size: 0.8rem;
     font-weight: 900;
     letter-spacing: -0.015rem;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 0.4vh;
 } 
 .about_top{
     display: flex;
     width: 98.9vw;
-    height: 45vh;
+    height: 50%;
     flex-flow: row nowrap;
+    padding-bottom: 1vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 .about_img{
+    position: relative;
     display: flex;
-    width: 50%;
-    background: url(../images/img.png) no-repeat;
-    background-position: center;
-    background-size: 100%;
+    width: 49%;
+    height: 100%;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+    box-sizing:border-box;
+    cursor:pointer;
 }
-.about_img{
-    background: url(../images/img_2.png) no-repeat;
+.img_1{
+    position:absolute;
+    width: 35%;
 }
 .about_txt{
-    width: 50%;
+    display: flex;
+    width: 49%;
     box-sizing: border-box;
+    flex-flow: column nowrap;
+    align-self: center;
+    padding-bottom: 2%;
 }
-.name{
-    font-size: 1.2rem;
+.about_name{
+    font-size: 1.4rem;
     font-weight: 500;
 }
 .engname{
-    font-size: 1rem;
-    margin-top: 0.5%;
-    margin-bottom: 2%;
+    font-size: 0.8rem;
+    margin-bottom: 1%;
 }
 .talk{
-    margin-top: 1%;
+    margin-top: 0.2%;
     margin-bottom: 2%;
+}
+.about_txt_mail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
 }
 .mail{
+    font-size: 0.8rem;
     font-weight: 500;
-    margin-top: 1%;
-    margin-bottom: 2%;
+    cursor: pointer;
+}
+.mail_contents{
+    margin-left: 1%;
 }
 .mailaddr{
-    margin-bottom: 2%;
+    font-size: 0.8rem;
+}
+.about_txt_gitchart{
+    margin-bottom: 1%;
 }
 .github{
+    font-size: 0.8rem;
     font-weight: 500;
-    margin-top: 0.5%;
-    margin-bottom: 2%;
+    margin: 0.5% 1% 0.5% 0;
+    cursor: pointer;
+}
+.githubblog{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/github.png) no-repeat center;
+    background-size: contain;
+    text-indent: 50px;
 }
 .chart{
     display: block;
     width: 65%;
+    margin-bottom: 2%;
+}
+.about_txt_blog{
+    display: flex;
+    align-items: center;
 }
 .blog{
+    font-size: 0.8rem;
     font-weight: 500;
-    margin-top: 1%;
-    margin-bottom: 0.5%;
+    cursor: pointer;
+}
+.blogaddr{
+    margin-left: 1%;
+    font-size: 0.8rem;
 }
 /* toggle 기능 구현 */
 
-.chartbox, .mailbox, .chart, .mailaddr, .blogbox, .blogaddr {
+.chartbox, .mailbox, .about_txt_github, .mail_contents, .blogbox, .blogaddr {
     display:none;
 }
-.chartbox:checked+.chart{display: block;}
-.mailbox:checked+.mailaddr{display: block;}
+.chartbox:checked+.about_txt_github{display: block;}
+.mailbox:checked+.mail_contents{display: block;}
 .blogbox:checked+.blogaddr{display: block;}
 
 /* skills */
@@ -184,76 +242,100 @@ body{
     display: flex;
     width: 98.9vw;
     height: 45vh;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: stretch;
+    box-sizing: border-box;
+}
+.skills_header{
+    width: 100%;
+    height: 10%;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: -0.015rem;
+    margin-bottom: 0.2vh;
 }
 .label{
-    font-size: medium;
+    font-size: 0.8rem;
     font-weight: 600;
+    cursor: pointer;
+}
+.skill_wrap{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    height: 90%;
 }
 .skillbox{
-    margin-top: 4%;
+    margin-top: 2%;
 }
 .about_skills_top{
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 50%;
     justify-content: space-between;
     padding: 0 2% 0 2%;
     box-sizing: border-box;
-    order: 0;
 }
 .html{
     width: 25%;
     height: 100%;
+    line-height: 2;
 }
 .js{
     width: 25%;
     height: 100%;
+    line-height: 2;
 }
 .sql{
     width: 25%;
     height: 100%;
+    line-height: 2;
 }
 
 .about_skills_bottom{
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 50%;
     justify-content: space-between;
     padding: 0 2% 0 2%;
     box-sizing: border-box;
-    order: 1;
 }
 .css{
     width: 25%;
     height: 100%;
+    line-height: 2;
 }
 .react{
     width: 25%;
     height: 100%;
+    line-height: 2;
 }
 .php{
     width: 25%;
     height: 100%;
+    line-height: 2;
 }
-
 .about_skills_etc{
-    width: 20%;
-    height: 100%;
+    width: 30%;
+    height: 90%;
+    padding-left: 1%;
     box-sizing: border-box;
-    order: 2;
 }
 .skills_etc{
-    width: 90%;
-    height: 90%;
-    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    margin-top: 2.5%;
+
 }
 .grap{
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    line-height: 1.5;
 }
 .git{
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    line-height: 1.5;
 }
 
 /* toggle 기능 구현 */
@@ -263,6 +345,107 @@ body{
 }
 .toggle:checked+.skillbox{display: block;}
 
+/* about me */
+
+.about_me{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 99.8vw;
+    height: 100vh;
+    margin: auto;
+    padding-left: 1.5vw;
+    border-top: 1px solid #eee;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.about_me_header{
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: -0.015rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.about_me_section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.about_me_one{
+    width: 31%;
+    height: 80%;
+    padding: 2%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    margin-right: 2%;
+    overflow: scroll;
+}
+.about_me_one_header{
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+}
+.about_me_one_txt{
+    font-size: 1rem;
+}
+.about_me_one_txt dt{
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+.about_me_one_txt dd{
+    margin-bottom: 4%;
+}
+.menual{
+    width: 100%;
+}
+.about_me_two{
+    width: 31%;
+    height: 80%;
+    padding: 2%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    margin-right: 2%;
+    overflow: scroll;
+}
+.about_me_two_header{
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+}
+.about_me_two_txt{
+    font-size: 1rem;
+}
+.about_me_two_txt dt{
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+.about_me_two_txt dd{
+    margin-bottom: 4%;
+}
+.about_me_three{
+    width: 31%;
+    height: 80%;
+    padding:2%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: scroll;
+}
+.about_me_three_header{
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+}
+.about_me_three_txt{
+    font-size: 1rem;
+}
+.about_me_three dt{
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+.about_me_three dd{
+    margin-bottom: 4%;
+}
 /* web */
 
 .web{
@@ -276,9 +459,10 @@ body{
     border-top: 1px solid #eee;
     box-sizing: border-box;
     z-index: 1;
+    overflow: hidden;
 }
 .web_header{
-    font-size: 0.8571rem;
+    font-size: 0.8rem;
     font-weight: 900;
     letter-spacing: -0.015rem;
     margin-top: 5vh;
@@ -297,11 +481,18 @@ body{
     display: flex;
     width: 45vw;
     height: 100%;
-    align-items: left;
+    align-items:flex-start;
     flex-flow: column nowrap;
     padding-left: 5vw;
     box-sizing: border-box;
     justify-content: center;
+}
+.active{
+    animation-name: fadein;
+    animation-delay: 0.1s;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 .datetxt{
     font-size: 0.7143rem;
@@ -311,8 +502,8 @@ body{
 }
 .titletxt{
     margin-top: 2vh;
-    margin-bottom: 0.5vh;
-    font-weight: 300;
+    margin-bottom: 0.7vh;
+    font-weight: 600;
     font-size: 1.286rem;
     line-height: 1.5rem;
 }
@@ -321,8 +512,9 @@ body{
     line-height: 0.9rem;
 }
 .desctxt{
+    font-size: 0.9rem;
     margin-bottom: 1rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 .process{
     font-size: 1rem;
@@ -352,6 +544,8 @@ body{
     margin-right: 1em;
     border: 1px solid #333;
     border-radius: 10px;
+    text-align: center;
+    line-height: 1.85;
 }
 
 /* mobile */
@@ -367,9 +561,10 @@ body{
     border-top: 1px solid #eee;
     box-sizing: border-box;
     z-index: 1;
+    overflow: hidden;
 }
 .mobile_header{
-    font-size: 0.8571rem;
+    font-size: 0.8rem;
     font-weight: 900;
     letter-spacing: -0.015rem;
     margin-top: 5vh;
@@ -390,7 +585,7 @@ body{
     display: flex;
     width: 45vw;
     height: 100%;
-    align-items: left;
+    align-items: flex-start;
     flex-flow: column nowrap;
     padding-right: 5vw;
     box-sizing: border-box;
@@ -409,6 +604,8 @@ body{
     margin-right: 1em;
     border: 1px solid #333;
     border-radius: 10px;
+    text-align: center;
+    line-height: 1.85;
 }
 
 /* rwd */
@@ -424,9 +621,10 @@ body{
     border-top: 1px solid #eee;
     box-sizing: border-box;
     z-index: 1;
+    overflow: hidden;
 }
 .rwd_header{
-    font-size: 0.8571rem;
+    font-size: 0.8rem;
     font-weight: 900;
     letter-spacing: -0.015rem;
     margin-top: 5vh;
@@ -445,7 +643,7 @@ body{
     display: flex;
     width: 45vw;
     height: 100%;
-    align-items: left;
+    align-items: flex-start;
     flex-flow: column nowrap;
     padding-left: 5vw;
     box-sizing: border-box;
@@ -459,18 +657,14 @@ body{
 }
 .titletxt{
     margin-top: 2vh;
-    margin-bottom: 0.5vh;
-    font-weight: 300;
+    margin-bottom: 1vh;
+    font-weight: 600;
     font-size: 1.286rem;
     line-height: 1.5rem;
 }
 .secondtitletxt{
     margin-bottom: 2vh;
     line-height: 0.9rem;
-}
-.desctxt{
-    margin-bottom: 1rem;
-    line-height: 1rem;
 }
 .process{
     font-size: 1rem;
@@ -490,7 +684,7 @@ body{
 .skilltxt{
     margin-bottom: 5vh;
 }
-.web_link_ul{
+.rwd_link_ul{
     display: flex;
     flex-flow: row nowrap;
 }
@@ -500,6 +694,8 @@ body{
     margin-right: 1em;
     border: 1px solid #333;
     border-radius: 10px;
+    text-align: center;
+    line-height: 1.85;
 }
 
 /* darkmode */
@@ -507,14 +703,22 @@ body.dark {
     background: url(../images/dbackground.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #aaa;
+    color: #eaeaea;
 }
 
 body.dark a {
-    color: #aaa;
+    color: #eaeaea;
 }
 body.dark input {
-    color: #aaa;
+    color: #eaeaea;
+}
+
+#toggleTheme{
+    display:none;
+}
+.darkmode{
+    font-weight: 500;
+    cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {

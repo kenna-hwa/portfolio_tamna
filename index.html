@@ -14,115 +14,141 @@
     <link rel="apple-touch-icon" href="./landingfavicon.ico" sizes="144x144">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header id="header" class="header">
-        <div class="header_wrap">
-            <h1 class="logo">KENNA</h1>
-            <label for="toggleTheme" ><span id="togglelabel">Night</span></label>
+        <div id="header_wrap" class="header_wrap">
+            <h1 id="logo" class="logo">KENNA</h1>
+            <label for="toggleTheme" class="darkmode">Dark</label>
             <input type="checkbox" id="toggleTheme" value="Night">
         </div>
     </header>
-
     <main id="main" class="main">
-
         <section class="title">
             <h2 class="title_header" >PORTFOLIO</h2>
             <div class="title_header_text">
                 <p class="developer">WEB Developer</p>
-                <p class="kenna">KENNA HWANG</p>
-                <p class="name">황주화</p>
+                <p class="name">황주화 <span>JUHWA HWANG</span></p>
             </div>
-            <div class="down_wrap" onclick="downAction()">
+            <div class="down_wrap" onclick="topClick()">
                 <p class="down">아래로</p>
             </div>
         </section>
-
         <section class="about">
             <h2 class="about_header">ABOUT</h2>
             <div class="about_top">
                 <section class="about_img">
                     <h3 class="blind">이미지</h3>
+                    <img src="images/img.png" onmouseover="this.src='images/img_2.png';" onmouseout="this.src='images/img.png';" class="img_1" />
                 </section>
                 <section class="about_txt">
                     <h3 class="blind">소개글</h3>
-                    <p class="name">황주화</p>
+                    <p class="about_name">황주화</p>
                     <p class="engname">HWANG JUHWA (KENNA HWANG)</p>
-                    <p class="talk">이야기 구구절절 구구절절</p>
-                    <label for="mail" class="mail">Mail &#10133;</label>
-                    <input type="checkbox" class="mailbox" name="mail" id="mail">
-                    <a class="mailaddr" href="mailto:kenna.hwa@gmail.com"><span>kenna.hwa@gmail.com</span></a>
-                    <label for="github" class="github">Github &#10133;</label>
-                    <input type="checkbox" class="chartbox" name="github" id="github">
-                    <img src="http://ghchart.rshah.org/kenna-hwa" alt="kenna-hwa's Github chart" class="chart"/>
-                    <label for="blog" class="blog">Blog &#10133;</label>
-                    <input type="checkbox" class="blogbox" name="blog" id="blog">
-                    <a class="blogaddr" href="https://kenna-hwa.github.io/" target="_blank" title="깃헙 블로그 새창 바로가기"><span>https://kenna-hwa.github.io/</span></a>
-
+                    <p class="talk">당신과 내가 좋은 나라에서</p>
+                    <div class="about_txt_mail">
+                        <label for="mail" class="mail">Mail &#10133;</label>
+                        <input type="checkbox" class="mailbox" name="mail" id="mail">
+                            <div class="mail_contents">
+                                <a class="mailaddr" href="javascript:void(0);">kenna.hwa@gmail.com</a>
+                            </div>
+                    </div>
+                    <div class="about_txt_gitchart">
+                        <label for="github" class="github">Github &#10133;</label>
+                        <input type="checkbox" class="chartbox" name="github" id="github">
+                        <div class="about_txt_github">
+                            <a href="https://github.com/kenna-hwa" target="_blank">
+                                <img src="http://ghchart.rshah.org/kenna-hwa" alt="kenna-hwa's Github chart" id="chart"
+                                    class="chart" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about_txt_blog">
+                        <label for="blog" class="blog">Blog &#10133;</label>
+                        <input type="checkbox" class="blogbox" name="blog" id="blog">
+                        <a class="blogaddr" href="https://kenna-hwa.github.io/" target="_blank" title="깃헙 블로그 새창 바로가기"><span class="githubblog"></span></a>
+                    </div>
                 </section>
             </div>
             <section class="about_skills">
-                <div class="about_skills_top">
-                    <article class="html">
-                        <label for="html" class="label">HTML &#10133;</label>
-                        <input type="checkbox" name="html" class="toggle" id="html">
-                        <div class="skills_html skillbox">
-                            <p>&#9643;&#65039; HTML5 마크업</p>
-                            <p>&#9643;&#65039; 웹 표준 및 접근성 (WAI-ARIA, KWCAG 2.1) 준수
-                            </p>
-                        </div>
-                    </article>
+                <h3 class="skills_header">Skills</h3>
+                <div class="skill_wrap">            
+                    <div class="about_skills_top">
+                        <article class="html">
+                            <h4 class="blind">HTML</h4>
+                            <label for="html" class="label">HTML &#10133;</label>
+                            <input type="checkbox" name="html" class="toggle" id="html">
+                            <div class="skills_html skillbox">
+                                <p>&#9643;&#65039; HTML5 마크업</p>
+                                <p>&#9643;&#65039; 웹 표준 및 접근성 (WAI-ARIA, KWCAG 2.1) 준수
+                                </p>
+                            </div>
+                        </article>
 
-                    <article class="js">
-                    <label for="javascript" class="label">JAVASCRIPT &#10133;</label>
-                    <input type="checkbox" name="javascript" class="toggle" id="javascript">
-                    <div class="skills_javascript skillbox">
-                        <p>&#9643;&#65039; ES6 활용</p>
-                        <p>&#9643;&#65039; JQuery 라이브러리</p>
-                    </div>
-                    </article>
+                        <article class="js">
+                            <h4 class="blind">JAVASCRIPT</h4>
 
-                    <article class="sql">
-                    <label for="mysql" class="label">MySQL &#10133;</label>
-                    <input type="checkbox" name="mysql" class="toggle" id="mysql">
-                    <div class="skills_mysql skillbox">
-                        <p>&#9643;&#65039; MySQL 기본 지식 보유</p>
+                        <label for="javascript" class="label">JAVASCRIPT &#10133;</label>
+                        <input type="checkbox" name="javascript" class="toggle" id="javascript">
+                        <div class="skills_javascript skillbox">
+                            <p>&#9643;&#65039; ES6 활용</p>
+                            <p>&#9643;&#65039; JQuery 라이브러리</p>
+                        </div>
+                        </article>
+
+                        <article class="sql">
+                            <h4 class="blind">MySQL</h4>
+
+                        <label for="mysql" class="label">MySQL &#10133;</label>
+                        <input type="checkbox" name="mysql" class="toggle" id="mysql">
+                        <div class="skills_mysql skillbox">
+                            <p>&#9643;&#65039; MySQL 기본 지식 보유</p>
+                        </div>
+                        </article>
                     </div>
-                    </article>
-                </div>
-                <div class="about_skills_bottom">
-                    <article class="css">
-                        <label for="css" class="label">CSS &#10133;</label>
-                        <input type="checkbox" name="css" class="toggle" id="css">
-                        <div class="skills_css skillbox">
-                            <p>&#9643;&#65039; CSS3</p>
-                            <p>&#9643;&#65039; Media Query 반응형 페이지</p>
-                            <p>&#9643;&#65039; Flex, Grid 사용 가능</p>
-                        </div>
-                    </article>
-                    <article class="react">
-                        <label for="react" class="label">REACT &#10133;</label>
-                        <input type="checkbox" name="react" class="toggle" id="react">
-                        <div class="skills_react skillbox">
-                            <p>&#9643;&#65039; 열심히 배우는 중..</p>
-                        </div>
-                    </article>
-                    <article class="php">
-                        <label for="php" class="label">PHP &#10133;</label>
-                        <input type="checkbox" name="php" class="toggle" id="php">
-                        <div class="skills_php skillbox">
-                            <p>&#9643;&#65039; 사용 가능 사용 가능</p>
-                        </div>
-                    </article>
+                    <div class="about_skills_bottom">
+                        <article class="css">
+                            <h4 class="blind">CSS</h4>
+
+                            <label for="css" class="label">CSS &#10133;</label>
+                            <input type="checkbox" name="css" class="toggle" id="css">
+                            <div class="skills_css skillbox">
+                                <p>&#9643;&#65039; CSS3</p>
+                                <p>&#9643;&#65039; Media Query 반응형 페이지</p>
+                                <p>&#9643;&#65039; Flex, Grid 사용 가능</p>
+                            </div>
+                        </article>
+                        <article class="react">
+                            <h4 class="blind">REACT</h4>
+
+                            <label for="react" class="label">REACT &#10133;</label>
+                            <input type="checkbox" name="react" class="toggle" id="react">
+                            <div class="skills_react skillbox">
+                                <p>&#9643;&#65039; 열심히 배우는 중..</p>
+                            </div>
+                        </article>
+                        <article class="php">
+                            <h4 class="blind">PHP</h4>
+
+                            <label for="php" class="label">PHP &#10133;</label>
+                            <input type="checkbox" name="php" class="toggle" id="php">
+                            <div class="skills_php skillbox">
+                                <p>&#9643;&#65039; PHP 수동설치로 환경 설정</p>
+                                <p>&#9643;&#65039; MySQL 연동 가능</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
                 <div class="about_skills_etc">
+                    <h4 class="blind">ETC</h4>
                     <label for="etc" class="label">ETC &#10133;</label>
                     <input type="checkbox" name="etc" class="toggle" id="etc">
-
                     <div class="skills_etc skillbox">
-                    
                         <article class="grap">
+                            <h4 class="blind">GRAPHICS</h4>
+
                             <label for="graphics" class="label">GRAPHICS &#10133;</label>
                             <input type="checkbox" name="graphics" class="toggle" id="graphics">
                             <div class="skills_grap skillbox">
@@ -131,6 +157,7 @@
                             </div>
                         </article>
                         <article class="git">
+                            <h4 class="blind">GIT</h4>
                             <label for="git" class="label">GIT &#10133;</label>
                             <input type="checkbox" name="git" class="toggle" id="git">
                             <div class="skills_git skillbox">
@@ -139,6 +166,7 @@
                             </div>
                         </article>
                         <article class="python">
+                            <h4 class="blind">PYTHON</h4>
                             <label for="python" class="label">Python &#10133;</label>
                             <input type="checkbox" name="python" class="toggle" id="python">
                             <div class="skills_python skillbox">
@@ -149,12 +177,78 @@
 
                 </div>
             </section>
-
+        </section>
+        <section class="about_me">
+            <h2 class="about_me_header">me</h2>
+                <div class="about_me_section" data-aos="fade-up"
+                data-aos-duration="1700" data-aos-easing="ease-in-sine">
+                    <article class="about_me_one">
+                        <h4 class="about_me_one_header">이런 것들을 좋아해요&#10084;&#65039;&#8205;&#128293; </h4>
+                        <div class="about_me_one_txt">
+                           <dl>
+                               <dt>&#10004;&#65039; 집순이</dt>
+                               <dd>보기보다 여행을 좋아하고 어디론가 훌쩍 떠나는 것에 두려움이 없어요. <br>(물론 남들이 혀를 내두르는 집순이인 것은 하나의 반전이에요!)<br> 새로운 곳에서 적응하고 경험하는 일들을 사랑해요.</dd>
+                               <dt>&#10004;&#65039; 글쓰기</dt>
+                               <dd>버디버디 미니홈피부터 티스토리, 이글루스, 네이버 ... <br>
+                                오랜 블로그 유저로 월별 기록부터 매일매일 생각나는 이야기까지 타자를 치면서 생각을 정리해나가요. <br>
+                                지금은 깃헙 블로그에 빠져서 개발 공부 기록으로 젬스톤을 모아요 &#128142;
+                                <br> (지킬jekyll 언어와 싸운다는 뜻..)</dd>
+                               <dt>&#10004;&#65039; 메뉴얼</dt>
+                               <dd>메뉴얼은 근무의 기본! <br>
+                                탕비실 이용법부터 코드 컨벤션까지 메뉴얼에 기대면 마음이 편안해져요.<br>
+                                문서화의 중요성을 일찍부터 깨닫고 <br>
+                                제가 경험한 대부분의 것들을 문서로 남겨둔답니다.
+                            </dd>
+                           </dl>
+                        </div>
+                    </article>
+                    <article class="about_me_two">
+                        <h4 class="about_me_two_header">이런 것들에 관심이 많아요&#129300;
+                        </h4>
+                        <div class="about_me_two_txt">
+                            <dl>
+                                <dt>&#10004;&#65039; UX/UI</dt>
+                                <dd>제가 구현한 페이지의 사용자들이 만족스러운 경험을 했으면 좋겠어요. <br>그리고 코로나라이브맵처럼 사회 문제와 현상을 한 눈에 보고 파악할 수 있는 오픈소스 서비스에도 관심이 많아요!<br>
+                                언젠간 사회 문제에 기여하는 서비스를 만들고 싶어요!&#128170;&#127995;
+                                </dd>
+                                <dt>&#10004;&#65039; 성장</dt>
+                                <dd>새로운 분야에서 매일 불안한 취준생이지만 <br>
+                                    졸업 후 내려놓았던 공부를 다시 손에 잡게 된 1년의 기간이 정말 소중해요! <br>
+                                    하나 하나 배우고 기억하면서 성장하고 있습니다!</dd>
+                                <dt>&#10004;&#65039; 웹 표준/접근성</dt>
+                                <dd>클린 코드를 지향하고 <br>
+                                    웹 표준과 접근성 기준에 부합한 시멘틱 마크업을 하기 위해 
+                                    <br> 꼼꼼하게 하나하나 마크업 하고 있어요. </dd>
+                            </dl>
+                         </div>
+                    </article>
+                    <article class="about_me_three">
+                        <h4 class="about_me_three_header">지금 공부하고 있어요&#129489;&#127995;&#8205;&#128187;
+                        </h4>
+                        <div class="about_me_three_txt">
+                            <dl>
+                                <dt>&#10004;&#65039; Vanilla Javascript</dt>
+                                <dd>쉽고 빠른 라이브러리 사용법만큼 중요한 것이 바닐라 자바스크립트 기본기라고 생각해요.<br> 
+                                    조금 오래 걸리더라도 자바스크립트를 많이 사용해보려고 하고 있어요.</dd>
+                                <dt>&#10004;&#65039; REACT</dt>
+                                <dd>대부분의 서비스의 프론트단에서 사용하고 있는 REACT 공부를 시작했어요. <br>
+                                    비동기적으로 구현되는 서비스들을 보면서 신기한 마음에 '우와!' 소리가 저절로 나오고 있습니다.&#128079;&#127995; </dd>
+                                <dt>&#10004;&#65039; DOM</dt>
+                                <dd>웹 브라우저의 동작 원리에 대해 공부하고 있어요.</dd>
+                                <dt>&#10004;&#65039; Sass/Scss</dt>
+                                <dd>알면 알수록 깊은 CSS의 세계 중 신세계를 발견한 기분. 
+                                    <br>최근 Sass/Scss 강의를 들으면서 Sass/Scss의 편리함에 반해버렸어요.</dd>
+                                <dt>&#10004;&#65039; GIT</dt>
+                                <dd>협업에 반드시 필요한 GIT의 필수 명령어와 브랜치에 대해 공부하고 있어요. </dd>
+                            </dl>
+                         </div>
+                    </article>
+                </div>
         </section>
         <section class="web">
             <h2 class="web_header">WEB</h2>
             <div class="web_section">
-                <div class="web_section_cont">
+                <div class="web_section_cont" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
                     <div class="web_section_txt">
                         <p class="datetxt">2021.04 - 2021. 07</p>
                         <p class="divisiontxt">Web Application</p>
@@ -173,9 +267,9 @@
                     </div>
                     <div class="web_section_link">
                         <ul class="web_link_ul">
-                            <li>Link</li>
-                            <li>Github</li>
-                            <li>PDF</li>
+                            <li><a href="http://kenna.dothome.co.kr/web/" target="_blank" class="link">Link</a></li>
+                            <li><a href="https://github.com/kenna-hwa/tamna.github.io/tree/main/web" target="_blank" class="link">Github</a></li>
+                            <li class="link" onclick="pdfdown()">PDF</li>
                         </ul>
                     </div>
                 </div>
@@ -184,7 +278,7 @@
         <section class="mobile">
             <h2 class="mobile_header">MOBILE</h2>
             <div class="mobile_section">
-                <div class="mobile_section_cont">
+                <div class="mobile_section_cont" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-sine">
                     <div class="mobile_section_txt">
                         <p class="datetxt">2021.04 - 2021. 07</p>
                         <p class="divisiontxt">Mobile Web Application</p>
@@ -202,8 +296,8 @@
                             HTML5 / CSS3 / Javascript ES6 / JQuery / PHP / MySQL</P>
                         <div class="mobile_section_link">
                             <ul class="mobile_link_ul">
-                                <li>Link</li>
-                                <li>Github</li>
+                                <li class="link"><a href="http://kenna.dothome.co.kr/web/mobile/" target="_blank">Link</a></li>
+                                <li class="link"><a href="https://github.com/kenna-hwa/tamna.github.io/tree/main/web/mobile" target="_blank">Github</a></li>
                             </ul>
                         </div>
                     </div>
@@ -213,12 +307,12 @@
         <section class="rwd">
             <h2 class="rwd_header">WEB</h2>
             <div class="rwd_section">
-                <div class="rwd_section_cont">
+                <div class="rwd_section_cont" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
                     <p class="datetxt">2021.06 - 2021. 07</p>
                     <p class="divisiontxt">Web Application</p>
-                    <h3 class="titletxt">샘표식품 웹페이지 클론 코딩</h3>
-                    <p class="secondtitletxt">반응형 페이지</p>
-                    <p class="desctxt">샘표식품 웹의 랜딩페이지를 반응형으로 제작하였습니다.
+                    <h3 class="titletxt">샘표 웹페이지 클론 코딩</h3>
+                    <p class="secondtitletxt">적응형(Adaptive) 페이지</p>
+                    <p class="desctxt">식품 업체 샘표의 랜딩페이지를 <br>미디어 쿼리를 이용해 3단계(데스크탑/태블릿/모바일)의 <br>적응형(Adaptive) 페이지으로 제작하였습니다.
                     </p>
                     <p class="process">PROCESS</p>
                     <p class="processtxt">주제 선정 &gt; 사용자 분석 &gt; 화면 설계 &gt; 인터페이스 정의 &gt; 마크업 &gt; 스타일 시트 &gt; 스크립트 &gt;
@@ -227,9 +321,9 @@
                     <P class="processtxt">Adobe Photoshop / Adobe Illustrator <br>
                         HTML5 / CSS3 </P>
                     <div class="rwd_section_link">
-                        <ul>
-                            <li>Link</li>
-                            <li>Github</li>
+                        <ul class="rwd_link_ul">
+                            <li class="link"><a href="http://kenna.dothome.co.kr/rwd/" target="_blank">Link</a></li>
+                            <li class="link"><a href="https://github.com/kenna-hwa/tamna.github.io/tree/main/rwd" target="_blank">Github</a></li>
                         </ul>
                     </div>
                 </div>
@@ -237,9 +331,55 @@
         </section>
     </main>
     <footer></footer>
-    <script src="js/parallax.js"></script>
-    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
 
+        //상단 로고 없애기
+        window.onscroll = function(){hideLogo()};
+        function hideLogo(){
+            let logo = document.getElementById("logo");
+            if (document.body.scrollTop> 450 || document.documentElement.scrollTop>450) {
+                logo.style.visibility = "hidden";
+            } else {
+                logo.style.visibility = "visible";
+            };
+        };
+       
+        //darkmode 구현
+            //사용자 다크모드 설정 시 클래스에 dark 추가
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.classList.add("dark")
+        };
+            //클릭 시 dark 클래스 추가
+        document.getElementById("toggleTheme").addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            toggleThemetxt();
+        });
+
+        //클릭 시 윈도우 바로 아랫단으로
+        function topClick(){
+        window.scrollTo({
+            //window.innerHeight API 사용
+        top: window.innerHeight,
+        behavior: 'smooth'
+        });
+        };
+
+
+        //클릭 시 링크 이동
+        function github(){
+            location.herf= "https://github.com/kenna-hwa"
+            location.target = "_blank"
+        };
+        function pdfdown(){
+            alert("아직 준비중이에요!");
+            return alse;
+        };
+
+        //slide event library
+        AOS.init();
+
+    </script>
 </body>
 
 </html>
